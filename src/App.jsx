@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router';
 
 // adding pages to app
 import Sidebar from "./components/Sidebar";
-import AboutPage from './components/AboutPage';
+import AboutPage from './pages/AboutPage';
 
 // import styled component
 import styled from 'styled-components';
@@ -13,6 +13,7 @@ import Brightness4Icon from '@material-ui/icons/Brightness4';
 import MenuIcon from '@material-ui/icons/Menu';
 import Switch from '@material-ui/core/Switch';
 import { IconButton } from "@material-ui/core";
+import TimelinePage from "./pages/TimelinePage";
 
 function App() {
 	const [theme, setTheme] = useState('dark-theme');
@@ -64,6 +65,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<AboutPage />} />
 					<Route path="/about" element={<AboutPage />} exact />
+					<Route path="/timeline" element={<TimelinePage />} exact />
 				</Routes>
 			</MainContentStyled>
 		</div>

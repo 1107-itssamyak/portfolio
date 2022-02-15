@@ -1,9 +1,10 @@
 import React from 'react'
-import ImageSection from './ImageSection';
-import Title from './Title';
 
 // importing styled component
 import styled from 'styled-components'
+
+import ImageSection from '../components/ImageSection'
+import Title from '../components/Title'
 
 const About = () => {
     return (
@@ -11,7 +12,6 @@ const About = () => {
             <Title title={'About me'} span={'About me'} />
             <ImageSection />
         </AboutStyled >
-
     )
 }
 

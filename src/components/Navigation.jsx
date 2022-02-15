@@ -17,19 +17,19 @@ const Navigation = () => {
 
             <ul className="nav-items">
                 <li className="nav-item">
-                    <NavLink to="/" activeClassName="active-class" exact>Home</NavLink>
+                    <NavLink to="/" exact="true">Home</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>
+                    <NavLink to="/about" exact="true">About</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/resume" activeClassName="active-class" exact>Resume</NavLink>
+                    <NavLink to="/timeline" exact="true">Timeline</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/portfolios" activeClassName="active-class" exact>Portfolios</NavLink>
+                    <NavLink to="/portfolio" exact="true">Portfolio</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
+                    <NavLink to="/contact" exact="true">Contact</NavLink>
                 </li>
             </ul>
             <footer className="footer">

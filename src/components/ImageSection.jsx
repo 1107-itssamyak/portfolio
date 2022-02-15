@@ -16,7 +16,7 @@ const ImageSection = () => {
             <div className="right-content">
                 <h4><span>Hey there, </span></h4>
                 <p className="paragraph">
-                    I am a prefinal year CS undergrad, a <span> Front Web developer</span>. I peek my interests in UI/UX development and am always found developing them. `
+                    I am a prefinal year CS undergrad, a <span> Front Web developer</span>. UI/UX development peek my Interests and I find myself developing them.
                 </p>
                 <div className="about-info">
                     <div className="info-title">
@@ -82,7 +82,7 @@ const ImageSectionStyled = styled.div`
         justify-content: center;
         align-items: center;
         img{
-            width: 90%;
+            width: 80%;
             object-fit: cover;
         }
     }
@@ -119,4 +119,5 @@ const ImageSectionStyled = styled.div`
     }
 }
 `;
+
 export default ImageSection;
