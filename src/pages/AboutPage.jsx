@@ -7,16 +7,17 @@ import ImageSection from '../components/ImageSection'
 import Title from '../components/Title'
 
 const About = () => {
+    const pageName = "about me";
     return (
         <AboutStyled>
-            <Title title={'About me'} span={'About me'} />
+            <Title title={pageName} span={pageName} />
             <ImageSection />
         </AboutStyled >
     )
 }
 
 const AboutStyled = styled.div`
-    padding: 1rem 0;
+    padding: 1rem 1.5rem;
 `
 
 export default About;

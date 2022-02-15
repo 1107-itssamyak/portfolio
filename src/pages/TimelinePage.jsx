@@ -11,10 +11,11 @@ import SmallTitle from '../components/SmallTitle';
 import ResumeItem from '../components/ResumeItem';
 
 const ResumePage = () => {
+    const pageName = "timeline";
     const school = <SchoolIcon />
     return (
         <ResumeStyled>
-            <Title title={'Timeline'} span={'Timeline'} />
+            <Title title={pageName} span={pageName} />
             <InnerLayout>
                 <div className="small-title u-small-title-margin">
                     <SmallTitle icon={school} title={'Educational Qualifications'} />
@@ -36,7 +37,7 @@ const ResumePage = () => {
 }
 
 const ResumeStyled = styled.section`
-    padding: 1rem 0;
+    padding: 1rem 1.5rem;
     .small-title{
         padding-bottom: 2rem;
     }
