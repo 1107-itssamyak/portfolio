@@ -112,7 +112,7 @@ h6{
 .light-dark-mode{
     position: fixed;
     right: 0;
-    top: 20%;
+    top: 80%;
     background-color: var(--background-light-color-2);
     width: 6rem;
     height: 3rem;
@@ -147,7 +147,7 @@ h6{
       display: none;
       z-index: 15;
       svg{
-          font-size: 3rem;
+          font-size: 2rem;
       }
     }
 

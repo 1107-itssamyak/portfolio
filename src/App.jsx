@@ -61,8 +61,8 @@ function App() {
 			</div>
 
 			<MainContentStyled>
-				<AboutPage />
 				<Routes>
+					<Route path="/" element={<AboutPage />} />
 					<Route path="/about" element={<AboutPage />} exact />
 				</Routes>
 			</MainContentStyled>

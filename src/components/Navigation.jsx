@@ -1,8 +1,12 @@
 import React from 'react'
 
 import avatar from '../image/my_image.jpg'
-import styled from 'styled-components';
+
+// importing styled component
+import styled from 'styled-components'
+
 import { NavLink } from 'react-router-dom';
+import { currYear } from '../data/DataImageSection';
 
 const Navigation = () => {
     return (
@@ -29,7 +33,7 @@ const Navigation = () => {
                 </li>
             </ul>
             <footer className="footer">
-                <p>&copy;2022<b> Samyak Mehta</b></p>
+                <p>&copy; {currYear}<b> Samyak Mehta</b></p>
             </footer>
         </NavigationStyled>
     )
