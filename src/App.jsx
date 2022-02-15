@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Fragment } from "react";
 import { Route, Routes } from 'react-router';
 
 // adding pages to app
@@ -15,6 +15,7 @@ import Switch from '@material-ui/core/Switch';
 import { IconButton } from "@material-ui/core";
 import TimelinePage from "./pages/TimelinePage";
 import PortfolioPage from "./pages/PortfolioPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
 	const [theme, setTheme] = useState('dark-theme');
@@ -64,10 +65,20 @@ function App() {
 
 			<MainContentStyled>
 				<Routes>
-					<Route path="/" element={<AboutPage />} />
+					<Route
+						path="/"
+						element={
+							<>
+								<AboutPage />
+								<TimelinePage />
+								<PortfolioPage />
+								<ContactPage />
+							</>
+						} />
 					<Route path="/about" element={<AboutPage />} exact />
 					<Route path="/timeline" element={<TimelinePage />} exact />
 					<Route path="/portfolio" element={<PortfolioPage />} exact />
+					<Route path="/contact" element={<ContactPage />} exact />
 				</Routes>
 			</MainContentStyled>
 		</div>

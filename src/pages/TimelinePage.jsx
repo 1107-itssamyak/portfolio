@@ -37,13 +37,14 @@ const ResumePage = () => {
 }
 
 const ResumeStyled = styled.section`
+    min-height: 100vh;
     padding: 1rem 1.5rem;
     .small-title{
         padding-bottom: 2rem;
     }
 
     .u-small-title-margin{
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 
     .resume-content{
