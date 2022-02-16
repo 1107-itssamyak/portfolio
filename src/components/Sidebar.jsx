@@ -5,8 +5,9 @@ import styled from 'styled-components';
 import Navigation from './Navigation';
 
 const Sidebar = ({ navToggle }) => {
+    const toggle = navToggle ? 'nav-toggle' : '';
     return (
-        <SidebarStyled classname={`${navToggle ? 'nav-toggle' : ''}`}>
+        <SidebarStyled className={toggle}>
             <Navigation />
         </ SidebarStyled>
     )

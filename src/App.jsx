@@ -41,6 +41,14 @@ function App() {
 
 	return (
 		<div className="App">
+			<div className="ham-burger-menu">
+				<IconButton onClick={() => {
+					setNavToggle((prev) => !prev)
+				}}>
+					<MenuIcon />
+				</IconButton>
+			</div>
+
 			<Sidebar navToggle={navToggle} />
 
 			<div className="theme">
@@ -58,12 +66,6 @@ function App() {
 						/>
 					</div>
 				</div>
-			</div>
-
-			<div className="ham-burger-menu">
-				<IconButton onClick={() => setNavToggle(!navToggle)}>
-					<MenuIcon />
-				</IconButton>
 			</div>
 
 			<MainContentStyled>
