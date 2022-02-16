@@ -98,11 +98,10 @@ const ContactItemStyled = styled.div`
             align-items:center;
         }
 
-        @media screen and (max-width: 600px){
-            width: 100%;
-        }
-        svg{
-            font-size: 2rem;
+        @media screen and (max-width: 800px){
+            svg{
+                font-size: 2rem;
+            }
         }
     }
 `;

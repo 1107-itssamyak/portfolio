@@ -62,7 +62,7 @@ const ContactPage = () => {
 }
 
 const ContactPageStyled = styled.section`
-    margin: 1rem 0;
+    margin: .5rem 0;
     .contact-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -82,7 +82,7 @@ const ContactPageStyled = styled.section`
         .contact-title{
             h4{
                 color: var(--white-color);
-                padding: .75rem 0;
+                padding: .5rem 0;
                 font-size: 1.8rem;
             }
         }

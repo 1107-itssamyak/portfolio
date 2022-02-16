@@ -25,6 +25,17 @@ const SmallTitleStyled = styled.div`
         color: var(--white-color);
         font-size: 1.5rem;
     }
+    @media screen and (max-width: 800px){
+        p{
+            padding-right: 1rem;
+            svg{
+                font-size: 1.5rem;
+            }
+        }
+        h3{
+            font-size: 1.2rem;
+        }
+    }
 `;
 
 export default SmallTitle;

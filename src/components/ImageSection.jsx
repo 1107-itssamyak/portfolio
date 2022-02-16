@@ -19,9 +19,8 @@ const ImageSection = () => {
             <div className="right-content">
                 <h1><span>Hey there,</span></h1>
                 <p className="paragraph">
-                    I love <span>designing Websites</span> and am looking for more opportunities to work in coding for them. Looking forward to Collabrate over Projects or Discussions which are fun & meaningful.
-                </p>
-                <p className="paragraph">
+                    I love <span>Designing & Developing Websites</span> and am looking for more opportunities to work in coding for them. Looking forward to Collabrate over Projects or Discussions which are fun & meaningful.
+                    <br />
                     Please see the attached <span>Resume</span>! 😃
                 </p>
                 <div className="about-info">
@@ -53,7 +52,7 @@ const ImageSection = () => {
 }
 
 const ImageSectionStyled = styled.div`
-    margin-top: 4rem;
+    margin-top: 3rem;
     display: flex;
     .left-content{
         width: 100%;

@@ -34,6 +34,7 @@ const SkillState = styled.div`
     padding: .5rem;
     border-radius: .5rem;
     margin: .5rem 0;
+    font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 `;
 

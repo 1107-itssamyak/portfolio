@@ -64,7 +64,7 @@ const SkillsPage = () => {
             <ContainerStyled>
                 <div className="left-content">
                     <div className='heading'>
-                        Tools
+                        Tools / Libraries
                     </div>
                     <div className="subheading">
                         These are the Tools which helps me, to make my working easier. I have experience in working on <span>React</span> Projects, use <span>Git</span> for Code Implementation & Progress tracking, <span>Figma</span> for Vector UI/UX content and using it for development of Projects.
@@ -88,7 +88,7 @@ const SkillsPage = () => {
                         Web Services / Databases
                     </div>
                     <div className="subheading">
-                        Some <span>Databases and Web services</span> I have worked upon.
+                        Some <span>Databases & Web services</span> I have worked upon.
                     </div>
                     <div className="skills">
                         {web_services.map((item) => (
@@ -122,18 +122,19 @@ const ContainerStyled = styled.div`
     .left-content{
         width: 50%;
         .heading{
+            text-align: center;
             text-decoration: underline;
             font-style: italic;
             letter-spacing: 1px;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin: 1.5rem 0 1rem 0;
             font-weight: 700;
             padding: .5rem 0;
         }
         .subheading{
             letter-spacing: 0;
-            font-size: 1.1rem;
-            margin: 1rem 0;
+            font-size: 1rem;
+            margin: 1rem .5rem;
             font-weight: 400;
         }
         .skills{
@@ -160,11 +161,18 @@ const ContainerStyled = styled.div`
         &:nth-child(2n){
             flex-direction: column;
         }
-
+        
         flex-direction: column;
         .left-content{
             width: 100%;
+            span{
+                font-size: 1rem;
+            }
+            .subheading, .skills{
+                font-size: 1rem;
+            }
         }
+
         .right-content{
             img{
                 margin: 2rem 0 0 0;

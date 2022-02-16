@@ -6,7 +6,7 @@ const MainLayout = styled.div`
 `;
 
 const InnerLayout = styled.div`
-    padding: 1.75rem 0;
+    padding: 1.5rem 0;
 `;
 
 const ButtonStyled = styled.a`
@@ -19,7 +19,7 @@ const ButtonStyled = styled.a`
     text-transform: uppercase;
     position: relative;
     transition: all .4s ease-in-out;
-    margin: 1rem 0 .75rem 0;
+    margin: .75rem 0;
     &::after{
         content: "";
         position: absolute;

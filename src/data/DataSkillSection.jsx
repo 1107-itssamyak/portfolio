@@ -38,15 +38,15 @@ const programming = [
 
 const tools = [
     {
-        "title": "vscode",
+        "title": "react",
         "id": "1"
     },
     {
-        "title": "react",
+        "title": "git/ github",
         "id": "2"
     },
     {
-        "title": "git/ github",
+        "title": "vscode",
         "id": "3"
     },
     {
