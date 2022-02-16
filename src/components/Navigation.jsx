@@ -26,6 +26,9 @@ const Navigation = () => {
                     <NavLink to="/timeline" exact="true">Timeline</NavLink>
                 </li>
                 <li className="nav-item">
+                    <NavLink to="/skills" exact="true">Skills</NavLink>
+                </li>
+                <li className="nav-item">
                     <NavLink to="/portfolio" exact="true">Portfolio</NavLink>
                 </li>
                 <li className="nav-item">

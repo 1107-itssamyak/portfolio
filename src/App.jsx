@@ -16,6 +16,7 @@ import { IconButton } from "@material-ui/core";
 import TimelinePage from "./pages/TimelinePage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ContactPage from "./pages/ContactPage";
+import SkillsPage from "./pages/SkillsPage";
 
 function App() {
 	const [theme, setTheme] = useState('dark-theme');
@@ -71,12 +72,14 @@ function App() {
 							<>
 								<AboutPage />
 								<TimelinePage />
+								<SkillsPage />
 								<PortfolioPage />
 								<ContactPage />
 							</>
 						} />
 					<Route path="/about" element={<AboutPage />} exact />
 					<Route path="/timeline" element={<TimelinePage />} exact />
+					<Route path="/skills" element={<SkillsPage />} exact />
 					<Route path="/portfolio" element={<PortfolioPage />} exact />
 					<Route path="/contact" element={<ContactPage />} exact />
 				</Routes>
