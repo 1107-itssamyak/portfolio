@@ -62,6 +62,7 @@ const ContactPage = () => {
 }
 
 const ContactPageStyled = styled.section`
+    margin: 1rem 0;
     .contact-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);

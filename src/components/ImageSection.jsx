@@ -7,7 +7,9 @@ import { age } from '../data/DataImageSection';
 import avatar from '../image/my_image.jpg';
 import { ButtonStyled } from '../styles/Layout';
 
+
 const ImageSection = () => {
+    const resume = 'https://drive.google.com/file/d/1DjpGBRpU7G2A2x_fPYgvjyT4fg6rfbZw/view?usp=sharing'
     return (
         <ImageSectionStyled>
             <div className="left-content">
@@ -38,7 +40,13 @@ const ImageSection = () => {
                         <p>: Rajasthan, India</p>
                     </div>
                 </div>
-                <ButtonStyled>Download Cv</ButtonStyled>
+                <ButtonStyled
+                    href={resume}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    Download Cv
+                </ButtonStyled>
             </div>
         </ImageSectionStyled>
     )
