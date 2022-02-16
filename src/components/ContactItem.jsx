@@ -70,7 +70,10 @@ const ContactItemStyled = styled.div`
     flex-direction: column;
     padding: 2rem;
     width: 80%;
-    
+    @media screen and (max-width:920px){
+        width: 60%;
+    }
+
     .content{
         font-size: 1.2rem;
         text-transform: uppercase;
@@ -79,6 +82,9 @@ const ContactItemStyled = styled.div`
         align-items:center;
         &:not(:last-child){
             margin-bottom: 2rem;
+            @media screen and (max-width:800px){
+                margin-bottom: 1rem;
+            }
         }
         
         a{
