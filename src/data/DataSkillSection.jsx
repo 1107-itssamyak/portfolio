@@ -1,18 +1,18 @@
 const web_development = [
     {
-        "title": "html",
-        "id": ""
+        "title": "html5",
+        "id": "1"
     },
     {
-        "title": "css",
+        "title": "css3 / scss",
         "id": "2"
     },
     {
-        "title": "scss",
+        "title": "tailwind css",
         "id": "3"
     },
     {
-        "title": "tailwind css",
+        "title": "bootstrap",
         "id": "4"
     }
 ]

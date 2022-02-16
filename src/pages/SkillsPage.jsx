@@ -108,7 +108,7 @@ const SkillsPage = () => {
 }
 
 const ContainerStyled = styled.div`
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;

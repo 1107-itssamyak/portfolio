@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // import styled component
 import styled from 'styled-components';
@@ -7,6 +7,7 @@ import { MainLayout, InnerLayout, ButtonStyled } from '../styles/Layout';
 import Title from '../components/Title';
 import ContactItem from '../components/ContactItem';
 import { GitHub, LinkedIn, Mail, Phone, Instagram } from '@material-ui/icons';
+// import { db } from '../firebase';
 
 const ContactPage = () => {
     const phone = <Phone />;
@@ -15,6 +16,37 @@ const ContactPage = () => {
     const mail = <Mail />;
     const instagram = <Instagram />
     const pageName = "contact";
+
+    const [name, setname] = useState('');
+    const [email, setEmail] = useState('');
+    const [textareaText, settextareaText] = useState('');
+
+    const handleNameText = (e) => {
+        setname((e) => e.target.value);
+    }
+    const handleEmailText = (e) => {
+        setEmail((e) => e.target.value);
+    }
+    const handleTextAreaText = (e) => {
+        settextareaText((e) => e.target.value);
+    }
+
+    const pushDetails = () => {
+        // pushing detials entered to the db for the firebase
+    }
+
+    const handleSubmitDetails = (e) => {
+        e.preventDefault();
+
+        if (name && email && textareaText)
+            pushDetails()
+        else {
+            alert("Input Fields missing");
+            setname('');
+            setEmail('');
+            settextareaText('');
+        }
+    }
 
     return (
         <MainLayout>
@@ -28,18 +60,39 @@ const ContactPage = () => {
                         <form className="form">
                             <div className="form-field">
                                 <label htmlFor="name"  >Enter your name</label>
-                                <input type="text" id="name" />
+                                <input
+                                    type="text"
+                                    id="name"
+                                    value={name}
+                                    onClick={handleNameText}
+                                />
                             </div>
                             <div className="form-field">
                                 <label htmlFor="email"  >Enter your email</label>
-                                <input type="email" id="email" />
+                                <input
+                                    type="email"
+                                    id="email"
+                                    value={email}
+                                    onClick={handleEmailText}
+                                />
                             </div>
                             <div className="form-field">
                                 <label htmlFor="text-area">Enter your Message</label>
-                                <textarea name="textarea" id="textarea" cols="20" rows="4"></textarea>
+                                <textarea
+                                    name="textarea"
+                                    id="textarea"
+                                    cols="20"
+                                    rows="4"
+                                    value={textareaText}
+                                    onClick={handleTextAreaText}
+                                ></textarea>
                             </div>
                             <div className="form-field f-button">
-                                <ButtonStyled type='submit'>Send Message</ButtonStyled>
+                                <ButtonStyled
+                                    type='submit'
+                                    onSubmit={handleSubmitDetails}>
+                                    Send Message
+                                </ButtonStyled>
                             </div>
                         </form>
                     </div>

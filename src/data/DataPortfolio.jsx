@@ -9,7 +9,7 @@ const data = [
         id: 1,
         category: 'Full Stack Project',
         link1: 'https://github.com/1107-itssamyak/portfolio',
-        link2: '#',
+        link2: 'https://samyak-mehta.web.app/',
         title: 'Portfolio Website',
         image: `${portfolio_image}`,
         text: 'Created with only React, Framer-Motion, CSS3'
