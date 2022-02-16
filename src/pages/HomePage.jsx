@@ -3,16 +3,14 @@ import React from 'react'
 // importing styled component
 import styled from 'styled-components';
 
-
 const HomePage = () => {
     return (
         <HomePageStyled>
             <div className="typography">
                 <h1>Hi, I'm <span>Samyak Mehta</span></h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Atque nihil voluptates ea dolore vel
-                    repellat? Quia tenetur non quam exercitationem. Lorem ipsum dolor sit amet.
+                    I am a Prefinal year CS Undergrad 😄, a <span>Front Web developer</span>. UI/UX development peek my Interests and find myself developing them.
+                    I live in Udaipur, Rajasthan. I'm working on improving my skills in scope of <span>Full Stack Web Development</span>.
                 </p>
             </div>
         </HomePageStyled>
@@ -32,12 +30,18 @@ const HomePageStyled = styled.header`
         text-align: center;
         width: 80%;
 
-        h1, span{
+        h1{
             font-size: 2.5rem;
             margin-bottom: 1rem;
         }
+        span{
+            font-size: 2.5rem;
+        }
         p{
             line-height: 1.4rem;
+            span{
+                font-size: 1rem;
+            }
         }
     }
 `;

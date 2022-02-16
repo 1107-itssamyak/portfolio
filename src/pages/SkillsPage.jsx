@@ -25,7 +25,7 @@ const SkillsPage = () => {
                         Web Development
                     </div>
                     <div className="subheading">
-                        I have worked on various web development projects. This the basic tech's using which I have worked upon on projects. My Language preference for development is using Javascript.
+                        I have worked on various Web Development projects. This is the tech's using which I have worked upon on projects.
                     </div>
                     <div className="skills">
                         {web_development.map((item) => (
@@ -46,7 +46,7 @@ const SkillsPage = () => {
                         Programming
                     </div>
                     <div className="subheading">
-                        I use C++ for implementing Data Structures and Algorithms. Javascript is mostly used by me when I want to develop web projects. I also have knowledge of Java and Python.
+                        I use C++ for implementing <span>Data Structures and Algorithms</span>. Javascript is mostly used by me when I want to develop <span>Web projects</span>. I also have knowledge of Java and Python.
                     </div>
                     <div className="skills">
                         {programming.map((item) => (
@@ -67,7 +67,7 @@ const SkillsPage = () => {
                         Tools
                     </div>
                     <div className="subheading">
-                        These are the Tools which helps me, to make my working easier. I have also worked on React Projects, used Git for Code Implementation & Progress tracking, Figma for Vector UI/UX content and using it for development of Projects.
+                        These are the Tools which helps me, to make my working easier. I have experience in working on <span>React</span> Projects, use <span>Git</span> for Code Implementation & Progress tracking, <span>Figma</span> for Vector UI/UX content and using it for development of Projects.
                     </div>
                     <div className="skills">
                         {tools.map((item) => (
@@ -88,7 +88,7 @@ const SkillsPage = () => {
                         Web Services / Databases
                     </div>
                     <div className="subheading">
-                        Some Databases and Web services I have worked upon.
+                        Some <span>Databases and Web services</span> I have worked upon.
                     </div>
                     <div className="skills">
                         {web_services.map((item) => (

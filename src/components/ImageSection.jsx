@@ -15,9 +15,12 @@ const ImageSection = () => {
             </div>
 
             <div className="right-content">
-                <h4><span>Hey there, </span></h4>
+                <h1><span>Hey there,</span></h1>
                 <p className="paragraph">
-                    I am a prefinal year CS undergrad, a <span> Front Web developer</span>. UI/UX development peek my Interests and I find myself developing them.
+                    I love <span>designing Websites</span> and am looking for more opportunities to work in coding for them. Looking forward to Collabrate over Projects or Discussions which are fun & meaningful.
+                </p>
+                <p className="paragraph">
+                    Please see the attached <span>Resume</span>! 😃
                 </p>
                 <div className="about-info">
                     <div className="info-title">
@@ -55,11 +58,11 @@ const ImageSectionStyled = styled.div`
         }
     }
     .right-content{
-        h4{
-            font-size: 2rem;
+        h1{
+            padding: .1rem 0;
             color: var(--white-color);
             span{
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
         }
         .paragraph{
