@@ -39,6 +39,7 @@ const ResumePage = () => {
 const ResumeStyled = styled.section`
     min-height: 100vh;
     padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
     .small-title{
         padding-bottom: 2rem;
     }

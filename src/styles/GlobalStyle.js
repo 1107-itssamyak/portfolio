@@ -47,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     font-family: 'Roboto', Lato, sans-serif;
     font-size: 1.1rem;
-    
+    letter-spacing: .75px;
 }
 
 body{

@@ -3,7 +3,6 @@ import React from 'react'
 // importing styled component
 import styled from 'styled-components'
 
-
 function ResumeItem({ year, title, subTitle, text }) {
     return (
         <ResumeItemStyled>
@@ -21,11 +20,6 @@ function ResumeItem({ year, title, subTitle, text }) {
 
 const ResumeItemStyled = styled.div`
     display: flex;
-    @media screen and (max-width: 421px){
-        p, h5, h6{
-            font-size: 80%;
-        }
-    }
     &:not(:last-child){
         padding-bottom: 2rem;
     }
@@ -46,6 +40,7 @@ const ResumeItemStyled = styled.div`
             background-color: var(--background-dark-color);
         }
         p{
+            align-text: center;
             border-radius: .5rem;
             padding: .25rem .5rem;
             background-color: rgba(250, 250, 250, 0.2);
@@ -53,7 +48,8 @@ const ResumeItemStyled = styled.div`
         }
     }
     .right-content{
-        padding-left: 5rem;
+        text-align: center;
+        width: 100%;
         position: relative;
         &::before{
             content: "";
@@ -63,20 +59,29 @@ const ResumeItemStyled = styled.div`
             height: 2px;
             width: 3rem;
             background-color: var(--border-color);
+            transform: translate(35%, 200%);
         }
         h5{
             color: var(--primary-color);
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             padding-bottom: .4rem;
-            margin: 0 10px 0 .4rem;
         }
         h6{
-            padding-bottom: .6rem;
+            margin-bottom: .6rem;
             font-size: 1.2rem;
-            margin: 0 10px .4rem 1rem;
         }
         p{
-            margin: 0 10px .4rem 1rem;
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 800px){
+        p, h5, h6{
+            font-size: 80%;
+        }
+        .right-content{
+            text-align: left;
+            padding-left: 5rem;
         }
     }
 `;

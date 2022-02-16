@@ -44,24 +44,17 @@ const ImageSection = () => {
 const ImageSectionStyled = styled.div`
     margin-top: 4rem;
     display: flex;
-    @media screen and (max-width:1000px){
-        flex-direction: column;
-        .left-content{
-            margin-bottom: 2rem;
-        }
-    }
     .left-content{
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         img{
-            width: 80%;
+            width: 70%;
             object-fit: cover;
         }
     }
     .right-content{
-        margin: 0 2rem;
         h4{
             font-size: 2rem;
             color: var(--white-color);
@@ -70,14 +63,14 @@ const ImageSectionStyled = styled.div`
             }
         }
         .paragraph{
-            padding: 1rem 1.5rem 1rem 0;
+            padding: .75rem 0;
             span{
                 font-weight: 600;
             }
         }
         .about-info{
             display: flex;
-            padding-bottom: 1.4rem;
+            padding-bottom: 1.5rem;
             .info-title{
                 padding-right: 3rem;
                 p{
@@ -87,6 +80,18 @@ const ImageSectionStyled = styled.div`
             .info-title, .info{
                 p{
                     padding: .3rem 0;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1000px){
+        flex-direction: column;
+        .left-content{
+            margin-bottom: 2rem;
+        }
+        .right-content{
+            h4 span{
+                    font-size: 1.5rem;
                 }
             }
         }

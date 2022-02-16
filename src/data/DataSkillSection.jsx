@@ -1,54 +1,68 @@
 const web_development = [
     {
-        "title": "html"
+        "title": "html",
+        "id": ""
     },
     {
-        "title": "css"
+        "title": "css",
+        "id": "2"
     },
     {
-        "title": "scss"
+        "title": "scss",
+        "id": "3"
     },
     {
-        "title": "tailwind css"
+        "title": "tailwind css",
+        "id": "4"
     }
 ]
 
 const programming = [
     {
-        "title": "c++"
+        "title": "c++",
+        "id": "1"
     },
     {
-        "title": "java"
+        "title": "java",
+        "id": "2"
     },
     {
-        "title": "javascript"
+        "title": "javascript",
+        "id": "3"
     },
     {
-        "title": "python"
+        "title": "python",
+        "id": "4"
     },
 ]
 
 const tools = [
     {
-        "title": "vscode"
+        "title": "vscode",
+        "id": "1"
     },
     {
-        "title": "react"
+        "title": "react",
+        "id": "2"
     },
     {
-        "title": "git/ github"
+        "title": "git/ github",
+        "id": "3"
     },
     {
-        "title": "figma"
+        "title": "figma",
+        "id": "4"
     }
 ]
 
 const web_services = [
     {
-        "title": "mysql"
+        "title": "mysql",
+        "id": "1"
     },
     {
-        "title": "Firebase"
+        "title": "Firebase",
+        "id": "2"
     },
 ]
 

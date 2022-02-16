@@ -6,13 +6,14 @@ import styled from 'styled-components';
 import { MainLayout, InnerLayout, ButtonStyled } from '../styles/Layout';
 import Title from '../components/Title';
 import ContactItem from '../components/ContactItem';
-import { GitHub, LinkedIn, Mail, Phone } from '@material-ui/icons';
+import { GitHub, LinkedIn, Mail, Phone, Instagram } from '@material-ui/icons';
 
 const ContactPage = () => {
     const phone = <Phone />;
     const github = <GitHub />;
     const linkedIn = <LinkedIn />;
     const mail = <Mail />;
+    const instagram = <Instagram />
     const pageName = "contact";
 
     return (
@@ -51,6 +52,7 @@ const ContactPage = () => {
                             github={github}
                             linkedIn={linkedIn}
                             mail={mail}
+                            instagram={instagram}
                         />
                     </div>
                 </InnerLayout>
@@ -71,15 +73,10 @@ const ContactPageStyled = styled.section`
             }
         }
         .right-content{
-            /* display: grid;
-            grid-template-rows: repeat(1, 1fr); */
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            @media screen and (max-width: 502px){
-                width: 70%;
-            }
         }
         .contact-title{
             h4{

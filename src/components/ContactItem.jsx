@@ -3,7 +3,7 @@ import React from 'react'
 // import styled component
 import styled from 'styled-components'
 
-const ContactItem = ({ phone, contact, github, linkedIn, mail }) => {
+const ContactItem = ({ phone, contact, github, linkedIn, mail, instagram }) => {
     return (
         <ContactItemStyled>
             <div>
@@ -16,7 +16,10 @@ const ContactItem = ({ phone, contact, github, linkedIn, mail }) => {
                     </div>
                 </div>
                 <div className='content'>
-                    <a href="mailto:samyak.mehta11@gmail.com">
+                    <a
+                        href="mailto:samyak.mehta11@gmail.com"
+                        rel="noreferrer"
+                        target="_blank" >
                         {mail}
                     </a>
                     <div>
@@ -24,7 +27,10 @@ const ContactItem = ({ phone, contact, github, linkedIn, mail }) => {
                     </div>
                 </div>
                 <div className='content'>
-                    <a href="https://github.com/1107-itssamyak">
+                    <a
+                        href="https://github.com/1107-itssamyak"
+                        rel="noreferrer"
+                        target="_blank" >
                         {github}
                     </a>
                     <div>
@@ -32,11 +38,24 @@ const ContactItem = ({ phone, contact, github, linkedIn, mail }) => {
                     </div>
                 </div>
                 <div className='content'>
-                    <a href="https://www.linkedin.com/in/samyak-mehta11/">
+                    <a
+                        href="https://www.linkedin.com/in/samyak-mehta11/"
+                        rel="noreferrer"
+                        target="_blank" >
                         {linkedIn}
                     </a>
                     <div>
                         linked in
+                    </div>
+                </div>
+                <div className='content'>
+                    <a
+                        href="https://www.instagram.com/_samyak___/" rel="noreferrer"
+                        target="_blank" >
+                        {instagram}
+                    </a>
+                    <div>
+                        instagram
                     </div>
                 </div>
             </div>
@@ -51,7 +70,6 @@ const ContactItemStyled = styled.div`
     flex-direction: column;
     padding: 2rem;
     width: 80%;
-    margin-bottom: 2rem;
     
     .content{
         font-size: 1.2rem;
@@ -64,7 +82,7 @@ const ContactItemStyled = styled.div`
         }
         
         a{
-            padding: .5rem;
+            padding: .4rem;
             width: 20%;
             display: flex;
             justify-content: center;

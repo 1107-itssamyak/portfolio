@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router';
 
 // adding pages to app
 import Sidebar from "./components/Sidebar";
-import AboutPage from './pages/AboutPage';
 
 // import styled component
 import styled from 'styled-components';
@@ -13,6 +12,9 @@ import Brightness4Icon from '@material-ui/icons/Brightness4';
 import MenuIcon from '@material-ui/icons/Menu';
 import Switch from '@material-ui/core/Switch';
 import { IconButton } from "@material-ui/core";
+
+import HomePage from "./pages/HomePage";
+import AboutPage from './pages/AboutPage';
 import TimelinePage from "./pages/TimelinePage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ContactPage from "./pages/ContactPage";
@@ -70,6 +72,7 @@ function App() {
 						path="/"
 						element={
 							<>
+								<HomePage />
 								<AboutPage />
 								<TimelinePage />
 								<SkillsPage />

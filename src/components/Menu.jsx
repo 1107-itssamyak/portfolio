@@ -19,13 +19,13 @@ const Menu = ({ data }) => {
                         <ul>
                             <li>
                                 <a href={item.link1}>
-                                    <i class="fa-solid fa-file-lines"></i>
+                                    <i className="fa-solid fa-file-lines"></i>
                                     Source
                                 </a>
                             </li>
                             <li>
                                 <a href={item.link2}>
-                                    <i class="fa-solid fa-tv"></i>
+                                    <i className="fa-solid fa-tv"></i>
                                     Live
                                 </a>
                             </li>

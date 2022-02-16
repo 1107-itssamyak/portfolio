@@ -23,14 +23,15 @@ const SkillsPage = () => {
                 <div className="left-content">
                     <div className='heading'>
                         Web Development
-                        <div className="subheading">
-                            I have worked on various web development projects. This the basic tech's using which I have worked upon on projects. My Language preference for development is using Javascript.
-                        </div>
+                    </div>
+                    <div className="subheading">
+                        I have worked on various web development projects. This the basic tech's using which I have worked upon on projects. My Language preference for development is using Javascript.
                     </div>
                     <div className="skills">
                         {web_development.map((item) => (
                             <SkillStats
                                 tools={item}
+                                key={item.id}
                             />
                         ))}
                     </div>
@@ -51,6 +52,7 @@ const SkillsPage = () => {
                         {programming.map((item) => (
                             <SkillStats
                                 tools={item}
+                                key={item.id}
                             />
                         ))}
                     </div>
@@ -71,6 +73,7 @@ const SkillsPage = () => {
                         {tools.map((item) => (
                             <SkillStats
                                 tools={item}
+                                key={item.id}
                             />
                         ))}
                     </div>
@@ -91,6 +94,7 @@ const SkillsPage = () => {
                         {web_services.map((item) => (
                             <SkillStats
                                 tools={item}
+                                key={item.id}
                             />
                         ))}
                     </div>
@@ -111,13 +115,20 @@ const ContainerStyled = styled.div`
     flex-direction: row;
     width: 100%;
 
+    &:nth-child(2n){
+        flex-direction: row-reverse;
+    }
+
     .left-content{
         width: 50%;
         .heading{
+            text-decoration: underline;
+            font-style: italic;
             letter-spacing: 1px;
             font-size: 1.5rem;
             margin: 1.5rem 0 1rem 0;
             font-weight: 700;
+            padding: .5rem 0;
         }
         .subheading{
             letter-spacing: 0;
@@ -133,6 +144,7 @@ const ContainerStyled = styled.div`
             flex-direction: column;
         }
     }
+
     .right-content{
         width: 50%;
         display: flex;
@@ -143,14 +155,19 @@ const ContainerStyled = styled.div`
             object-fit: cover;
         }
     }
+
     @media screen and (max-width:800px){
+        &:nth-child(2n){
+            flex-direction: column;
+        }
+
         flex-direction: column;
         .left-content{
             width: 100%;
         }
         .right-content{
             img{
-                margin: 2rem 0;
+                margin: 2rem 0 0 0;
                 width: 20rem;
                 object-fit: cover;
             }

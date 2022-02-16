@@ -3,8 +3,6 @@ import React from 'react'
 // import styled component
 import styled from 'styled-components';
 
-// import { ButtonStyled } from '../styles/Layout';
-
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // const html_icon = <FontAwesomeIcon icon="fa-brands fa-html5" />;
 // const css = <FontAwesomeIcon icon="fa-brands fa-css3" />
@@ -21,20 +19,17 @@ import styled from 'styled-components';
 // const mysql = <FontAwesomeIcon icon="fa-solid fa-database" />
 // const firebase = <FontAwesomeIcon icon="fa-solid fa-fire-flame-curved" />
 
-function SkillStats({ tools: { title } }) {
+function SkillStats({ tools: { title, id } }) {
     return (
-        // <ButtonStyled>
-        //     {title}
-        // </ButtonStyled>
-        <SkillState>{title}</SkillState>
+        <SkillState key={id}>{title}</SkillState>
     )
 }
 
 const SkillState = styled.div`
-    width: 75%;
+    width: 70%;
     text-align: center;
-    color: var(--primary-color);
-    background-color: rgba(250, 250, 250, 0.2);
+    color: var(--font-light-color);
+    background-color: var(--background-light-color-2);
     text-transform: uppercase;
     padding: .5rem;
     border-radius: .5rem;

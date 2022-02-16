@@ -2,7 +2,7 @@ const EducationQualificationItems = [
     {
         "id": "1",
         "year": "2019 - 2023",
-        "title": "Computer Science Degree",
+        "title": "Bachelor's in Computer Science",
         "subtitle": "Sikkim Manipal Institute of Technology",
         "text": "Sikkim, India"
     },
