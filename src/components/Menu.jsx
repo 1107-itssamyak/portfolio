@@ -43,10 +43,16 @@ const MenuItemStyled = styled.div`
     h6{
         padding: 1rem 0 .5rem 0;
         font-size: 1.3rem;
+        @media screen and (max-width:600px){
+            font-size: 1.1rem;
+        }
     }
     p{
         height: 8vh;
         font-size: .9rem;
+        @media screen and (max-width:600px){
+            min-height: 4vh;
+        }
     }
     @media screen and (max-width:920px){
         grid-template-columns: repeat(2, 1fr);
@@ -70,6 +76,9 @@ const MenuItemStyled = styled.div`
                 @media screen and (max-width:800px){
                     height: 40vh;
                 }
+                @media screen and (max-width:600px){
+                    height: 30vh;
+                }
             }
         }
         ul{
@@ -81,6 +90,9 @@ const MenuItemStyled = styled.div`
             i{
                 margin: 0 .5rem;
             }
+        }
+        @media screen and (max-width:600px){
+            margin: 0;
         }
     }
 `;

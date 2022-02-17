@@ -51,10 +51,14 @@ const TimelineStyled = styled.section`
     .resume-content{
         margin: 0 2rem;
         border-left: 2px solid var(--border-color);
+        @media screen and (max-width:600px){
+            margin: 0 1rem;
+        }
     }
     
     @media screen and (max-width: 800px){
         margin-bottom: 2rem;
+        padding: 1rem;
     }
 `;
 

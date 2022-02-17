@@ -36,6 +36,10 @@ const SkillState = styled.div`
     margin: .5rem 0;
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    @media screen and (max-width:600px){
+        width: 60%;
+        padding: .2rem;
+    }
 `;
 
 export default SkillStats;

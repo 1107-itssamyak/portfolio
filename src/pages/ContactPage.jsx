@@ -99,8 +99,7 @@ const ContactPage = () => {
                             <div className="form-field f-button">
                                 <ButtonStyled
                                     type='submit'
-                                    onClick={handleSubmitDetails}
-                                >
+                                    onClick={handleSubmitDetails} >
                                     Send Message
                                 </ButtonStyled>
                             </div>
@@ -136,6 +135,11 @@ const ContactPageStyled = styled.section`
                 margin-bottom: 3rem;
             }
         }
+        @media screen and (max-width:600px){
+            .f-button{
+                margin-bottom: 2rem;
+            }
+        }
         .right-content{
             display: flex;
             justify-content: center;
@@ -147,6 +151,9 @@ const ContactPageStyled = styled.section`
                 color: var(--white-color);
                 padding: .5rem 0;
                 font-size: 1.6rem;
+                @media screen and (max-width:600px){
+                    font-size: 1rem;
+                }
             }
         }
         .form{
@@ -175,6 +182,10 @@ const ContactPageStyled = styled.section`
                     padding: 0 15px;
                     width: 100%;
                     color: inherit;
+                    @media screen and (max-width:600px){
+                        height: 40px;
+                        padding: 0 5px;
+                    }
                 }
                 textarea{
                     background-color: transparent;
@@ -183,6 +194,9 @@ const ContactPageStyled = styled.section`
                     color: inherit;
                     width: 100%;
                     padding: .8rem 1rem;
+                    @media screen and (max-width:600px){
+                        padding: .75rem;
+                    }
                 }
             }            
         }

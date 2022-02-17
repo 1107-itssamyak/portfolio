@@ -7,7 +7,7 @@ import Title from '../components/Title';
 
 // importing svg's
 import web_development_svg from '../image/web_developer.svg';
-import react_svg from "../image/react.svg";
+import thinking_svg from "../image/thought_process.svg";
 import server_svg from "../image/server_status.svg";
 import knowledge_svg from "../image/knowledge.svg";
 
@@ -79,7 +79,7 @@ const SkillsPage = () => {
                     </div>
                 </div>
                 <div className="right-content">
-                    <img src={react_svg} alt="vector svg" />
+                    <img src={thinking_svg} alt="vector svg" />
                 </div>
             </ContainerStyled>
             <ContainerStyled>
@@ -130,6 +130,10 @@ const ContainerStyled = styled.div`
             margin: 1.5rem 0 1rem 0;
             font-weight: 700;
             padding: .5rem 0;
+            @media screen and (max-width:600px){
+                margin: 1rem 0;
+                font-size: 1.2rem;
+            }
         }
         .subheading{
             letter-spacing: 0;
@@ -178,6 +182,11 @@ const ContainerStyled = styled.div`
                 margin: 2rem 0 0 0;
                 width: 20rem;
                 object-fit: cover;
+                @media screen and (max-width:600px){
+                    margin: 1.25rem 0;
+                    /* padding: 1.25rem 0; */
+                    width: 15rem;
+                }
             }
         }
   }

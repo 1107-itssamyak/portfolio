@@ -24,6 +24,9 @@ const ButtonStyled = styled(motion.a)`
     position: relative;
     transition: all .4s ease-in-out;
     margin: .75rem 0;
+    @media screen and (max-width:600px){
+        padding: .75rem 1.5rem;
+    }
     &::after{
         content: "";
         position: absolute;

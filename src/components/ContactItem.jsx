@@ -86,6 +86,9 @@ const ContactItemStyled = styled.div`
                 font-size: 1rem;
                 margin-bottom: 1rem;
             }
+            @media screen and (max-width:600px){
+                margin: 0 0 .5rem 0;
+            }
         }
         
         a{
@@ -109,6 +112,7 @@ const ContactItemStyled = styled.div`
         }
 
         @media screen and (max-width: 800px){
+            width: 100%;
             svg{
                 font-size: 2rem;
             }

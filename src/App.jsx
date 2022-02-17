@@ -6,7 +6,7 @@ import Sidebar from "./components/Sidebar";
 // importing styled component
 import styled from 'styled-components';
 
-// adding icons from mui
+// adding icons from material react
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -23,7 +23,6 @@ import SkillsPage from "./pages/SkillsPage";
 
 // framer motion details
 // import { motion } from "framer-motion";
-import { defaultFramer } from "./animation/animation";
 
 function App() {
 	const [theme, setTheme] = useState('dark-theme');
@@ -44,6 +43,7 @@ function App() {
 		}
 	}
 
+	// handling the side navbar
 	const handleCloseNavbar = () => (setNavToggle((prev) => !prev))
 
 	// handling the arrow up button
@@ -55,9 +55,8 @@ function App() {
 	window.onscroll = () => scrollFunction();
 
 	const scrollFunction = () => {
-
 		const arrowUp = document.querySelector('#arrowUp');
-		if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 20) {
+		if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
 			arrowUp.style.display = "block";
 		} else {
 			arrowUp.style.display = "none";
@@ -68,11 +67,7 @@ function App() {
 		<div className="App">
 			<div className="ham-burger-menu">
 				<IconButton
-					variants={defaultFramer}
-					initial="hidden"
-					animate="show"
-					exit="exit"
-					onClick={handleCloseNavbar} >
+					onClick={handleCloseNavbar}>
 					<MenuIcon />
 				</IconButton>
 			</div>
@@ -88,9 +83,7 @@ function App() {
 					</div>
 					<div className="right-content">
 						<Switch
-							// value=""
 							checked={checked}
-							// inputProps={{ 'aria-label': '' }}
 							size="medium"
 							onClick={themeToggler}
 						/>
@@ -110,9 +103,8 @@ function App() {
 			</MainContentStyled>
 
 			<div className="arrow-up-icon">
-				<IconButton>
+				<IconButton onClick={handleArrowUpClick}>
 					<ArrowUpwardIcon
-						onClick={handleArrowUpClick}
 						id="arrowUp"
 					/>
 				</IconButton>

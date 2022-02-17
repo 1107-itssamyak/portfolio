@@ -9,7 +9,7 @@ import { ButtonStyled } from '../styles/Layout';
 import resume from '../resume/resume_samyak_mehta.pdf';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import { defaultFramer, imageFramer, spanFramer } from '../animation/animation';
+import { imageFramer } from '../animation/animation';
 
 const ImageSection = () => {
     return (
@@ -29,11 +29,7 @@ const ImageSection = () => {
 
             <div className="right-content">
                 <h1>
-                    <motion.span
-                        variants={spanFramer}
-                        initial="hidden"
-                        animate="show"
-                        exit="exit" >
+                    <motion.span>
                         Hey there,
                     </motion.span>
                 </h1>
@@ -61,12 +57,7 @@ const ImageSection = () => {
                 <ButtonStyled
                     href={resume}
                     target='_blank'
-                    rel='noopener noreferrer'
-                    variants={defaultFramer}
-                    initial="hidden"
-                    animate="show"
-                    exit="exit"
-                >
+                    rel='noopener noreferrer'>
                     Download CV
                 </ButtonStyled>
             </div>
@@ -83,7 +74,7 @@ const ImageSectionStyled = styled.div`
         justify-content: center;
         align-items: center;
         img{
-            width: 70%;
+            width: 80%;
             object-fit: cover;
         }
     }
@@ -92,7 +83,7 @@ const ImageSectionStyled = styled.div`
             padding: .1rem 0;
             color: var(--white-color);
             span{
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
         }
         .paragraph{
