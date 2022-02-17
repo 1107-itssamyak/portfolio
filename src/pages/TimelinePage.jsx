@@ -17,11 +17,12 @@ const TimelinePage = () => {
     return (
         <TimelineStyled id="timeline">
             <Title title={pageName} span={pageName} />
-            <InnerLayout>
+            <InnerLayout >
                 <div className="small-title u-small-title-margin">
                     <SmallTitle icon={school} title={'Educational Qualifications'} />
                 </div>
-                <div className="resume-content ">
+                <div className="resume-content"
+                >
                     {EducationQualificationItems.map((item) => (
                         <ResumeItem
                             key={item.id}
@@ -38,7 +39,7 @@ const TimelinePage = () => {
 }
 
 const TimelineStyled = styled.section`
-    min-height: 100vh;
+    margin-bottom: 5rem;
     padding: 1rem 1.5rem;
     .small-title{
         padding-bottom: 2rem;

@@ -193,7 +193,8 @@ const ContainerStyled = styled.div`
 `
 
 const SkillsStyled = styled.section`
-    padding: 1rem 1.5rem;
+    padding: 0 1.5rem;
+    margin-bottom: 5rem;
 `;
 
 export default SkillsPage;

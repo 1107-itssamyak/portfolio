@@ -95,7 +95,7 @@ const ResumeItemStyled = styled.div`
         }
         @media screen and (max-width: 800px){
             text-align: left;
-            padding-left: 3rem;
+            padding-left: 5rem;
         }
     }
 `;

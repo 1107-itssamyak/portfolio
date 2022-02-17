@@ -48,8 +48,10 @@ function App() {
 
 	// handling the arrow up button
 	const handleArrowUpClick = () => {
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
+		setTimeout(() => {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}, 500);
 	}
 
 	window.onscroll = () => scrollFunction();

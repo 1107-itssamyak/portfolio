@@ -17,7 +17,7 @@ const About = () => {
 }
 
 const AboutStyled = styled.div`
-    min-height: 100vh;
+    margin-bottom: 5rem;
     padding: 1rem 1.5rem;
 `
 

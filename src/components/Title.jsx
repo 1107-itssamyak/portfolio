@@ -3,23 +3,25 @@ import React from 'react'
 
 // importing styled component
 import styled from 'styled-components'
+import { fade } from '../animation/animation'
 
 const Title = ({ title, span }) => {
     return (
-        <TitleStyled>
+        <TitleStyled
+            variants={fade}
+            initial="hidden"
+            animate="show"
+            exit="exit"
+        >
             <motion.h2>
-                {title}
-                <b>
-                    <motion.span>
-                        {span}
-                    </motion.span>
-                </b>
+                {title}<b>
+                    <motion.span>{span}</motion.span></b>
             </motion.h2>
         </TitleStyled>
     )
 }
 
-const TitleStyled = styled.div`
+const TitleStyled = styled(motion.div)`
     position: relative;
     h2{
         color: var(--white-color);

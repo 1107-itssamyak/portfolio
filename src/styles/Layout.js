@@ -3,11 +3,18 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 const MainLayout = styled.div`
-    padding: 1rem 1.5rem;
+    margin-bottom: 5rem;
+    padding: 0 1.5rem;
+    @media screen and (max-width:600px){
+        padding: .5rem 1rem;
+    }
 `;
 
 const InnerLayout = styled.div`
     padding: 1.5rem 0;
+    @media screen and (max-width:600px){
+        padding: 1rem 0;
+    }
 `;
 
 const ButtonStyled = styled(motion.a)`

@@ -13,4 +13,17 @@ const imageFramer = {
     }
 }
 
-export { imageFramer };
+const fade = {
+    hidden: {
+        opacity: 0,
+    },
+    show: {
+        opacity: 1,
+        transition: { duration: 1 },
+    },
+    exit: {
+        opacity: 0,
+    }
+}
+
+export { imageFramer, fade };
