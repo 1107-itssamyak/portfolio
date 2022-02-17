@@ -16,7 +16,7 @@ import { web_development, web_services, tools, programming } from '../data/DataS
 
 const SkillsPage = () => {
     return (
-        <SkillsStyled>
+        <SkillsStyled id="skills">
             <Title title={'My Skills'} span={'my skills'} />
 
             <ContainerStyled>

@@ -5,10 +5,9 @@ import avatar from '../image/my_image.jpg'
 // importing styled component
 import styled from 'styled-components'
 
-import { NavLink } from 'react-router-dom';
 import { currYear } from '../data/DataImageSection';
 
-const Navigation = () => {
+const Navigation = ({ handleCloseNavbar }) => {
     return (
         <NavigationStyled>
             <div className="avatar">
@@ -17,22 +16,22 @@ const Navigation = () => {
 
             <ul className="nav-items">
                 <li className="nav-item">
-                    <NavLink to="/" exact="true">Home</NavLink>
+                    <a onClick={handleCloseNavbar} href="#home">Home</a>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/about" exact="true">About</NavLink>
+                    <a onClick={handleCloseNavbar} href="#about">About</a>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/timeline" exact="true">Timeline</NavLink>
+                    <a onClick={handleCloseNavbar} href="#timeline">Timeline</a>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/skills" exact="true">Skills</NavLink>
+                    <a onClick={handleCloseNavbar} href="#skills">Skills</a>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/portfolio" exact="true">Portfolio</NavLink>
+                    <a onClick={handleCloseNavbar} href="#portfolio">Portfolio</a>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/contact" exact="true">Contact</NavLink>
+                    <a onClick={handleCloseNavbar} href="#contact">Contact</a>
                 </li>
             </ul>
             <footer className="footer">

@@ -8,7 +8,7 @@ import { data } from '../data/DataPortfolio';
 const PortfolioPage = () => {
     const pageName = "portfolio";
     return (
-        <MainLayout>
+        <MainLayout id="portfolio">
             <Title title={pageName} span={pageName} />
             <InnerLayout >
                 <Menu data={data} />

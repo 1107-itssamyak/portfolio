@@ -10,11 +10,12 @@ import SchoolIcon from '@material-ui/icons/School';
 import SmallTitle from '../components/SmallTitle';
 import ResumeItem from '../components/ResumeItem';
 
-const ResumePage = () => {
+const TimelinePage = () => {
     const pageName = "timeline";
     const school = <SchoolIcon />
+
     return (
-        <ResumeStyled>
+        <TimelineStyled id="timeline">
             <Title title={pageName} span={pageName} />
             <InnerLayout>
                 <div className="small-title u-small-title-margin">
@@ -32,11 +33,11 @@ const ResumePage = () => {
                     ))}
                 </div>
             </InnerLayout>
-        </ResumeStyled>
+        </TimelineStyled>
     )
 }
 
-const ResumeStyled = styled.section`
+const TimelineStyled = styled.section`
     min-height: 100vh;
     padding: 1rem 1.5rem;
     .small-title{
@@ -57,4 +58,4 @@ const ResumeStyled = styled.section`
     }
 `;
 
-export default ResumePage;
+export default TimelinePage;

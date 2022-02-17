@@ -4,12 +4,13 @@ import React from 'react'
 import styled from 'styled-components';
 import Navigation from './Navigation';
 
-const Sidebar = ({ navToggle }) => {
+const Sidebar = ({ navToggle, handleCloseNavbar }) => {
+
     const toggle = navToggle ? 'nav-toggle' : '';
     return (
         <SidebarStyled className={toggle}>
-            <Navigation />
-        </ SidebarStyled>
+            <Navigation handleCloseNavbar={handleCloseNavbar} />
+        </SidebarStyled>
     )
 }
 

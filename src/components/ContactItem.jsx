@@ -97,7 +97,7 @@ const ContactItemStyled = styled.div`
             border: 1px solid var(--border-color);
             border-radius: .5rem;
             @media screen and (max-width:800px){
-                padding: 0 1rem;
+                padding: .2rem;
             }
         }
 

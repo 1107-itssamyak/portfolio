@@ -8,19 +8,39 @@ import avatar from '../image/my_image.jpg';
 import { ButtonStyled } from '../styles/Layout';
 import resume from '../resume/resume_samyak_mehta.pdf';
 
+import { AnimatePresence, motion } from 'framer-motion';
+import { defaultFramer, imageFramer, spanFramer } from '../animation/animation';
+
 const ImageSection = () => {
     return (
         <ImageSectionStyled>
             <div className="left-content">
-                <img src={avatar} alt="avatar" />
+                <AnimatePresence>
+                    <motion.img
+                        src={avatar}
+                        alt="avatar"
+                        variants={imageFramer}
+                        initial="hidden"
+                        animate="show"
+                        exit="exit"
+                    />
+                </AnimatePresence>
             </div>
 
             <div className="right-content">
-                <h1><span>Hey there,</span></h1>
+                <h1>
+                    <motion.span
+                        variants={spanFramer}
+                        initial="hidden"
+                        animate="show"
+                        exit="exit" >
+                        Hey there,
+                    </motion.span>
+                </h1>
                 <p className="paragraph">
-                    I love <span>Designing & Developing Websites</span> and am looking for more opportunities to work in coding for them. Looking forward to Collabrate over Projects or Discussions which are fun & meaningful.
+                    I love <motion.span>Designing & Developing Websites</motion.span> and am looking for more opportunities to work in coding for them. Looking forward to Collabrate over Projects or Discussions which are fun & meaningful.
                     <br />
-                    Please see the attached <span>Resume</span>! 😃
+                    Please see the attached <motion.span>Resume</motion.span>! 😃
                 </p>
                 <div className="about-info">
                     <div className="info-title">
@@ -42,6 +62,10 @@ const ImageSection = () => {
                     href={resume}
                     target='_blank'
                     rel='noopener noreferrer'
+                    variants={defaultFramer}
+                    initial="hidden"
+                    animate="show"
+                    exit="exit"
                 >
                     Download CV
                 </ButtonStyled>

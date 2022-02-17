@@ -46,7 +46,7 @@ const data = [
         category: 'Frontend Development',
         link1: 'https://github.com/1107-itssamyak/Frontend-development-project',
         link2: 'http://frontend-development-project.vercel.app/',
-        title: 'Figma Prototype Development',
+        title: 'Figma Development',
         image: `${insignia_image}`,
         text: 'Created using HTML5, CSS3, JS'
     }

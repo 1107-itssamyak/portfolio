@@ -48,6 +48,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', Lato, sans-serif;
     font-size: 1.1rem;
     letter-spacing: .75px;
+    scroll-behaviour: smooth;
 }
 
 body{
@@ -139,7 +140,7 @@ h6{
     }
   }
 
-    //Nav Toggler
+  //Nav Toggler
     .ham-burger-menu{
         position: fixed;
         right: 5%;
@@ -147,7 +148,10 @@ h6{
         display: none;
         z-index: 15;
         svg{
-            font-size: 2rem;
+          font-size: 2rem;
+        }
+        @media screen and (max-width:1200px){
+            display: block;
         }
     }
 
@@ -156,11 +160,6 @@ h6{
         z-index: 20;
     }
 
-    @media screen and (max-width:1200px){
-        .ham-burger-menu{
-            display: block;
-        }
-  }
 `;
 
 export default GlobalStyle;

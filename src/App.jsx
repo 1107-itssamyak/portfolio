@@ -1,10 +1,9 @@
-import { useState, useEffect, Fragment } from "react";
-import { Route, Routes } from 'react-router';
+import { useState, useEffect } from "react";
 
-// adding pages to app
+// importing navigation sidebar to app 
 import Sidebar from "./components/Sidebar";
 
-// import styled component
+// importing styled component
 import styled from 'styled-components';
 
 // adding icons from mui
@@ -13,12 +12,16 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Switch from '@material-ui/core/Switch';
 import { IconButton } from "@material-ui/core";
 
+// importing all pages here
 import HomePage from "./pages/HomePage";
 import AboutPage from './pages/AboutPage';
 import TimelinePage from "./pages/TimelinePage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ContactPage from "./pages/ContactPage";
 import SkillsPage from "./pages/SkillsPage";
+
+// framer motion details
+// import { AnimatePresence } from "framer-motion";
 
 function App() {
 	const [theme, setTheme] = useState('dark-theme');
@@ -39,17 +42,18 @@ function App() {
 		}
 	}
 
+	const handleCloseNavbar = () => (setNavToggle((prev) => !prev))
+
 	return (
 		<div className="App">
 			<div className="ham-burger-menu">
-				<IconButton onClick={() => {
-					setNavToggle((prev) => !prev)
-				}}>
+				<IconButton
+					onClick={handleCloseNavbar} >
 					<MenuIcon />
 				</IconButton>
 			</div>
 
-			<Sidebar navToggle={navToggle} />
+			<Sidebar navToggle={navToggle} handleCloseNavbar={handleCloseNavbar} />
 
 			<div className="theme">
 				<div className="light-dark-mode">
@@ -69,37 +73,26 @@ function App() {
 			</div>
 
 			<MainContentStyled>
-				<Routes>
-					<Route
-						path="/"
-						element={
-							<>
-								<HomePage />
-								<AboutPage />
-								<TimelinePage />
-								<SkillsPage />
-								<PortfolioPage />
-								<ContactPage />
-							</>
-						} />
-					<Route path="/about" element={<AboutPage />} exact />
-					<Route path="/timeline" element={<TimelinePage />} exact />
-					<Route path="/skills" element={<SkillsPage />} exact />
-					<Route path="/portfolio" element={<PortfolioPage />} exact />
-					<Route path="/contact" element={<ContactPage />} exact />
-				</Routes>
+				{/* <AnimatePresence exitBeforeEnter> */}
+				<HomePage />
+				<AboutPage />
+				<TimelinePage />
+				<SkillsPage />
+				<PortfolioPage />
+				<ContactPage />
+				{/* </AnimatePresence> */}
 			</MainContentStyled>
 		</div>
 	);
 }
 
 const MainContentStyled = styled.main`
-  position: relative;
-  margin-left: 16.3rem;
-  min-height: 100vh;
-  @media screen and (max-width:1200px){
-    margin-left: 0;
-  }
+	position: relative;
+	margin-left: 16.3rem;
+	min-height: 100vh;
+	@media screen and (max-width:1200px){
+		margin-left: 0;
+	}
 `;
 
 export default App;

@@ -9,8 +9,13 @@ const HomePage = () => {
             <div className="typography">
                 <h1>Hi, I'm <span>Samyak Mehta</span></h1>
                 <p>
-                    I am a Prefinal year CS Undergrad 😄, a <span>Front Web developer</span>. UI/UX development peek my Interests and find myself developing them.
-                    I live in Udaipur, Rajasthan. I'm working on improving my skills in scope of <span>Full Stack Web Development</span>.
+                    I am a Prefinal year CS Undergrad 😄, a <span>Front-end Web developer</span>.
+                    <br />
+                    UI/UX development peek my Interests and find myself developing them.
+                    <br />
+                    I live in Udaipur, Rajasthan.
+                    <br />
+                    I'm working on improving my skills in scope of <span>Full Stack Web Development</span>.
                 </p>
             </div>
         </HomePageStyled>
@@ -29,7 +34,6 @@ const HomePageStyled = styled.header`
         transform: translate(-50%, -50%);
         text-align: center;
         width: 80%;
-
         h1{
             font-size: 2.5rem;
             margin-bottom: 1rem;

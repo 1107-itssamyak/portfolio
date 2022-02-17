@@ -7,7 +7,8 @@ import { MainLayout, InnerLayout, ButtonStyled } from '../styles/Layout';
 import Title from '../components/Title';
 import ContactItem from '../components/ContactItem';
 import { GitHub, LinkedIn, Mail, Phone, Instagram } from '@material-ui/icons';
-// import { db } from '../firebase';
+import firebase from 'firebase/compat/app';
+import { db } from '../firebase';
 
 const ContactPage = () => {
     const phone = <Phone />;
@@ -17,22 +18,33 @@ const ContactPage = () => {
     const instagram = <Instagram />
     const pageName = "contact";
 
-    const [name, setname] = useState('');
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [textareaText, settextareaText] = useState('');
 
     const handleNameText = (e) => {
-        setname((e) => e.target.value);
+        setName(() => e.target.value);
     }
     const handleEmailText = (e) => {
-        setEmail((e) => e.target.value);
+        setEmail(() => e.target.value);
     }
     const handleTextAreaText = (e) => {
-        settextareaText((e) => e.target.value);
+        settextareaText(() => e.target.value);
     }
 
     const pushDetails = () => {
         // pushing detials entered to the db for the firebase
+        db.collection('query').add({
+            name: name,
+            email: email,
+            textareaText: textareaText,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        })
+
+        alert("Your Detail's are submitted");
+        setName('');
+        setEmail('');
+        settextareaText('');
     }
 
     const handleSubmitDetails = (e) => {
@@ -41,15 +53,12 @@ const ContactPage = () => {
         if (name && email && textareaText)
             pushDetails()
         else {
-            alert("Input Fields missing");
-            setname('');
-            setEmail('');
-            settextareaText('');
+            alert("Input Fields are missing");
         }
     }
 
     return (
-        <MainLayout>
+        <MainLayout id="contact">
             <Title title={pageName} span={pageName} />
             <ContactPageStyled >
                 <InnerLayout className={'contact-section'}>
@@ -59,21 +68,21 @@ const ContactPage = () => {
                         </div>
                         <form className="form">
                             <div className="form-field">
-                                <label htmlFor="name"  >Enter your name</label>
+                                <label htmlFor="name">Enter your name</label>
                                 <input
                                     type="text"
                                     id="name"
                                     value={name}
-                                    onClick={handleNameText}
+                                    onChange={handleNameText}
                                 />
                             </div>
                             <div className="form-field">
-                                <label htmlFor="email"  >Enter your email</label>
+                                <label htmlFor="email">Enter your email</label>
                                 <input
                                     type="email"
                                     id="email"
                                     value={email}
-                                    onClick={handleEmailText}
+                                    onChange={handleEmailText}
                                 />
                             </div>
                             <div className="form-field">
@@ -84,13 +93,14 @@ const ContactPage = () => {
                                     cols="20"
                                     rows="4"
                                     value={textareaText}
-                                    onClick={handleTextAreaText}
+                                    onChange={handleTextAreaText}
                                 ></textarea>
                             </div>
                             <div className="form-field f-button">
                                 <ButtonStyled
                                     type='submit'
-                                    onSubmit={handleSubmitDetails}>
+                                    onClick={handleSubmitDetails}
+                                >
                                     Send Message
                                 </ButtonStyled>
                             </div>
@@ -136,7 +146,7 @@ const ContactPageStyled = styled.section`
             h4{
                 color: var(--white-color);
                 padding: .5rem 0;
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
         }
         .form{

@@ -1,4 +1,5 @@
 // import styled component
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 const MainLayout = styled.div`
@@ -9,12 +10,15 @@ const InnerLayout = styled.div`
     padding: 1.5rem 0;
 `;
 
-const ButtonStyled = styled.a`
+const ButtonStyled = styled(motion.a)`
     background-color: var(--primary-color);
     padding: .8rem 2.5rem;
     color: white;
     cursor: pointer;
     display: inline-block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
     font-size: inherit;
     text-transform: uppercase;
     position: relative;
@@ -35,4 +39,5 @@ const ButtonStyled = styled.a`
         background-color: var(--white-color);
     }
 `;
+
 export { InnerLayout, MainLayout, ButtonStyled };
