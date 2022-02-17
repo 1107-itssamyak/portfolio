@@ -108,12 +108,11 @@ h6{
     margin-bottom: 4rem;
 }
 
-
 //Floting Toggler
 .light-dark-mode{
     position: fixed;
     right: 0;
-    top: 80%;
+    top: 50%;
     background-color: var(--background-light-color-2);
     width: 6rem;
     height: 3rem;
@@ -140,11 +139,25 @@ h6{
     }
   }
 
-  //Nav Toggler
+    //Nav Toggler
     .ham-burger-menu{
         position: fixed;
         right: 5%;
         top: 2%; 
+        display: none;
+        z-index: 15;
+        svg{
+          font-size: 2rem;
+        }
+        @media screen and (max-width:1200px){
+            display: block;
+        }
+    }
+    
+    .arrow-up-icon{
+        position: fixed;
+        right: 5%;
+        bottom: 2%;
         display: none;
         z-index: 15;
         svg{
@@ -159,7 +172,6 @@ h6{
         transform: translateX(0);
         z-index: 20;
     }
-
 `;
 
 export default GlobalStyle;

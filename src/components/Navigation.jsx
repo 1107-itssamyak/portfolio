@@ -1,7 +1,5 @@
 import React from 'react'
 
-import avatar from '../image/my_image.jpg'
-
 // importing styled component
 import styled from 'styled-components'
 
@@ -10,10 +8,6 @@ import { currYear } from '../data/DataImageSection';
 const Navigation = ({ handleCloseNavbar }) => {
     return (
         <NavigationStyled>
-            <div className="avatar">
-                <img src={avatar} alt="avatar_image" />
-            </div>
-
             <ul className="nav-items">
                 <li className="nav-item">
                     <a onClick={handleCloseNavbar} href="#home">Home</a>
@@ -35,7 +29,7 @@ const Navigation = ({ handleCloseNavbar }) => {
                 </li>
             </ul>
             <footer className="footer">
-                <p>&copy; {currYear}<b> Samyak Mehta</b></p>
+                <p>&copy;{currYear}<b> Samyak Mehta</b></p>
             </footer>
         </NavigationStyled>
     )
@@ -43,22 +37,12 @@ const Navigation = ({ handleCloseNavbar }) => {
 
 const NavigationStyled = styled.nav`
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     height: 100%;
     width: 100%;
     border-right: 1px solid var(--border-color);
-    .avatar{
-        width: 100%;
-        border-bottom: 1px solid var(--border-color);
-        text-align: center;
-        padding: 1rem 0;
-        img{
-            width: 70%;
-            border-radius: 50%;
-            border: 8px solid var(--border-color);
-        }
     }
 
     .nav-items{
@@ -105,6 +89,8 @@ const NavigationStyled = styled.nav`
     }
 
     footer{
+        position: absolute;
+        bottom: 0;
         border-top: 1px solid var(--border-color);
         width: 100%;
         p{

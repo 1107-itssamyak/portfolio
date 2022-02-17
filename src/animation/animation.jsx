@@ -49,7 +49,6 @@ const defaultFramer = {
         opacity: 0
     },
     show: {
-        x: 0,
         opacity: 1,
         transition: { duration: 1, ease: 'easeOut' }
     },

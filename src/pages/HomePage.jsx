@@ -9,8 +9,9 @@ const HomePage = () => {
             <div className="typography">
                 <h1>Hi, I'm <span>Samyak Mehta</span></h1>
                 <p>
-                    I am a Prefinal year CS Undergrad 😄, a <span>Front-end Web developer</span>.
+                    I am a Prefinal year CS Undergraduate 😄,
                     <br />
+                    a <span>Front-end Web developer</span>.
                     UI/UX development peek my Interests and find myself developing them.
                     <br />
                     I live in Udaipur, Rajasthan.
