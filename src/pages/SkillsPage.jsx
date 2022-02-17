@@ -14,10 +14,20 @@ import knowledge_svg from "../image/knowledge.svg";
 // importing data
 import { web_development, web_services, tools, programming } from '../data/DataSkillSection';
 
+import { motion } from 'framer-motion';
+import { useScroll } from '../animation/useScroll';
+import { imageFramer } from '../animation/animation';
+
 const SkillsPage = () => {
+    const pageName = 'My Skills';
+    const [image_1, image_control_1] = useScroll(0.1);
+    const [image_2, image_control_2] = useScroll(0.1);
+    const [image_3, image_control_3] = useScroll(0.1);
+    const [image_4, image_control_4] = useScroll(0.1);
+
     return (
         <SkillsStyled id="skills">
-            <Title title={'My Skills'} span={'my skills'} />
+            <Title title={pageName} span={pageName} />
 
             <ContainerStyled>
                 <div className="left-content">
@@ -37,9 +47,16 @@ const SkillsPage = () => {
                     </div>
                 </div>
                 <div className="right-content">
-                    <img src={web_development_svg} alt="vector svg" />
+                    <motion.img
+                        src={web_development_svg}
+                        alt="vector svg"
+                        ref={image_1}
+                        variants={imageFramer}
+                        animate={image_control_1}
+                    />
                 </div>
             </ContainerStyled>
+
             <ContainerStyled>
                 <div className="left-content">
                     <div className='heading'>
@@ -58,9 +75,16 @@ const SkillsPage = () => {
                     </div>
                 </div>
                 <div className="right-content">
-                    <img src={knowledge_svg} alt="vector svg" />
+                    <motion.img
+                        src={knowledge_svg}
+                        alt="vector svg"
+                        ref={image_2}
+                        variants={imageFramer}
+                        animate={image_control_2}
+                    />
                 </div>
             </ContainerStyled>
+
             <ContainerStyled>
                 <div className="left-content">
                     <div className='heading'>
@@ -79,7 +103,12 @@ const SkillsPage = () => {
                     </div>
                 </div>
                 <div className="right-content">
-                    <img src={thinking_svg} alt="vector svg" />
+                    <motion.img
+                        src={thinking_svg}
+                        alt="vector svg"
+                        ref={image_3}
+                        variants={imageFramer}
+                        animate={image_control_3} />
                 </div>
             </ContainerStyled>
             <ContainerStyled>
@@ -100,15 +129,21 @@ const SkillsPage = () => {
                     </div>
                 </div>
                 <div className="right-content">
-                    <img src={server_svg} alt="vector svg" />
+                    <motion.img
+                        src={server_svg}
+                        alt="vector svg"
+                        ref={image_4}
+                        variants={imageFramer}
+                        animate={image_control_4}
+                    />
                 </div>
             </ContainerStyled>
         </SkillsStyled>
     )
 }
 
-const ContainerStyled = styled.div`
-    padding: 1rem 0;
+const ContainerStyled = styled(motion.div)`
+    margin: 1.5rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,6 +197,8 @@ const ContainerStyled = styled.div`
     }
 
     @media screen and (max-width:800px){
+        margin: .75rem;
+        margin-bottom: 1rem;
         &:nth-child(2n){
             flex-direction: column;
         }
@@ -184,7 +221,6 @@ const ContainerStyled = styled.div`
                 object-fit: cover;
                 @media screen and (max-width:600px){
                     margin: 1.25rem 0;
-                    /* padding: 1.25rem 0; */
                     width: 15rem;
                 }
             }
@@ -192,7 +228,8 @@ const ContainerStyled = styled.div`
   }
 `
 
-const SkillsStyled = styled.section`
+const SkillsStyled = styled(motion.section)`
+    margin-top: 1rem;
     padding: 0 1.5rem;
     margin-bottom: 5rem;
 `;

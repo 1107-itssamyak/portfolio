@@ -5,17 +5,18 @@ import styled from 'styled-components';
 
 // import framer motion
 import { motion } from 'framer-motion';
-import { fade } from '../animation/animation';
+import { HomePageFramer } from '../animation/animation';
+import { useScroll } from '../animation/useScroll';
 
 const HomePage = () => {
+    const [ref, controls] = useScroll(0.3);
+
     return (
         <HomePageStyled
-            id="home"
-            variants={fade}
-            initial="hidden"
-            animate="show"
-            exit="exit"
-        >
+            ref={ref}
+            variants={HomePageFramer}
+            animate={controls}
+            id="home" >
             <div className="typography">
                 <h1>Hi, I'm <span>Samyak Mehta</span></h1>
                 <p>

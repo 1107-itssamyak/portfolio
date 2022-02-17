@@ -8,35 +8,38 @@ import avatar from '../image/my_image.jpg';
 import { ButtonStyled } from '../styles/Layout';
 import resume from '../resume/resume_samyak_mehta.pdf';
 
-import { AnimatePresence, motion } from 'framer-motion';
-import { imageFramer } from '../animation/animation';
+import { motion } from 'framer-motion';
+import { imageFramer, fade } from '../animation/animation';
+import { useScroll } from '../animation/useScroll';
 
 const ImageSection = () => {
+    const [ref, controls] = useScroll(0.3);
+
     return (
-        <ImageSectionStyled>
+        <ImageSectionStyled ref={ref}>
             <div className="left-content">
-                <AnimatePresence>
-                    <motion.img
-                        src={avatar}
-                        alt="avatar"
-                        variants={imageFramer}
-                        initial="hidden"
-                        animate="show"
-                        exit="exit"
-                    />
-                </AnimatePresence>
+                <motion.img
+                    src={avatar}
+                    alt="avatar"
+                    variants={imageFramer}
+                    animate={controls}
+                />
             </div>
 
-            <div className="right-content">
+            <motion.div
+                className="right-content"
+                ref={ref}
+                animate={controls}
+                variants={fade} >
                 <h1>
-                    <motion.span>
+                    <span>
                         Hey there,
-                    </motion.span>
+                    </span>
                 </h1>
                 <p className="paragraph">
-                    I love <motion.span>Designing & Developing Websites</motion.span> and am looking for more opportunities to work in coding for them. Looking forward to Collabrate over Projects or Discussions which are fun & meaningful.
+                    I love <span>Designing & Developing Websites</span> and am looking for more opportunities to work in coding for them. Looking forward to Collabrate over Projects or Discussions which are fun & meaningful.
                     <br />
-                    Please see the attached <motion.span>Resume</motion.span>! 😃
+                    Please see the attached <span>Resume</span>! 😃
                 </p>
                 <div className="about-info">
                     <div className="info-title">
@@ -55,17 +58,21 @@ const ImageSection = () => {
                     </div>
                 </div>
                 <ButtonStyled
+                    variants={fade}
+                    initial="hidden"
+                    exit="exit"
+                    animate={controls}
                     href={resume}
                     target='_blank'
                     rel='noopener noreferrer'>
                     Download CV
                 </ButtonStyled>
-            </div>
+            </motion.div>
         </ImageSectionStyled>
     )
 }
 
-const ImageSectionStyled = styled.div`
+const ImageSectionStyled = styled(motion.div)`
     margin-top: 3rem;
     display: flex;
     .left-content{

@@ -10,6 +10,10 @@ import { GitHub, LinkedIn, Mail, Phone, Instagram } from '@material-ui/icons';
 import firebase from 'firebase/compat/app';
 import { db } from '../firebase';
 
+import { motion } from 'framer-motion';
+import { fade } from '../animation/animation';
+import { useScroll } from '../animation/useScroll';
+
 const ContactPage = () => {
     const phone = <Phone />;
     const github = <GitHub />;
@@ -57,10 +61,16 @@ const ContactPage = () => {
         }
     }
 
+    const [ref, controls] = useScroll(0.3);
+
     return (
-        <MainLayout id="contact">
+        <MainLayout id="contact" ref={ref}>
             <Title title={pageName} span={pageName} />
-            <ContactPageStyled >
+            <ContactPageStyled
+                variants={fade}
+                initial="hidden"
+                exit="exit"
+                animate={controls} >
                 <InnerLayout className={'contact-section'}>
                     <div className="left-content">
                         <div className="contact-title">
@@ -123,7 +133,7 @@ const ContactPage = () => {
     )
 }
 
-const ContactPageStyled = styled.section`
+const ContactPageStyled = styled(motion.section)`
     margin: .5rem 0;
     .contact-section{
         display: grid;

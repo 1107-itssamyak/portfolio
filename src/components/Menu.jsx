@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react'
 
 // import styled component
@@ -10,7 +11,9 @@ const Menu = ({ data }) => {
                 return (
                     <div className="grid-item" key={item.id}>
                         <div className="portfolio-content">
-                            <img src={item.image} alt={item.title} />
+                            <img
+                                src={item.image}
+                                alt={item.title} />
                         </div>
                         <h6>{item.title}</h6>
                         <p>{item.text}</p>
@@ -22,7 +25,7 @@ const Menu = ({ data }) => {
                                 </a>
                             </li>
                             <li>
-                                <a href={item.link2}>
+                                <a href={item.link2} >
                                     <i className="fa-solid fa-tv"></i>
                                     Live
                                 </a>
@@ -35,11 +38,11 @@ const Menu = ({ data }) => {
     )
 }
 
-const MenuItemStyled = styled.div`
+const MenuItemStyled = styled(motion.div)`
     margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     h6{
         padding: 1rem 0 .5rem 0;
         font-size: 1.3rem;
@@ -66,14 +69,15 @@ const MenuItemStyled = styled.div`
         margin: .25rem .5rem;
         overflow: hidden;
         .portfolio-content{
+            display: flex;
+            align-item: center;
+            justify-content: center;
             img{
                 border-radius: 1rem;
-                padding: .5rem;
-                width: 100%;
+                width: 90%;
                 height: 30vh;
-                padding: 1rem .5rem;
-                border: 1px solid #e0e0e0;
                 @media screen and (max-width:800px){
+                    width: 100%;
                     height: 40vh;
                 }
                 @media screen and (max-width:600px){

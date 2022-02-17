@@ -4,15 +4,18 @@ import React from 'react'
 // importing styled component
 import styled from 'styled-components'
 import { fade } from '../animation/animation'
+import { useScroll } from '../animation/useScroll'
 
 const Title = ({ title, span }) => {
+    const [ref, controls] = useScroll(0.5)
+
     return (
         <TitleStyled
+            ref={ref}
             variants={fade}
             initial="hidden"
-            animate="show"
             exit="exit"
-        >
+            animate={controls} >
             <motion.h2>
                 {title}<b>
                     <motion.span>{span}</motion.span></b>

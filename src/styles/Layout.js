@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 const MainLayout = styled.div`
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     padding: 0 1.5rem;
     @media screen and (max-width:600px){
         padding: .5rem 1rem;
     }
 `;
 
-const InnerLayout = styled.div`
+const InnerLayout = styled(motion.div)`
     padding: 1.5rem 0;
     @media screen and (max-width:600px){
         padding: 1rem 0;

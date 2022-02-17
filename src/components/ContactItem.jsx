@@ -65,11 +65,10 @@ const ContactItem = ({ phone, contact, github, linkedIn, mail, instagram }) => {
 
 const ContactItemStyled = styled.div`
     background-color: var(--background-dark-grey);
-    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    width: 80%;
+    width: 70%;
     @media screen and (max-width:800px){
         width: 100%;
     }

@@ -8,9 +8,11 @@ import Title from '../components/Title'
 
 const About = () => {
     const pageName = "about me";
+
     return (
         <AboutStyled id="about">
-            <Title title={pageName} span={pageName} />
+            <Title
+                title={pageName} span={pageName} />
             <ImageSection />
         </AboutStyled >
     )
