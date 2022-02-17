@@ -37,9 +37,7 @@ const ImageSection = () => {
                     </span>
                 </h1>
                 <p className="paragraph">
-                    I love <span>Designing & Developing Websites</span> and am looking for more opportunities to work in coding for them. Looking forward to Collabrate over Projects or Discussions which are fun & meaningful.
-                    <br />
-                    Please see the attached <span>Resume</span>! 😃
+                    I love <span>Designing & Developing Websites</span> and am looking for more opportunities to work in coding for them. Looking forward to Collabrate over Projects or Discussions which are fun & meaningful.😃
                 </p>
                 <div className="about-info">
                     <div className="info-title">

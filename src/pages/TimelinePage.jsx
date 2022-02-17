@@ -60,7 +60,7 @@ const TimelineStyled = styled.section`
         margin: 0 2rem;
         border-left: 2px solid var(--border-color);
         @media screen and (max-width:600px){
-            margin: 0 1rem;
+            margin: 0 0rem;
         }
     }
     

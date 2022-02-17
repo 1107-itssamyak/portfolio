@@ -24,8 +24,9 @@ const HomePage = () => {
                     <br />
                     a <span>Front-end Web developer</span>.
                     <br />
-                    UI/UX development peek my Interests and I find myself developing them. I live in Udaipur, Rajasthan.
+                    UI/UX development peek my Interests and I find myself developing them.
                     <br />
+                    I live in Udaipur, Rajasthan.
                     I'm working on improving my skills in scope of
                     <br />
                     <span>Full Stack Web Development</span>.

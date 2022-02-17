@@ -25,8 +25,8 @@ import SkillsPage from "./pages/SkillsPage";
 // import { motion } from "framer-motion";
 
 function App() {
-	const [theme, setTheme] = useState('dark-theme');
-	const [checked, setChecked] = useState(false);
+	const [theme, setTheme] = useState('light-theme');
+	const [checked, setChecked] = useState(true);
 	const [navToggle, setNavToggle] = useState(false);
 
 	useEffect(() => {
@@ -94,14 +94,12 @@ function App() {
 			</div>
 
 			<MainContentStyled>
-				{/* <AnimatePresence exitBeforeEnter> */}
 				<HomePage />
 				<AboutPage />
 				<TimelinePage />
 				<SkillsPage />
 				<PortfolioPage />
 				<ContactPage />
-				{/* </AnimatePresence> */}
 			</MainContentStyled>
 
 			<div className="arrow-up-icon">
