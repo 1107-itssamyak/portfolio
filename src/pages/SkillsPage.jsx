@@ -143,7 +143,6 @@ const SkillsPage = () => {
 }
 
 const ContainerStyled = styled(motion.div)`
-    margin: 1.5rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,19 +160,12 @@ const ContainerStyled = styled(motion.div)`
             text-decoration: underline;
             font-style: italic;
             letter-spacing: 1px;
-            font-size: 1.4rem;
-            margin: 1.5rem 0 1rem 0;
             font-weight: 700;
-            padding: .5rem 0;
             @media screen and (max-width:600px){
-                margin: 1rem 0;
-                font-size: 1.2rem;
             }
         }
         .subheading{
             letter-spacing: 0;
-            font-size: 1rem;
-            margin: 1rem .5rem;
             font-weight: 400;
         }
         .skills{
@@ -197,7 +189,6 @@ const ContainerStyled = styled(motion.div)`
     }
 
     @media screen and (max-width:800px){
-        margin: .75rem;
         margin-bottom: 1rem;
         &:nth-child(2n){
             flex-direction: column;
@@ -207,20 +198,16 @@ const ContainerStyled = styled(motion.div)`
         .left-content{
             width: 100%;
             span{
-                font-size: 1rem;
             }
             .subheading, .skills{
-                font-size: 1rem;
             }
         }
 
         .right-content{
             img{
-                margin: 2rem 0 0 0;
                 width: 20rem;
                 object-fit: cover;
                 @media screen and (max-width:600px){
-                    margin: 1.25rem 0;
                     width: 15rem;
                 }
             }
@@ -230,7 +217,6 @@ const ContainerStyled = styled(motion.div)`
 
 const SkillsStyled = styled(motion.section)`
     margin-top: 1rem;
-    padding: 0 1.5rem;
     margin-bottom: 5rem;
 `;
 

@@ -43,26 +43,27 @@ const NavigationStyled = styled.nav`
     height: 100%;
     width: 100%;
     border-right: 1px solid var(--border-color);
-    }
 
     .nav-items{
         width: 100%;
         text-align: center;
-        .active-class{
+
+        /* check via intersection observer the presence of nav a */
+        /* .active-class{
             background-color: var(--primary-color-light);
             color: white;
-        }
+        } */
+        
         li{
             display: block;
             a{
                 display: block;
-                padding: .45rem 0;
+                padding: .5rem 0;
                 position: relative;
                 z-index: 10;
                 text-transform: uppercase;
                 transition: all .4s ease-in-out;
-                font-weight: 600;
-                letter-spacing: 1px;
+                font-weight: 500;
                 &:hover{
                     cursor: pointer;
                     color: var(--white-color);
@@ -94,9 +95,7 @@ const NavigationStyled = styled.nav`
         border-top: 1px solid var(--border-color);
         width: 100%;
         p{
-            padding: 1.3rem 0;
-            font-size: 1.1rem;
-            display: block;
+            padding: 1rem 0;
             text-align: center;
         }
     }

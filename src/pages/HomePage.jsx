@@ -49,26 +49,18 @@ const HomePageStyled = styled(motion.header)`
         text-align: center;
         width: 80%;
         h1{
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
             @media screen and (max-width:600px){
-                font-size: 2rem;
             }
         }
         span{
-            font-size: 2.5rem;
             @media screen and (max-width:600px){
-                font-size: 2rem;
             }
         }
         p{
-            font-size: 1rem;
             line-height: 1.4rem;
             span{
-                font-size: 1rem;
             }
             @media screen and (max-width:600px){
-                font-size: 1rem;
             }
         }
     }

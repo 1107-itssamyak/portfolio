@@ -46,27 +46,18 @@ const TimelinePage = () => {
 }
 
 const TimelineStyled = styled.section`
-    margin-bottom: 5rem;
-    padding: 1rem 1.5rem;
     .small-title{
-        padding-bottom: 2rem;
     }
     
-    .u-small-title-margin{
-        margin-top: 2rem;
     }
     
     .resume-content{
-        margin: 0 2rem;
         border-left: 2px solid var(--border-color);
         @media screen and (max-width:600px){
-            margin: 0 0rem;
         }
     }
     
     @media screen and (max-width: 800px){
-        margin-bottom: 2rem;
-        padding: 1rem;
     }
 `;
 

@@ -16,24 +16,18 @@ const SmallTitleStyled = styled.div`
     display: flex;
     align-items: center;
     p{
-        padding-right: 1rem;
         svg{
-            font-size: 2rem;
         }
     }
     h3{
         color: var(--white-color);
-        font-size: 1.5rem;
     }
     @media screen and (max-width: 800px){
         p{
-            padding-right: 1rem;
             svg{
-                font-size: 1.5rem;
             }
         }
         h3{
-            font-size: 1rem;
         }
     }
 `;

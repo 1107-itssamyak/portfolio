@@ -3,23 +3,17 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 const MainLayout = styled.div`
-    margin-bottom: 4rem;
-    padding: 0 1.5rem;
     @media screen and (max-width:600px){
-        padding: .5rem 1rem;
     }
 `;
 
 const InnerLayout = styled(motion.div)`
-    padding: 1.5rem 0;
     @media screen and (max-width:600px){
-        padding: 1rem 0;
     }
 `;
 
 const ButtonStyled = styled(motion.a)`
     background-color: var(--primary-color);
-    padding: .8rem 2.5rem;
     color: white;
     cursor: pointer;
     display: inline-block;
@@ -30,9 +24,7 @@ const ButtonStyled = styled(motion.a)`
     text-transform: uppercase;
     position: relative;
     transition: all .4s ease-in-out;
-    margin: .75rem 0;
     @media screen and (max-width:600px){
-        padding: .75rem 1.5rem;
     }
     &::after{
         content: "";

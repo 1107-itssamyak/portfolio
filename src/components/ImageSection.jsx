@@ -71,7 +71,6 @@ const ImageSection = () => {
 }
 
 const ImageSectionStyled = styled(motion.div)`
-    margin-top: 3rem;
     display: flex;
     .left-content{
         width: 100%;
@@ -85,30 +84,24 @@ const ImageSectionStyled = styled(motion.div)`
     }
     .right-content{
         h1{
-            padding: .1rem 0;
             color: var(--white-color);
             span{
-                font-size: 1.8rem;
             }
         }
         .paragraph{
-            padding: .75rem 0;
             span{
                 font-weight: 600;
             }
         }
         .about-info{
             display: flex;
-            padding-bottom: 1.5rem;
             .info-title{
-                padding-right: 3rem;
                 p{
                     font-weight: 600;
                 }
             }
             .info-title, .info{
                 p{
-                    padding: .3rem 0;
                 }
             }
         }
@@ -116,11 +109,9 @@ const ImageSectionStyled = styled(motion.div)`
     @media screen and (max-width:1000px){
         flex-direction: column;
         .left-content{
-            margin-bottom: 2rem;
         }
         .right-content{
             h4 span{
-                    font-size: 1.5rem;
                 }
             }
         }

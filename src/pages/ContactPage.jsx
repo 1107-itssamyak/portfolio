@@ -134,7 +134,6 @@ const ContactPage = () => {
 }
 
 const ContactPageStyled = styled(motion.section)`
-    margin: .5rem 0;
     .contact-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -142,12 +141,10 @@ const ContactPageStyled = styled(motion.section)`
         @media screen and (max-width: 978px){
             grid-template-columns: repeat(1, 1fr);
             .f-button{
-                margin-bottom: 3rem;
             }
         }
         @media screen and (max-width:600px){
             .f-button{
-                margin-bottom: 2rem;
             }
         }
         .right-content{
@@ -159,10 +156,7 @@ const ContactPageStyled = styled(motion.section)`
         .contact-title{
             h4{
                 color: var(--white-color);
-                padding: .5rem 0;
-                font-size: 1.6rem;
                 @media screen and (max-width:600px){
-                    font-size: 1rem;
                 }
             }
         }
@@ -172,7 +166,6 @@ const ContactPageStyled = styled(motion.section)`
                 width: 100%;
             }
             .form-field{
-                margin-top: 2rem;
                 position: relative;
                 width: 100%;
                 label{
@@ -181,7 +174,6 @@ const ContactPageStyled = styled(motion.section)`
                     top: -19px;
                     display: inline-block;
                     background-color: var(--background-dark-color);
-                    padding:0 .5rem;
                     color: inherit;
                 }
                 input{
@@ -189,12 +181,10 @@ const ContactPageStyled = styled(motion.section)`
                     outline: none;
                     background: transparent;
                     height: 50px;
-                    padding: 0 15px;
                     width: 100%;
                     color: inherit;
                     @media screen and (max-width:600px){
                         height: 40px;
-                        padding: 0 5px;
                     }
                 }
                 textarea{
@@ -203,9 +193,7 @@ const ContactPageStyled = styled(motion.section)`
                     outline: none;
                     color: inherit;
                     width: 100%;
-                    padding: .8rem 1rem;
                     @media screen and (max-width:600px){
-                        padding: .75rem;
                     }
                 }
             }            

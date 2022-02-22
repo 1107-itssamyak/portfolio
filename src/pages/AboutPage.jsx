@@ -18,9 +18,6 @@ const About = () => {
     )
 }
 
-const AboutStyled = styled.div`
-    margin-bottom: 5rem;
-    padding: 1rem 1.5rem;
-`
+const AboutStyled = styled.div``
 
 export default About;

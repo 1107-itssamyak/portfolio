@@ -2,47 +2,55 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 .light-theme{
-    --primary-color: #007bff;
-    --primary-color-light: #057FFF;
-    --secondary-color: #ff7675;
+/*     
     --background-dark-color: #F1F1F1;
     --background-dark-grey: #e4e4e4;
-    --border-color: #cbced8;
+    
     --background-light-color: #F1F1F1;
     --background-light-color-2: rgba(3,127,255,.3);
-    --white-color: #151515;
     --font-light-color: #313131;
     --font-dark-color: #313131;
     --font-dark-color-2: #151515;
-    --sidebar-dark-color: #E4E4E4;
+    --sidebar-dark-color: #E4E4E4; */
+
+    
+    /* special color for title span's */
+    --span-theme-color: #F1F1F1;
+    
+    --white-color: #151515;
+    --primary-color: #004F76;
+    --border-color: #cbced8;
+
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
     --scrollbar-track-color: #383838;
-
-    /* special color for title span's */
-    --span-theme-color: #F1F1F1;
 }
 
 .dark-theme{
-    --primary-color: #007bff;
-    --primary-color-light: #057FFF;
-    --secondary-color: #6c757d;
+    /* 
     --background-dark-color: #10121A;
     --background-dark-grey: #191D2B;
-    --border-color: #2e344e;
+    
     --background-light-color: #F1F1F1;
     --background-light-color-2: rgba(3,127,255,.3);
-    --white-color: #FFF;
     --font-light-color: #a4acc4;
     --font-dark-color: #313131;
     --font-dark-color-2: #151515;
-    --sidebar-dark-color: #191D2B;
-    --scrollbar-bg-color: #383838;
-    --scrollbar-thump-color: #6b6b6b;
-    --scrollbar-track-color: #383838;
+    --sidebar-dark-color: #191D2B; */
 
     /* special color for title span's */
     --span-theme-color: #191d2b70;
+    
+    --primary-color: #004F76;
+    --white-color: #FFF;
+    --primary-color-light: #057FFF;
+    --primary-color-light: #057FFF;
+
+    --border-color: #2e344e;
+
+    --scrollbar-bg-color: #383838;
+    --scrollbar-thump-color: #6b6b6b;
+    --scrollbar-track-color: #383838;
 }
 
 *{
@@ -51,10 +59,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Roboto', Lato, sans-serif;
-    font-size: 1.1rem;
-    letter-spacing: .75px;
-    scroll-behaviour: smooth;
+    font-family: 'Inter', Open-sans, sans-serif;
+    letter-spacing: .5px;
+    font-weight: 400;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -82,21 +90,15 @@ textarea{
 a{
     font-family: inherit;
     color: inherit;
-    font-size: inherit;
-    font-size: 1rem;
 }
 
 h1{
-    font-size: 4rem;
     color: var(--white-color);
     span{
-        font-size: 4rem;
         @media screen and (max-width: 502px){
-            font-size: 3rem
         }
     }
     @media screen and (max-width: 502px){
-        font-size: 3rem
     }
 }
 
@@ -105,7 +107,6 @@ span{
 }
 h6{
     color: var(--white-color);
-    font-size: 1.2rem;
     padding-bottom: .6rem;
 }
 
@@ -134,7 +135,6 @@ h6{
     svg{
       display: flex;
       align-items: center;
-      font-size: 1.7rem;
       color: var(--white-color);
     }
 
@@ -153,7 +153,6 @@ h6{
         display: none;
         z-index: 15;
         svg{
-          font-size: 2rem;
         }
         @media screen and (max-width:1200px){
             display: block;
@@ -167,7 +166,6 @@ h6{
         display: none;
         z-index: 15;
         svg{
-          font-size: 2rem;
         }
         @media screen and (max-width:1200px){
             display: block;

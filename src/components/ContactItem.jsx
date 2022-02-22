@@ -67,14 +67,12 @@ const ContactItemStyled = styled.div`
     background-color: var(--background-dark-grey);
     display: flex;
     flex-direction: column;
-    padding: 2rem;
     width: 70%;
     @media screen and (max-width:800px){
         width: 100%;
     }
 
     .content{
-        font-size: 1.2rem;
         text-transform: uppercase;
         display: flex;
         justify-content: space-around;
@@ -82,7 +80,6 @@ const ContactItemStyled = styled.div`
         &:not(:last-child){
             margin-bottom: 2rem;
             @media screen and (max-width:800px){
-                font-size: 1rem;
                 margin-bottom: 1rem;
             }
             @media screen and (max-width:600px){
@@ -91,7 +88,6 @@ const ContactItemStyled = styled.div`
         }
         
         a{
-            padding: .4rem;
             width: 20%;
             display: flex;
             justify-content: center;
@@ -99,7 +95,6 @@ const ContactItemStyled = styled.div`
             border: 1px solid var(--border-color);
             border-radius: .5rem;
             @media screen and (max-width:800px){
-                padding: .2rem;
             }
         }
 
@@ -113,7 +108,6 @@ const ContactItemStyled = styled.div`
         @media screen and (max-width: 800px){
             width: 100%;
             svg{
-                font-size: 2rem;
             }
         }
     }

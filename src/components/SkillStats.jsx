@@ -31,14 +31,11 @@ const SkillState = styled.div`
     color: var(--font-light-color);
     background-color: var(--background-light-color-2);
     text-transform: uppercase;
-    padding: .5rem;
     border-radius: .5rem;
-    margin: .5rem 0;
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     @media screen and (max-width:600px){
         width: 60%;
-        padding: .2rem;
     }
 `;
 

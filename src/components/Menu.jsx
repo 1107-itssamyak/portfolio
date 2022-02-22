@@ -39,20 +39,15 @@ const Menu = ({ data }) => {
 }
 
 const MenuItemStyled = styled(motion.div)`
-    margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
-    h6{
-        padding: 1rem 0 .5rem 0;
-        font-size: 1.3rem;
-        @media screen and (max-width:600px){
-            font-size: 1.1rem;
+    h6{*
+        @media screen and (max-width:600px){*
         }
     }
     p{
-        height: 8vh;
-        font-size: .9rem;
+        height: 8vh;*
         @media screen and (max-width:600px){
             min-height: 4vh;
         }
@@ -66,7 +61,6 @@ const MenuItemStyled = styled(motion.div)`
     
     .grid-item{
         min-height: 20rem;
-        margin: .25rem .5rem;
         overflow: hidden;
         .portfolio-content{
             display: flex;
@@ -86,17 +80,14 @@ const MenuItemStyled = styled(motion.div)`
             }
         }
         ul{
-            margin: .75rem 0 0 0;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
             i{
-                margin: 0 .5rem;
             }
         }
         @media screen and (max-width:600px){
-            margin: 0;
         }
     }
 `;
