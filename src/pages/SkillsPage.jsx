@@ -35,7 +35,7 @@ const SkillsPage = () => {
                         Web Development
                     </div>
                     <div className="subheading">
-                        I have worked on various Web Development projects. This is the tech's using which I have worked upon on projects.
+                        I have worked on various <span>Web Development projects</span>. This is the tech's I have worked upon various projects. I also used <span>Bootstrap</span>, which is a CSS framework for developing responsive and mobile-first websites.
                     </div>
                     <div className="skills">
                         {web_development.map((item) => (
@@ -142,34 +142,38 @@ const SkillsPage = () => {
     )
 }
 
-const ContainerStyled = styled(motion.div)`
+const ContainerStyled = styled(motion.section)`
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     width: 100%;
+    margin: 2rem 0;
 
     &:nth-child(2n){
-        flex-direction: row-reverse;
+        flex-direction: reverse;
     }
 
     .left-content{
+        padding: 0 .75rem;
         width: 50%;
         .heading{
-            text-align: center;
             text-decoration: underline;
             font-style: italic;
-            letter-spacing: 1px;
+            font-size: 1.5rem;
             font-weight: 700;
-            @media screen and (max-width:600px){
+            margin: .75rem 0;
+            @media screen and (max-width:800px){
+                font-weight: 1.2rem;
             }
         }
+
         .subheading{
-            letter-spacing: 0;
-            font-weight: 400;
+            margin: .75rem 0;
         }
+
         .skills{
-            margin-top: 1rem;
+            margin: 1rem 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -178,22 +182,23 @@ const ContainerStyled = styled(motion.div)`
     }
 
     .right-content{
+        margin: 0 .75rem;
         width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         img{
-            width: 60%;
+            width: 50%;
             object-fit: cover;
+            padding: 1rem;
+            @media screen and (max-width:800px){
+                margin: 2rem 0;
+            }
         }
     }
 
     @media screen and (max-width:800px){
-        margin-bottom: 1rem;
-        &:nth-child(2n){
-            flex-direction: column;
-        }
-        
+        margin: 1.5rem 0;        
         flex-direction: column;
         .left-content{
             width: 100%;
@@ -216,8 +221,7 @@ const ContainerStyled = styled(motion.div)`
 `
 
 const SkillsStyled = styled(motion.section)`
-    margin-top: 1rem;
-    margin-bottom: 5rem;
+    margin: 1rem;
 `;
 
 export default SkillsPage;

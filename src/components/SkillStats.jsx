@@ -34,6 +34,8 @@ const SkillState = styled.div`
     border-radius: .5rem;
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    padding: 8px 14px;
+    margin: .5rem 0;
     @media screen and (max-width:600px){
         width: 60%;
     }
