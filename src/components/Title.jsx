@@ -6,8 +6,8 @@ import styled from 'styled-components'
 import { fade } from '../animation/animation'
 import { useScroll } from '../animation/useScroll'
 
-const Title = ({ title, span }) => {
-    const [ref, controls] = useScroll(0.5)
+const Title = ({ title }) => {
+    const [ref, controls] = useScroll(0.2)
 
     return (
         <TitleStyled
@@ -29,16 +29,17 @@ const TitleStyled = styled(motion.div)`
         color: var(--white-color);
         text-transform: uppercase;
         position: relative;
-        padding-bottom: .5rem;
-        @media screen and (max-width: 496px){
-        }
-        @media screen and (max-width: 370px){
+        font-style: italic;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        @media screen and (max-width:600px){
+            font-size: 1.2rem;
         }
         &::before{
             content: "";
             position: absolute;
-            bottom: 5px;
             width: 10rem;
+            top: 120%;
             height: .33rem;
             background-color: var(--background-light-color-2);
             border-radius: 15px;
@@ -47,8 +48,8 @@ const TitleStyled = styled(motion.div)`
         &::after{
             content: "";
             position: absolute;
-            bottom: 5px;
             width: 4rem;
+            top: 120%;
             height: .33rem;
             background-color: var(--primary-color);
             border-radius: 15px;

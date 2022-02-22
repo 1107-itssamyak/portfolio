@@ -28,16 +28,17 @@ const ImageSection = () => {
 
             <motion.div
                 className="right-content"
-                ref={ref}
                 animate={controls}
-                variants={fade} >
+                variants={fade}
+            >
                 <h1>
                     <span>
                         Hey there,
                     </span>
                 </h1>
                 <p className="paragraph">
-                    I love <span>Designing & Developing Websites</span> and am looking for more opportunities to work in coding for them. Looking forward to Collabrate over Projects or Discussions which are fun & meaningful.😃
+                    <span>UI/UX development</span> peek my Interests. I find myself developing and designing these. I am looking for more opportunities to work in coding for them.
+                    <br /> Looking forward to Collabrate over Projects or Discussions which are fun & meaningful.😃
                 </p>
                 <div className="about-info">
                     <div className="info-title">
@@ -73,48 +74,53 @@ const ImageSection = () => {
 const ImageSectionStyled = styled(motion.div)`
     display: flex;
     .left-content{
-        width: 100%;
+        flex: 0.4;
         display: flex;
         justify-content: center;
         align-items: center;
         img{
             width: 80%;
+            /* height: 50vh; */
             object-fit: cover;
+            padding: 1rem;
+            overflow: hidden;
+            @media screen and (max-width:800px){
+                width: 50%;
+            }
         }
     }
+    
     .right-content{
+        flex: 0.6;
+        margin: 1rem 0;
         h1{
+            font-size: 1.5rem;
             color: var(--white-color);
+            padding: .5rem 0;
             span{
             }
         }
         .paragraph{
+            font-size: 1rem;
+            padding: .5rem 0;
             span{
                 font-weight: 600;
             }
         }
         .about-info{
             display: flex;
-            .info-title{
-                p{
-                    font-weight: 600;
-                }
+            font-size: 1rem;
+            padding: 1rem 0;
+            .info-title p{
+                font-weight: 700;
             }
-            .info-title, .info{
-                p{
-                }
+            .info p{
+                padding-left: 2rem;
             }
         }
     }
-    @media screen and (max-width:1000px){
+    @media screen and (max-width:800px){
         flex-direction: column;
-        .left-content{
-        }
-        .right-content{
-            h4 span{
-                }
-            }
-        }
     }
 }
 `;

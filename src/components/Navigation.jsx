@@ -56,6 +56,8 @@ const NavigationStyled = styled.nav`
         
         li{
             display: block;
+            padding: .1rem .5rem;
+            border-radius: .5rem;
             a{
                 display: block;
                 padding: .5rem 0;
@@ -64,14 +66,15 @@ const NavigationStyled = styled.nav`
                 text-transform: uppercase;
                 transition: all .4s ease-in-out;
                 font-weight: 500;
+                color: var(--white-color);
+
                 &:hover{
                     cursor: pointer;
-                    color: var(--white-color);
                 }
                 &::before{
                     content: "";
                     position: absolute;
-                    bottom: 0;
+                    top: 0;
                     left: 0;
                     width: 0;
                     height: 50%;

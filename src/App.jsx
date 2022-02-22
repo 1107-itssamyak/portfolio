@@ -51,7 +51,7 @@ function App() {
 		setTimeout(() => {
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
-		}, 500);
+		}, 200);
 	}
 
 	window.onscroll = () => scrollFunction();

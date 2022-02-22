@@ -2,25 +2,25 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 .light-theme{
-/*     
-    --background-dark-color: #F1F1F1;
+    /* --background-dark-color: #F1F1F1;
     --background-dark-grey: #e4e4e4;
     
     --background-light-color: #F1F1F1;
-    --background-light-color-2: rgba(3,127,255,.3);
     --font-light-color: #313131;
     --font-dark-color: #313131;
-    --font-dark-color-2: #151515;
-    --sidebar-dark-color: #E4E4E4; */
+    --font-dark-color-2: #151515; */
 
     
     /* special color for title span's */
     --span-theme-color: #F1F1F1;
     
-    --white-color: #151515;
     --primary-color: #004F76;
-    --border-color: #cbced8;
+    --white-color: #3F3F3F;
 
+    
+    --background-light-color-2: #037fff4d;
+    --border-color: #cbced8;
+    --sidebar-dark-color: #E9E9E9;
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
     --scrollbar-track-color: #383838;
@@ -32,11 +32,10 @@ const GlobalStyle = createGlobalStyle`
     --background-dark-grey: #191D2B;
     
     --background-light-color: #F1F1F1;
-    --background-light-color-2: rgba(3,127,255,.3);
     --font-light-color: #a4acc4;
     --font-dark-color: #313131;
     --font-dark-color-2: #151515;
-    --sidebar-dark-color: #191D2B; */
+     */
 
     /* special color for title span's */
     --span-theme-color: #191d2b70;
@@ -46,8 +45,9 @@ const GlobalStyle = createGlobalStyle`
     --primary-color-light: #057FFF;
     --primary-color-light: #057FFF;
 
+    --background-light-color-2: #037fff4d;
     --border-color: #2e344e;
-
+    --sidebar-dark-color: #191D2B;
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
     --scrollbar-track-color: #383838;
@@ -87,6 +87,7 @@ body::-webkit-scrollbar-track{
 textarea{
     max-width: 100%;
 }
+
 a{
     font-family: inherit;
     color: inherit;
@@ -94,20 +95,15 @@ a{
 
 h1{
     color: var(--white-color);
-    span{
-        @media screen and (max-width: 502px){
-        }
-    }
-    @media screen and (max-width: 502px){
-    }
 }
 
 span{
     color: var(--primary-color);
+    font-weight: 600;
 }
+
 h6{
     color: var(--white-color);
-    padding-bottom: .6rem;
 }
 
 //Utilities
@@ -119,14 +115,15 @@ h6{
 .light-dark-mode{
     position: fixed;
     right: 0;
-    top: 50%;
+    top: 60%;
     background-color: var(--background-light-color-2);
     width: 6rem;
     height: 3rem;
     z-index: 15;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    border-radius: .75rem;
 
     .left-content, .right-content{
         margin: 0.1rem;
@@ -165,11 +162,7 @@ h6{
         bottom: 2%;
         display: none;
         z-index: 15;
-        svg{
-        }
-        @media screen and (max-width:1200px){
-            display: block;
-        }
+        display: block;
     }
 
     .nav-toggle{

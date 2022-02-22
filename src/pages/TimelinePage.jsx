@@ -10,22 +10,23 @@ import SchoolIcon from '@material-ui/icons/School';
 import SmallTitle from '../components/SmallTitle';
 import ResumeItem from '../components/ResumeItem';
 
-import { useScroll } from '../animation/useScroll';
-import { scaledFramer } from '../animation/animation';
+// import { useScroll } from '../animation/useScroll';
+// import { scaledFramer } from '../animation/animation';
 
 const TimelinePage = () => {
     const pageName = "timeline";
     const school = <SchoolIcon />
 
-    const [ref, controls] = useScroll(0.3);
+    // const [ref, controls] = useScroll(0.3);
 
     return (
         <TimelineStyled id="timeline">
             <Title title={pageName} span={pageName} />
             <InnerLayout
-                animate={controls}
-                ref={ref}
-                variants={scaledFramer} >
+            // animate={controls}
+            // ref={ref}
+            // variants={scaledFramer}
+            >
                 <div className="small-title u-small-title-margin">
                     <SmallTitle icon={school} title={'Educational Qualifications'} />
                 </div>
@@ -46,12 +47,14 @@ const TimelinePage = () => {
 }
 
 const TimelineStyled = styled.section`
+    min-height: 60vh;
+    padding: 1rem;
     .small-title{
-    }
-    
+        font-weight: 600;
     }
     
     .resume-content{
+        margin: 1rem;
         border-left: 2px solid var(--border-color);
         @media screen and (max-width:600px){
         }

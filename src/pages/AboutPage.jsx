@@ -12,12 +12,15 @@ const About = () => {
     return (
         <AboutStyled id="about">
             <Title
-                title={pageName} span={pageName} />
+                title={pageName} />
             <ImageSection />
         </AboutStyled >
     )
 }
 
-const AboutStyled = styled.div``
+const AboutStyled = styled.div`
+    min-height: 80vh;
+    padding: 1rem;
+`
 
 export default About;

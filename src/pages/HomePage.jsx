@@ -21,10 +21,7 @@ const HomePage = () => {
                 <h1>Hi, I'm <span>Samyak Mehta</span></h1>
                 <p>
                     I am a Prefinal year CS Undergraduate 😄,
-                    <br />
                     a <span>Front-end Web developer</span>.
-                    <br />
-                    UI/UX development peek my Interests and I find myself developing them.
                     <br />
                     I live in Udaipur, Rajasthan.
                     I'm working on improving my skills in scope of
@@ -39,29 +36,31 @@ const HomePage = () => {
 const HomePageStyled = styled(motion.header)`
     width: 100%;
     height: 100vh;
-    position: relative;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
     .typography{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        width: 100%;
         text-align: center;
-        width: 80%;
+        padding: 0 2rem;
         h1{
-            @media screen and (max-width:600px){
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 2rem;
+            @media screen and (max-width:1000px){
+                font-size: 1.5rem;
             }
-        }
-        span{
             @media screen and (max-width:600px){
+                font-size: 1.2rem;
             }
         }
         p{
-            line-height: 1.4rem;
-            span{
-            }
-            @media screen and (max-width:600px){
-            }
+            font-size: 1rem;
+        }
+        @media screen and (max-width: 600px){
+            padding: 0 1rem;
         }
     }
 `;
