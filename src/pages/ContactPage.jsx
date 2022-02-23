@@ -61,7 +61,7 @@ const ContactPage = () => {
         }
     }
 
-    const [ref, controls] = useScroll(0.3);
+    const [ref, controls] = useScroll(0.25);
 
     return (
         <MainLayout id="contact" ref={ref} >
@@ -134,7 +134,7 @@ const ContactPage = () => {
 }
 
 const ContactPageStyled = styled(motion.section)`
-    min-height: 70vh;
+    min-height: 80vh;
     .contact-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);

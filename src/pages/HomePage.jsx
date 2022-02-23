@@ -9,7 +9,7 @@ import { HomePageFramer } from '../animation/animation';
 import { useScroll } from '../animation/useScroll';
 
 const HomePage = () => {
-    const [ref, controls] = useScroll(0.3);
+    const [ref, controls] = useScroll(0.25);
 
     return (
         <HomePageStyled

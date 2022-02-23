@@ -17,7 +17,7 @@ const TimelinePage = () => {
     const pageName = "timeline";
     const school = <SchoolIcon />
 
-    const [ref, controls] = useScroll(0.3);
+    const [ref, controls] = useScroll(0.25);
 
     return (
         <TimelineStyled id="timeline" ref={ref}>

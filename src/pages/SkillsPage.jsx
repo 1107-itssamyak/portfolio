@@ -20,10 +20,10 @@ import { imageFramer } from '../animation/animation';
 
 const SkillsPage = () => {
     const pageName = 'My Skills';
-    const [image_1, image_control_1] = useScroll(0.1);
-    const [image_2, image_control_2] = useScroll(0.1);
-    const [image_3, image_control_3] = useScroll(0.1);
-    const [image_4, image_control_4] = useScroll(0.1);
+    const [image_1, image_control_1] = useScroll(0.2);
+    const [image_2, image_control_2] = useScroll(0.2);
+    const [image_3, image_control_3] = useScroll(0.2);
+    const [image_4, image_control_4] = useScroll(0.2);
 
     return (
         <SkillsStyled id="skills">
@@ -46,11 +46,12 @@ const SkillsPage = () => {
                         ))}
                     </div>
                 </div>
-                <div className="right-content">
+                <div
+                    className="right-content"
+                    ref={image_1} >
                     <motion.img
                         src={web_development_svg}
                         alt="vector svg"
-                        ref={image_1}
                         variants={imageFramer}
                         animate={image_control_1}
                     />
@@ -74,11 +75,12 @@ const SkillsPage = () => {
                         ))}
                     </div>
                 </div>
-                <div className="right-content">
+                <div
+                    className="right-content"
+                    ref={image_2} >
                     <motion.img
                         src={knowledge_svg}
                         alt="vector svg"
-                        ref={image_2}
                         variants={imageFramer}
                         animate={image_control_2}
                     />
@@ -102,11 +104,12 @@ const SkillsPage = () => {
                         ))}
                     </div>
                 </div>
-                <div className="right-content">
+                <div
+                    className="right-content"
+                    ref={image_3} >
                     <motion.img
                         src={thinking_svg}
                         alt="vector svg"
-                        ref={image_3}
                         variants={imageFramer}
                         animate={image_control_3} />
                 </div>
@@ -128,11 +131,12 @@ const SkillsPage = () => {
                         ))}
                     </div>
                 </div>
-                <div className="right-content">
+                <div
+                    className="right-content"
+                    ref={image_4} >
                     <motion.img
                         src={server_svg}
                         alt="vector svg"
-                        ref={image_4}
                         variants={imageFramer}
                         animate={image_control_4}
                     />

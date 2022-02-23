@@ -13,7 +13,7 @@ import { imageFramer, fade } from '../animation/animation';
 import { useScroll } from '../animation/useScroll';
 
 const ImageSection = () => {
-    const [ref, controls] = useScroll(0.3);
+    const [ref, controls] = useScroll(0.25);
 
     return (
         <ImageSectionStyled ref={ref}>
