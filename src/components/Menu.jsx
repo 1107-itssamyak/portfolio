@@ -4,6 +4,9 @@ import React from 'react'
 // import styled component
 import styled from 'styled-components';
 
+import DescriptionIcon from '@material-ui/icons/Description';
+import TvIcon from '@material-ui/icons/Tv';
+
 const Menu = ({ data }) => {
     return (
         <MenuItemStyled>
@@ -19,14 +22,12 @@ const Menu = ({ data }) => {
                     <ul>
                         <li>
                             <a href={item.link1}>
-                                <i className="fa-solid fa-file-lines"></i>
-                                Source
+                                <DescriptionIcon /> Source
                             </a>
                         </li>
                         <li>
                             <a href={item.link2} >
-                                <i className="fa-solid fa-tv"></i>
-                                Live
+                                <TvIcon /> Live
                             </a>
                         </li>
                     </ul>
@@ -39,23 +40,25 @@ const Menu = ({ data }) => {
 const MenuItemStyled = styled(motion.div)`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+    grid-gap: 2rem;
 
     @media screen and (max-width:1200px){
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
     }
-    @media screen and (max-width:800px){
+    @media screen and (max-width:680px){
         grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
     }
     h2{
         font-size: 1.2rem;
-        margin: 1rem;
+        margin: 0 1rem;
         font-weight: 600;
         font-style: italic;
     }
     p{
-        height: 8vh;
-        margin: 1rem;
+        min-height: 8vh;
+        margin: .5rem 1rem;
         font-size: 1rem;
         @media screen and (max-width:600px){
             min-height: 4vh;
@@ -67,8 +70,9 @@ const MenuItemStyled = styled(motion.div)`
         overflow: hidden;
         padding: .5rem 0;
         margin: 1rem 0;
-        border-radius: .75rem;
-        background-color: var(--background-light-color) ;
+        border-radius: .5rem;
+        border: 4px solid var(--background-light-color);
+        background-color: var(--portfolio-bg);
 
         .portfolio-content{
             display: flex;
@@ -76,14 +80,13 @@ const MenuItemStyled = styled(motion.div)`
             justify-content: center;
             margin: 1rem 0;
             img{
-                border-radius: .75rem;
+                border-radius: .5rem;
                 width: 80%;
                 height: 25vh;
-                @media screen and (max-width:1000px){
-                    width: 80%;
-                }
+                
                 @media screen and (max-width:600px){
                     width: 70%;
+                    height: 25vh;
                 }
             }
         }
@@ -93,19 +96,35 @@ const MenuItemStyled = styled(motion.div)`
             justify-content: space-around;
             align-items: center;
             margin-bottom: .75rem;
-
+            
             li{
-                border: 1px solid var(--border-color);
+                border: 3px solid var(--background-light-color);
                 padding: 8px 12px;
-                border-radius: .75rem;
+                border-radius: .5rem;
+                min-width: 20%;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                background-color: var(--portfolio-bg);
+                color: var(--primary-color);
             }
-            li i{
-                padding-right: 2.75rem;
+            li svg{
+                font-size: 1rem;
             }
         }
+        &:hover{
+            transition: .4s ease-in;
+            transform: scale(1.02);
+        }
+
+
         @media screen and (max-width: 800px){
+            &:last-child{
+                margin-bottom: 4rem;
+            }
             padding: .25rem 0;
-            margin: .75rem 0;
+            min-height: 10vh;
+            margin: .5rem 0;
         }
     }
 `;

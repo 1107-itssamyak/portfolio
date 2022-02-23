@@ -29,12 +29,9 @@ const ImageSection = () => {
             <motion.div
                 className="right-content"
                 animate={controls}
-                variants={fade}
-            >
+                variants={fade} >
                 <h1>
-                    <span>
-                        Hey there,
-                    </span>
+                    <span>Hey there,</span>
                 </h1>
                 <p className="paragraph">
                     <span>UI/UX development</span> peek my Interests. I find myself developing and designing these. I am looking for more opportunities to work in coding for them.
@@ -111,6 +108,7 @@ const ImageSectionStyled = styled(motion.div)`
             display: flex;
             font-size: 1rem;
             padding: 1rem 0;
+            line-height: 1.5rem;
             .info-title p{
                 font-weight: 700;
             }

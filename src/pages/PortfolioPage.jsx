@@ -21,8 +21,7 @@ const PortfolioPage = () => {
             <Title title={pageName} />
             <InnerLayout
                 variants={fade}
-                animate={controls}
-            >
+                animate={controls} >
                 <Menu data={data} />
             </InnerLayout>
         </PortfolioStyled >

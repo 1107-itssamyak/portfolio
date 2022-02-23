@@ -38,7 +38,7 @@ const programming = [
 
 const tools = [
     {
-        "title": "react",
+        "title": "react js",
         "id": "1"
     },
     {

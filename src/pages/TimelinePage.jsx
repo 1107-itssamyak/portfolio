@@ -45,20 +45,16 @@ const TimelinePage = () => {
 }
 
 const TimelineStyled = styled.section`
-    min-height: 60vh;
+    min-height: 70vh;
     padding: 1rem;
     .small-title{
+        margin-bottom: 2rem;
         font-weight: 600;
     }
     
     .resume-content{
         margin: 1rem;
         border-left: 2px solid var(--border-color);
-        @media screen and (max-width:600px){
-        }
-    }
-    
-    @media screen and (max-width: 800px){
     }
 `;
 

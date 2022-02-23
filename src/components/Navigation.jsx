@@ -54,7 +54,7 @@ const NavigationStyled = styled.nav`
             color: white;
         } */
         
-        li{
+        .nav-item{
             display: block;
             padding: .1rem .5rem;
             border-radius: .5rem;
@@ -65,7 +65,7 @@ const NavigationStyled = styled.nav`
                 z-index: 10;
                 text-transform: uppercase;
                 transition: all .4s ease-in-out;
-                font-weight: 500;
+                font-weight: 600;
                 color: var(--white-color);
 
                 &:hover{
@@ -95,11 +95,15 @@ const NavigationStyled = styled.nav`
     footer{
         position: absolute;
         bottom: 0;
-        border-top: 1px solid var(--border-color);
+        border-top: 3px solid var(--border-color);
         width: 100%;
         p{
             padding: 1rem 0;
             text-align: center;
+            font-weight: 700;
+            b{
+                font-weight: 700;
+            }
         }
     }
 `;

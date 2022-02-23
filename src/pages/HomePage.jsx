@@ -48,7 +48,8 @@ const HomePageStyled = styled(motion.header)`
         h1{
             font-weight: 600;
             font-size: 2rem;
-            line-height: 2rem;
+            line-height: 2.5rem;
+            margin: .75rem 0;
             @media screen and (max-width:1000px){
                 font-size: 1.5rem;
             }
@@ -58,6 +59,7 @@ const HomePageStyled = styled(motion.header)`
         }
         p{
             font-size: 1rem;
+            line-height: 1.5rem;
         }
         @media screen and (max-width: 600px){
             padding: 0 1rem;

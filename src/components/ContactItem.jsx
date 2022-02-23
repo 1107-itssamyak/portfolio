@@ -66,11 +66,7 @@ const ContactItemStyled = styled.div`
         justify-content: space-around;
         align-items:center;
         font-size: 1.2rem;
-        margin-bottom: 5rem;
-        @media screen and (max-width: 850px){
-            margin-bottom: 4rem;
-        }
-
+        margin-bottom: 4rem;
         padding: .25rem 0;
         &:not(:last-child){
             margin: 0 0 1rem 0;
@@ -87,6 +83,7 @@ const ContactItemStyled = styled.div`
             @media screen and (max-width:800px){
                 width: 10%;
                 padding: .5rem;
+                border: none;
             }
         }
 

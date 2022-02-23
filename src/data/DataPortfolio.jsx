@@ -12,7 +12,7 @@ const data = [
         link2: 'https://samyak-mehta.web.app/',
         title: 'Portfolio Website',
         image: `${portfolio_image}`,
-        text: 'Created with only React, Framer-Motion, CSS3'
+        text: 'Developed using React JS, Framer-Motion, CSS3'
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ const data = [
         link2: 'https://typing-game-1.web.app/',
         title: 'Typing Game',
         image: `${typing_game_image}`,
-        text: 'Created with only HTML5, SCSS, JS'
+        text: 'Developed using HTML5, SCSS, JS'
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ const data = [
         link2: 'https://forward-455dc.web.app/index.html',
         title: 'Forward',
         image: `${forward_image}`,
-        text: 'Created using HTML5, CSS3, JS, CHART.JS, GOOGLE FIREBASE'
+        text: 'Developed using HTML5, CSS3, JS, CHART.JS, GOOGLE FIREBASE'
     },
     {
         id: 4,
@@ -39,7 +39,7 @@ const data = [
         link2: 'https://pokedex-project-1107-itssamyak.vercel.app/',
         title: 'PokeDex Project',
         image: `${pokedex_image}`,
-        text: 'Created using React JS, CSS3'
+        text: 'Developed using React JS, CSS3'
     },
     {
         id: 5,
@@ -48,7 +48,7 @@ const data = [
         link2: 'http://frontend-development-project.vercel.app/',
         title: 'Figma Development',
         image: `${insignia_image}`,
-        text: 'Created using HTML5, CSS3, JS'
+        text: 'Developed using HTML5, CSS3, JS'
     }
 ]
 

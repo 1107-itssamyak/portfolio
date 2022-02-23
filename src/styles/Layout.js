@@ -11,18 +11,20 @@ const InnerLayout = styled(motion.div)`
 `;
 
 const ButtonStyled = styled(motion.a)`
-    background-color: var(--primary-color);
+    background-color: var(--button-styled-bg-color);
     color: white;
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
-    letter-spacing: 1px;
     font-size: 1rem;
-    padding: 8px 16px;
+    padding: 10px 14px;
     margin: 1rem 0;
     text-transform: uppercase;
     position: relative;
     transition: all .4s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
     &::after{
         content: "";
         position: absolute;
@@ -35,7 +37,7 @@ const ButtonStyled = styled(motion.a)`
     }
     &:hover::after{
         width: 100%;
-        background-color: var(--white-color);
+        background-color: white;
     }
     @media screen and (max-width:600px){
         margin: 1.5rem 0;

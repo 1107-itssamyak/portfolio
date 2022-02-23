@@ -35,7 +35,7 @@ const SkillsPage = () => {
                         Web Development
                     </div>
                     <div className="subheading">
-                        I have worked on various <span>Web Development projects</span>. This is the tech's I have worked upon various projects. I also used <span>Bootstrap</span>, which is a CSS framework for developing responsive and mobile-first websites.
+                        I have worked on various <span>Web Development projects</span>. This is the tech's I knowledge and am confident about. I also have knowledge about <span>Bootstrap</span>, which is a CSS framework for developing responsive and mobile-first websites.
                     </div>
                     <div className="skills">
                         {web_development.map((item) => (
@@ -63,7 +63,7 @@ const SkillsPage = () => {
                         Programming
                     </div>
                     <div className="subheading">
-                        I use C++ for implementing <span>Data Structures and Algorithms</span>. Javascript is mostly used by me when I want to develop <span>Web projects</span>. I also have knowledge of Java and Python.
+                        I use C++ for implementing <span>Data Structures and Algorithms</span>. Javascript is helpful for me when I want to develop <span>Web projects</span>. I also have coding experience in Java & Python.
                     </div>
                     <div className="skills">
                         {programming.map((item) => (
@@ -153,14 +153,12 @@ const ContainerStyled = styled(motion.section)`
     &:nth-child(2n){
         flex-direction: reverse;
     }
-
     .left-content{
         padding: 0 .75rem;
         width: 50%;
         .heading{
             text-decoration: underline;
-            font-style: italic;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 700;
             margin: .75rem 0;
             @media screen and (max-width:800px){
@@ -222,6 +220,7 @@ const ContainerStyled = styled(motion.section)`
 
 const SkillsStyled = styled(motion.section)`
     margin: 1rem;
+    margin-bottom: 4rem;
 `;
 
 export default SkillsPage;

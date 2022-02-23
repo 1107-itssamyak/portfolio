@@ -70,8 +70,7 @@ const ContactPage = () => {
                 variants={fade}
                 initial="hidden"
                 exit="exit"
-                animate={controls}
-            >
+                animate={controls} >
                 <InnerLayout className={'contact-section'}>
                     <div className="left-content">
                         <div className="contact-title">
@@ -154,6 +153,7 @@ const ContactPageStyled = styled(motion.section)`
                 color: var(--white-color);
                 font-size: 1.2rem;
                 font-weight: 600;
+                padding: 1rem 0;
             }
         }
         .form{
@@ -168,7 +168,7 @@ const ContactPageStyled = styled(motion.section)`
                     left: 20px;
                     top: -4px;
                     display: inline-block;
-                    padding: 0 .25rem;
+                    padding: 0 .2rem;
                     background-color: var(--background-dark-color);
                     color: inherit;
                     font-size: 1rem;

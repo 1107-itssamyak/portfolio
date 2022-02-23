@@ -2,46 +2,32 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 .light-theme{
-    /* --background-dark-grey: #e4e4e4;
-    
-    --font-light-color: #313131;
-    --font-dark-color: #313131;
-    --font-dark-color-2: #151515; */
-    
-
-    /* special color for title span's */
-    --span-theme-color: #F1F1F1;
-    
     --primary-color: #004F76;
     --white-color: #3F3F3F;
-    --background-dark-color: #F1F1F1;
+    --primary-color-light: #057FFF;
+    --background-dark-color: #fbfbfb;
+    --box-shadow-color: #00000019;
+
+    --button-styled-bg-color: #004F76;
 
     --background-light-color: #F6F9F9;
     --background-light-color-2: #037fff4d;
     --border-color: #cbced8;
-    --sidebar-dark-color: #E9E9E9;
+    --sidebar-dark-color: #F0F0F0;
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
     --scrollbar-track-color: #383838;
 }
 
 .dark-theme{
-    /*     
-    --background-dark-grey: #191D2B;
-    
-    --font-light-color: #a4acc4;
-    --font-dark-color: #313131;
-    --font-dark-color-2: #151515;
-     */
-
-
-    /* special color for title span's */
-    --span-theme-color: #191d2b70;
-    
-    --primary-color: #004F76;
-    --white-color: #FFF;
+    --primary-color: #14829F;
+    --white-color: #E1E1E1;
     --primary-color-light: #057FFF;
     --background-dark-color: #10121A;
+    --box-shadow-color: #e4e4e4;
+    
+    --button-styled-bg-color: #004F76;
+    --portfolio-bg: #fff1;
 
     --background-light-color: #FFF3;
     --background-light-color-2: #037fff4d;
@@ -61,12 +47,14 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Inter', Open-sans, sans-serif;
     letter-spacing: .5px;
     font-weight: 400;
+    color: var(--white-color);
     scroll-behavior: smooth;
 }
 
 body{
     background-color: var(--background-dark-color);
     color: var(--font-light-color);
+    /* opacity: 0.0; */
     transition: all .4s ease-in-out;
 }
 
@@ -116,13 +104,16 @@ h6{
     right: 0;
     top: 60%;
     background-color: var(--background-light-color-2);
-    width: 6rem;
-    height: 3rem;
+    height: 5rem;
+    width: 3.5rem;
     z-index: 15;
+    border-radius: .75rem;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
+
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: .75rem;
+    flex-direction: column;
 
     .left-content, .right-content{
         margin: 0.1rem;
@@ -133,13 +124,7 @@ h6{
       align-items: center;
       color: var(--white-color);
     }
-
-    @media screen and (max-width:996px){
-        height: 5rem;
-        width: 3.5rem;
-        flex-direction: column;
     }
-  }
 
     //Nav Toggler
     .ham-burger-menu{
@@ -148,8 +133,6 @@ h6{
         top: 2%; 
         display: none;
         z-index: 15;
-        svg{
-        }
         @media screen and (max-width:1200px){
             display: block;
         }
@@ -158,10 +141,15 @@ h6{
     .arrow-up-icon{
         position: fixed;
         right: 5%;
-        bottom: 2%;
+        bottom: 5%;
         display: none;
         z-index: 15;
         display: block;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        border-radius: 50%;
+        @media screen and (max-width:800px){
+            bottom: 2%;
+        }
     }
 
     .nav-toggle{

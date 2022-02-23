@@ -25,13 +25,18 @@ const Title = ({ title }) => {
 
 const TitleStyled = styled(motion.div)`
     position: relative;
+    margin-bottom: 2.5rem;
+    
     h2{
         color: var(--white-color);
         text-transform: uppercase;
         position: relative;
-        font-style: italic;
+        /* font-style: italic; */
         margin-bottom: 2rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
+        @media screen and (max-width:1000px){
+            font-size: 1.5rem;
+        }
         @media screen and (max-width:600px){
             font-size: 1.2rem;
         }
