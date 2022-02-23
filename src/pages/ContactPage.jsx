@@ -64,17 +64,18 @@ const ContactPage = () => {
     const [ref, controls] = useScroll(0.3);
 
     return (
-        <MainLayout id="contact" ref={ref}>
-            <Title title={pageName} span={pageName} />
+        <MainLayout id="contact" ref={ref} >
+            <Title title={pageName} />
             <ContactPageStyled
                 variants={fade}
                 initial="hidden"
                 exit="exit"
-                animate={controls} >
+                animate={controls}
+            >
                 <InnerLayout className={'contact-section'}>
                     <div className="left-content">
                         <div className="contact-title">
-                            <h4>Get In Touch</h4>
+                            <h4><span>Get In Touch</span> 😄</h4>
                         </div>
                         <form className="form">
                             <div className="form-field">
@@ -106,7 +107,7 @@ const ContactPage = () => {
                                     onChange={handleTextAreaText}
                                 ></textarea>
                             </div>
-                            <div className="form-field f-button">
+                            <div className="form-field">
                                 <ButtonStyled
                                     type='submit'
                                     onClick={handleSubmitDetails} >
@@ -134,18 +135,13 @@ const ContactPage = () => {
 }
 
 const ContactPageStyled = styled(motion.section)`
+    min-height: 70vh;
     .contact-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 2rem;
-        @media screen and (max-width: 978px){
+        @media screen and (max-width: 850px){
             grid-template-columns: repeat(1, 1fr);
-            .f-button{
-            }
-        }
-        @media screen and (max-width:600px){
-            .f-button{
-            }
         }
         .right-content{
             display: flex;
@@ -156,25 +152,26 @@ const ContactPageStyled = styled(motion.section)`
         .contact-title{
             h4{
                 color: var(--white-color);
-                @media screen and (max-width:600px){
-                }
+                font-size: 1.2rem;
+                font-weight: 600;
             }
         }
         .form{
             width: 100%;
-            @media screen and (max-width: 502px){
-                width: 100%;
-            }
+            font-size: 1rem;
             .form-field{
                 position: relative;
                 width: 100%;
+                margin: 1rem 0;
                 label{
                     position: absolute;
                     left: 20px;
-                    top: -19px;
+                    top: -4px;
                     display: inline-block;
+                    padding: 0 .25rem;
                     background-color: var(--background-dark-color);
                     color: inherit;
+                    font-size: 1rem;
                 }
                 input{
                     border: 1px solid var(--border-color);
@@ -182,7 +179,11 @@ const ContactPageStyled = styled(motion.section)`
                     background: transparent;
                     height: 50px;
                     width: 100%;
+                    border-radius: .5rem;
+                    padding: .75rem;
                     color: inherit;
+                    margin: .5rem 0;
+                    font-family: inherit;
                     @media screen and (max-width:600px){
                         height: 40px;
                     }
@@ -192,9 +193,9 @@ const ContactPageStyled = styled(motion.section)`
                     border: 1px solid var(--border-color);
                     outline: none;
                     color: inherit;
+                    border-radius: .5rem;
+                    padding: .75rem;
                     width: 100%;
-                    @media screen and (max-width:600px){
-                    }
                 }
             }            
         }

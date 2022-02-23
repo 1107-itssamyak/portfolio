@@ -92,7 +92,7 @@ const MenuItemStyled = styled(motion.div)`
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            margin-bottom: .5rem;
+            margin-bottom: .75rem;
 
             li{
                 border: 1px solid var(--border-color);
@@ -100,7 +100,7 @@ const MenuItemStyled = styled(motion.div)`
                 border-radius: .75rem;
             }
             li i{
-                padding-right: .75rem;
+                padding-right: 2.75rem;
             }
         }
         @media screen and (max-width: 800px){

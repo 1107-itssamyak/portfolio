@@ -27,7 +27,7 @@ const SkillsPage = () => {
 
     return (
         <SkillsStyled id="skills">
-            <Title title={pageName} span={pageName} />
+            <Title title={pageName} />
 
             <ContainerStyled>
                 <div className="left-content">

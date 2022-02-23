@@ -2,8 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 .light-theme{
-    /* --background-dark-color: #F1F1F1;
-    --background-dark-grey: #e4e4e4;
+    /* --background-dark-grey: #e4e4e4;
     
     --font-light-color: #313131;
     --font-dark-color: #313131;
@@ -15,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
     
     --primary-color: #004F76;
     --white-color: #3F3F3F;
+    --background-dark-color: #F1F1F1;
 
     --background-light-color: #F6F9F9;
     --background-light-color-2: #037fff4d;
@@ -26,8 +26,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 .dark-theme{
-    /* 
-    --background-dark-color: #10121A;
+    /*     
     --background-dark-grey: #191D2B;
     
     --font-light-color: #a4acc4;
@@ -42,6 +41,7 @@ const GlobalStyle = createGlobalStyle`
     --primary-color: #004F76;
     --white-color: #FFF;
     --primary-color-light: #057FFF;
+    --background-dark-color: #10121A;
 
     --background-light-color: #FFF3;
     --background-light-color-2: #037fff4d;
