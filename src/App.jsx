@@ -69,7 +69,9 @@ function App() {
 		<div className="App">
 			<div className="ham-burger-menu">
 				<IconButton
-					onClick={handleCloseNavbar}>
+					onClick={handleCloseNavbar}
+					name="ham-burger-menu"
+					aria-label="ham-burger-menu" >
 					<MenuIcon />
 				</IconButton>
 			</div>
@@ -80,16 +82,15 @@ function App() {
 
 			<div className="theme">
 				<div className="light-dark-mode">
-					<div className="left-content">
+					<label htmlFor="theme-toggler">
 						<Brightness4Icon />
-					</div>
-					<div className="right-content">
-						<Switch
-							checked={checked}
-							size="medium"
-							onClick={themeToggler}
-						/>
-					</div>
+					</label>
+					<Switch
+						checked={checked}
+						size="medium"
+						id="theme-toggler"
+						name="theme-toggler"
+						onClick={themeToggler} />
 				</div>
 			</div>
 
@@ -103,10 +104,11 @@ function App() {
 			</MainContentStyled>
 
 			<div className="arrow-up-icon">
-				<IconButton onClick={handleArrowUpClick}>
+				<IconButton
+					onClick={handleArrowUpClick}
+					aria-label="arrow-up-icon" >
 					<ArrowUpwardIcon
-						id="arrowUp"
-					/>
+						id="arrowUp" />
 				</IconButton>
 			</div>
 		</div>

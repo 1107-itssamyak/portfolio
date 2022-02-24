@@ -4,7 +4,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { age } from '../data/DataImageSection';
-import avatar from '../image/my_image.jpg';
+// import avatar from '../image/my_image.jpg';
+import avatar from '../image/my_image.webp';
 import { ButtonStyled } from '../styles/Layout';
 import resume from '../resume/resume_samyak_mehta.pdf';
 
@@ -76,13 +77,13 @@ const ImageSectionStyled = styled(motion.div)`
         justify-content: center;
         align-items: center;
         img{
+            height: 100%;
             width: 80%;
-            /* height: 50vh; */
             object-fit: cover;
             padding: 1rem;
             overflow: hidden;
             @media screen and (max-width:800px){
-                width: 50%;
+                width: 60%;
             }
         }
     }

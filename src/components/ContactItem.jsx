@@ -8,14 +8,18 @@ const ContactItem = ({ phone, contact, github, linkedIn, mail, instagram }) => {
         <ContactItemStyled>
             <div>
                 <div className='content'>
-                    <a href={`Tel:${contact}`}>{phone}</a>
+                    <a
+                        href={`Tel:${contact}`}
+                        aria-label='contact-link-tag1' >{phone}</a>
                     <div>contact no.</div>
                 </div>
                 <div className='content'>
                     <a
                         href="mailto:samyak.mehta11@gmail.com"
                         rel="noreferrer"
-                        target="_blank" >
+                        target="_blank"
+                        aria-label='contact-link-tag2'
+                    >
                         {mail}
                     </a>
                     <div>email</div>
@@ -24,7 +28,8 @@ const ContactItem = ({ phone, contact, github, linkedIn, mail, instagram }) => {
                     <a
                         href="https://github.com/1107-itssamyak"
                         rel="noreferrer"
-                        target="_blank" >
+                        target="_blank"
+                        aria-label='contact-link-tag3'>
                         {github}
                     </a>
                     <div>github</div>
@@ -33,7 +38,8 @@ const ContactItem = ({ phone, contact, github, linkedIn, mail, instagram }) => {
                     <a
                         href="https://www.linkedin.com/in/samyak-mehta11/"
                         rel="noreferrer"
-                        target="_blank" >
+                        target="_blank"
+                        aria-label='contact-link-tag4'>
                         {linkedIn}
                     </a>
                     <div>linked in</div>
@@ -42,7 +48,8 @@ const ContactItem = ({ phone, contact, github, linkedIn, mail, instagram }) => {
                     <a
                         href="https://www.instagram.com/_samyak___/"
                         rel="noreferrer"
-                        target="_blank" >
+                        target="_blank"
+                        aria-label='contact-link-tag5'>
                         {instagram}
                     </a>
                     <div>instagram</div>

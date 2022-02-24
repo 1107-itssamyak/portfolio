@@ -1,8 +1,13 @@
-import insignia_image from '../image/insignia_image.jpg';
-import forward_image from '../image/forward_image.jpg';
-import pokedex_image from '../image/pokedex_image.jpg';
-import typing_game_image from '../image/typing_game_image.jpg';
-import portfolio_image from '../image/portfolio_image.jpg';
+// import insignia_image from '../image/insignia_image.jpg';
+import insignia_image from '../image/insignia_image.webp';
+// import forward_image from '../image/forward_image.jpg';
+import forward_image from '../image/forward_image.webp';
+// import pokedex_image from '../image/pokedex_image.jpg';
+import pokedex_image from '../image/pokedex_image.webp';
+// import typing_game_image from '../image/typing_game_image.jpg';
+import typing_game_image from '../image/typing_game.webp';
+// import portfolio_image from '../image/portfolio_image.jpg';
+import portfolio_image from '../image/portfolio_image.webp';
 
 const data = [
     {

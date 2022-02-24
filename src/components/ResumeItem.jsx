@@ -10,8 +10,8 @@ function ResumeItem({ year, title, subTitle, text }) {
                 <p>{year}</p>
             </div>
             <div className="right-content">
-                <h5>{title}</h5>
-                <h6>{subTitle}</h6>
+                <div>{title}</div>
+                <div>{subTitle}</div>
                 <p>{text}</p>
             </div>
         </ResumeItemStyled>
@@ -79,7 +79,7 @@ const ResumeItemStyled = styled.div`
                 width: .75rem;
             }
         }
-        h5{
+        div{
             font-size: 1.2rem;
             font-weight: 600;
             color: var(--primary-color);
@@ -87,7 +87,7 @@ const ResumeItemStyled = styled.div`
                 font-size: 1.2rem;
             }
         }
-        h6{
+        div{
             font-size: 1.2rem;
             @media screen and (max-width:800px){
                 font-size: 1rem;

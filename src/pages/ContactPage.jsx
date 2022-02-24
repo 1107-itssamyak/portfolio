@@ -74,7 +74,7 @@ const ContactPage = () => {
                 <InnerLayout className={'contact-section'}>
                     <div className="left-content">
                         <div className="contact-title">
-                            <h4><span>Get In Touch</span> 😄</h4>
+                            <div><span>Get In Touch</span> 😄</div>
                         </div>
                         <form className="form">
                             <div className="form-field">
@@ -149,7 +149,7 @@ const ContactPageStyled = styled(motion.section)`
             flex-direction: column;
         }
         .contact-title{
-            h4{
+            div{
                 color: var(--white-color);
                 font-size: 1.2rem;
                 font-weight: 600;

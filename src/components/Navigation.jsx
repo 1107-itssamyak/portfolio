@@ -10,22 +10,22 @@ const Navigation = ({ handleCloseNavbar }) => {
         <NavigationStyled>
             <ul className="nav-items">
                 <li className="nav-item">
-                    <a onClick={handleCloseNavbar} href="#home">Home</a>
+                    <a aria-label='nav-link-tag1' onClick={handleCloseNavbar} href="#home">Home</a>
                 </li>
                 <li className="nav-item">
-                    <a onClick={handleCloseNavbar} href="#about">About</a>
+                    <a aria-label='nav-link-tag2' onClick={handleCloseNavbar} href="#about">About</a>
                 </li>
                 <li className="nav-item">
-                    <a onClick={handleCloseNavbar} href="#timeline">Timeline</a>
+                    <a aria-label='nav-link-tag3' onClick={handleCloseNavbar} href="#timeline">Timeline</a>
                 </li>
                 <li className="nav-item">
-                    <a onClick={handleCloseNavbar} href="#skills">Skills</a>
+                    <a aria-label='nav-link-tag4' onClick={handleCloseNavbar} href="#skills">Skills</a>
                 </li>
                 <li className="nav-item">
-                    <a onClick={handleCloseNavbar} href="#portfolio">Portfolio</a>
+                    <a aria-label='nav-link-tag5' onClick={handleCloseNavbar} href="#portfolio">Portfolio</a>
                 </li>
                 <li className="nav-item">
-                    <a onClick={handleCloseNavbar} href="#contact">Contact</a>
+                    <a aria-label='nav-link-tag6' onClick={handleCloseNavbar} href="#contact">Contact</a>
                 </li>
             </ul>
             <footer className="footer">

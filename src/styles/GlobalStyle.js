@@ -44,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Inter', Open-sans, sans-serif;
+    font-family: Open-sans, sans-serif;
     letter-spacing: .5px;
     font-weight: 400;
     color: var(--white-color);
@@ -108,16 +108,11 @@ h6{
     width: 3.5rem;
     z-index: 15;
     border-radius: .75rem;
-    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    .left-content, .right-content{
-        margin: 0.1rem;
-    }
 
     svg{
       display: flex;

@@ -191,6 +191,7 @@ const ContainerStyled = styled(motion.section)`
         align-items: center;
         img{
             width: 50%;
+            height: 100%;
             object-fit: cover;
             padding: 1rem;
             @media screen and (max-width:800px){

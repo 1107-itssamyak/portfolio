@@ -21,14 +21,10 @@ const Menu = ({ data }) => {
                     <p>{item.text}</p>
                     <ul>
                         <li>
-                            <a href={item.link1}>
-                                <DescriptionIcon /> Source
-                            </a>
+                            <a href={item.link1}><DescriptionIcon /> Source</a>
                         </li>
                         <li>
-                            <a href={item.link2} >
-                                <TvIcon /> Live
-                            </a>
+                            <a href={item.link2} ><TvIcon /> Live</a>
                         </li>
                     </ul>
                 </div>
