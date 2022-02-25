@@ -1,59 +1,55 @@
-// import insignia_image from '../image/insignia_image.jpg';
+// import image from storage
 import insignia_image from '../image/insignia_image.webp';
-// import forward_image from '../image/forward_image.jpg';
 import forward_image from '../image/forward_image.webp';
-// import pokedex_image from '../image/pokedex_image.jpg';
 import pokedex_image from '../image/pokedex_image.webp';
-// import typing_game_image from '../image/typing_game_image.jpg';
 import typing_game_image from '../image/typing_game.webp';
-// import portfolio_image from '../image/portfolio_image.jpg';
 import portfolio_image from '../image/portfolio_image.webp';
 
 const data = [
     {
         id: 1,
-        category: 'Full Stack Project',
         link1: 'https://github.com/1107-itssamyak/portfolio',
         link2: 'https://samyak-mehta.web.app/',
         title: 'Portfolio Website',
+        description: 'A Personal Project for displaying my intel & portfolio stack',
         image: `${portfolio_image}`,
-        text: 'Developed using React JS, Framer-Motion, CSS3'
+        text: 'Developed using React JS, Framer-Motion, css3, Google Firebase'
     },
     {
         id: 2,
-        category: 'Web Game Project',
         link1: 'https://github.com/1107-itssamyak/Typing-game',
         link2: 'https://typing-game-1.web.app/',
         title: 'Typing Game',
+        description: 'A Typing Game using which a user can increase his typing speed, if he/she plays the game consistently.',
         image: `${typing_game_image}`,
-        text: 'Developed using HTML5, SCSS, JS'
+        text: 'Developed using html5, scss, js, Google Firebase'
     },
     {
         id: 3,
-        category: 'Web Development',
         link1: 'https://github.com/1107-itssamyak/Forward',
         link2: 'https://forward-455dc.web.app/index.html',
         title: 'Forward',
+        description: 'A Web Dev Project which helps in keeping track of time. The Project also displays the tracked time using Beautiful Chart.',
         image: `${forward_image}`,
-        text: 'Developed using HTML5, CSS3, JS, CHART.JS, GOOGLE FIREBASE'
+        text: 'Developed using html5, css3, chartjs, js, Google Firebase'
     },
     {
         id: 4,
-        category: 'Frontend Project',
         link1: 'https://github.com/1107-itssamyak/Pokedex-Project',
         link2: 'https://pokedex-project-1107-itssamyak.vercel.app/',
         title: 'PokeDex Project',
+        description: 'A React Project which fetches Pokemon detail from the API randomly, and displays Winner among 2 players automatically from the Pokemons user had received',
         image: `${pokedex_image}`,
         text: 'Developed using React JS, CSS3'
     },
     {
         id: 5,
-        category: 'Frontend Development',
         link1: 'https://github.com/1107-itssamyak/Frontend-development-project',
         link2: 'http://frontend-development-project.vercel.app/',
         title: 'Figma Development',
+        description: 'A Frontend Project which was developed by me. I used Figma for the Vector illustration in the development for this.',
         image: `${insignia_image}`,
-        text: 'Developed using HTML5, CSS3, JS'
+        text: 'Developed using html5, css3, js'
     }
 ]
 

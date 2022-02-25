@@ -35,7 +35,7 @@ const ImageSection = () => {
                     <span>Hey there,</span>
                 </h1>
                 <p className="paragraph">
-                    <span>UI/UX development</span> peek my Interests. I find myself developing and designing these. I am looking for more opportunities to work in coding for them.
+                    <span>UI/UX development</span> peek my Interests. I find myself developing and designing them. I am looking for more opportunities to work in coding for them.
                     <br /> Looking forward to Collabrate over Projects or Discussions which are fun & meaningful.😃
                 </p>
                 <div className="about-info">
@@ -95,7 +95,8 @@ const ImageSectionStyled = styled(motion.div)`
             font-size: 1.5rem;
             color: var(--white-color);
             padding: .5rem 0;
-            span{
+            @media screen and (max-width:800px){
+                padding: .25rem 0;
             }
         }
         .paragraph{

@@ -21,7 +21,8 @@ const HomePage = () => {
                 <h1>Hi, I'm <span>Samyak Mehta</span></h1>
                 <p>
                     I am a Prefinal year CS Undergraduate 😄,
-                    a <span>Front-end Web developer</span>.
+                    <br className='br1' />
+                    <span>Front-end Web Developer</span>.
                     <br />
                     I live in Udaipur, Rajasthan.
                     I'm working on improving my skills in scope of
@@ -60,6 +61,15 @@ const HomePageStyled = styled(motion.header)`
         p{
             font-size: 1rem;
             line-height: 1.5rem;
+            .br1{
+                    display: none;
+                    @media screen and (max-width: 650px){
+                        display: block;
+                    }
+                    @media screen and (max-width: 450px){
+                        display: none;
+                    }
+                }
         }
         @media screen and (max-width: 600px){
             padding: 0 1rem;

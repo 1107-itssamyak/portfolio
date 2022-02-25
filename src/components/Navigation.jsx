@@ -1,13 +1,23 @@
 import React from 'react'
+import Brightness4Icon from '@material-ui/icons/Brightness4';
+import CloseIcon from '@material-ui/icons/Close';
+import Switch from '@material-ui/core/Switch';
 
 // importing styled component
 import styled from 'styled-components'
 
 import { currYear } from '../data/DataImageSection';
+import { IconButton } from '@material-ui/core';
 
-const Navigation = ({ handleCloseNavbar }) => {
+const Navigation = ({ handleCloseNavbar, checked, themeToggler }) => {
     return (
-        <NavigationStyled>
+        <NavigationStyled id='navigation'>
+            <div className="close-button" onClick={handleCloseNavbar}>
+                <IconButton>
+                    <CloseIcon />
+                </IconButton>
+            </div>
+
             <ul className="nav-items">
                 <li className="nav-item">
                     <a aria-label='nav-link-tag1' onClick={handleCloseNavbar} href="#home">Home</a>
@@ -28,6 +38,21 @@ const Navigation = ({ handleCloseNavbar }) => {
                     <a aria-label='nav-link-tag6' onClick={handleCloseNavbar} href="#contact">Contact</a>
                 </li>
             </ul>
+            <ul className="nav-items">
+                <li className="nav-item">
+                    <div className="light-dark-mode">
+                        <label htmlFor="theme-toggler">
+                            <Brightness4Icon />
+                        </label>
+                        <Switch
+                            checked={checked}
+                            size="medium"
+                            id="theme-toggler"
+                            name="theme-toggler"
+                            onClick={themeToggler} />
+                    </div>
+                </li>
+            </ul>
             <footer className="footer">
                 <p>&copy;{currYear}<b> Samyak Mehta</b></p>
             </footer>
@@ -43,6 +68,16 @@ const NavigationStyled = styled.nav`
     height: 100%;
     width: 100%;
     border-right: 1px solid var(--border-color);
+
+    .close-button{
+        position: absolute;
+        top: 2%;
+        left: 5%;
+        display: none;
+        @media screen and (max-width:1200px){
+            display: block;
+        }
+    }
 
     .nav-items{
         width: 100%;
@@ -60,7 +95,7 @@ const NavigationStyled = styled.nav`
             border-radius: .5rem;
             a{
                 display: block;
-                padding: .5rem 0;
+                padding: .3rem 0;
                 position: relative;
                 z-index: 10;
                 text-transform: uppercase;

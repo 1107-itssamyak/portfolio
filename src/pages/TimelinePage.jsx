@@ -45,8 +45,11 @@ const TimelinePage = () => {
 }
 
 const TimelineStyled = styled.section`
-    min-height: 70vh;
+    min-height: 80vh;
     padding: 1rem;
+    @media screen and (max-width:800px){
+        min-height: 70vh;
+    }
     .small-title{
         margin-bottom: 2rem;
         font-weight: 600;

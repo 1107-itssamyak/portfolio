@@ -30,7 +30,10 @@ const PortfolioPage = () => {
 
 const PortfolioStyled = styled(motion.section)`
     padding: 1rem;
-    min-height: 150vh;
+    margin-bottom: 10vh;
+    @media screen and (max-width: 800px){
+        margin-bottom: 6vh;
+    }
 `
 
 export default PortfolioPage;

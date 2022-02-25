@@ -13,6 +13,11 @@ const GlobalStyle = createGlobalStyle`
     --background-light-color: #F6F9F9;
     --background-light-color-2: #037fff4d;
     --border-color: #cbced8;
+
+    --portfolio-bg: #f9f9f9;
+
+    --toggle-color: #037fff4d;
+
     --sidebar-dark-color: #F0F0F0;
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
@@ -32,6 +37,9 @@ const GlobalStyle = createGlobalStyle`
     --background-light-color: #FFF3;
     --background-light-color-2: #037fff4d;
     --border-color: #2e344e;
+
+    --toggle-color:  #037fff4d;
+
     --sidebar-dark-color: #191D2B;
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
@@ -54,7 +62,6 @@ const GlobalStyle = createGlobalStyle`
 body{
     background-color: var(--background-dark-color);
     color: var(--font-light-color);
-    /* opacity: 0.0; */
     transition: all .4s ease-in-out;
 }
 
@@ -100,57 +107,51 @@ h6{
 
 //Floting Toggler
 .light-dark-mode{
-    position: fixed;
-    right: 0;
-    top: 60%;
-    background-color: var(--background-light-color-2);
-    height: 5rem;
-    width: 3.5rem;
-    z-index: 15;
+    background-color: var(--toggle-color);
     border-radius: .75rem;
-
+    padding: 0 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 
     svg{
       display: flex;
       align-items: center;
       color: var(--white-color);
     }
-    }
+}
 
-    //Nav Toggler
-    .ham-burger-menu{
-        position: fixed;
-        right: 5%;
-        top: 2%; 
-        display: none;
-        z-index: 15;
-        @media screen and (max-width:1200px){
-            display: block;
-        }
-    }
-    
-    .arrow-up-icon{
-        position: fixed;
-        right: 5%;
-        bottom: 5%;
-        display: none;
-        z-index: 15;
+//Nav Toggler
+.ham-burger-menu{
+    position: fixed;
+    right: 5%;
+    top: 2%; 
+    display: none;
+    z-index: 15;
+    @media screen and (max-width:1200px){
         display: block;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-        border-radius: 50%;
-        @media screen and (max-width:800px){
-            bottom: 2%;
-        }
     }
+}
+    
+.arrowUp{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 15;
+    display: block;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    -webkit-backface-visibility: hidden;
+    @media screen and (max-width:800px){
+        bottom: 2%;
+    }
+}
 
-    .nav-toggle{
-        transform: translateX(0);
-        z-index: 20;
-    }
+.nav-toggle{
+    transform: translateX(0%);
+    z-index: 20;
+}
 `;
 
 export default GlobalStyle;

@@ -35,7 +35,7 @@ const SkillsPage = () => {
                         Web Development
                     </div>
                     <div className="subheading">
-                        I have worked on various <span>Web Development projects</span>. This is the tech's I knowledge and am confident about. I also have knowledge about <span>Bootstrap</span>, which is a CSS framework for developing responsive and mobile-first websites.
+                        I have worked on various <span>Web Development Projects</span>. This is the tech's Stack, I have knowledge and am confident about. I also have used <span>Bootstrap</span>, which is a CSS framework for developing responsive and mobile-first websites, for Responsive Web Projects.
                     </div>
                     <div className="skills">
                         {web_development.map((item) => (
@@ -64,7 +64,7 @@ const SkillsPage = () => {
                         Programming
                     </div>
                     <div className="subheading">
-                        I use C++ for implementing <span>Data Structures and Algorithms</span>. Javascript is helpful for me when I want to develop <span>Web projects</span>. I also have coding experience in Java & Python.
+                        For implementing of <span>Data Structures and Algorithms</span>, I use C++ Programming Language. I use Javascript Language for the development of <span>Web projects</span>. I also have coding experience in Java & Python.
                     </div>
                     <div className="skills">
                         {programming.map((item) => (
@@ -93,7 +93,7 @@ const SkillsPage = () => {
                         Tools / Libraries
                     </div>
                     <div className="subheading">
-                        These are the Tools which helps me, to make my working easier. I have experience in working on <span>React</span> Projects, use <span>Git</span> for Code Implementation & Progress tracking, <span>Figma</span> for Vector UI/UX content and using it for development of Projects.
+                        These are the Tool Stack which help me, to make my working as a <span>Developer</span> easier. I have experience on working with <span>React</span> Projects, <span>Git/Github</span> for Code Implementation & Progress tracking, <span>Figma</span> for Vector UI/UX content development and using it for Frontend Implementation & Projects Ideation.
                     </div>
                     <div className="skills">
                         {tools.map((item) => (
@@ -224,7 +224,7 @@ const ContainerStyled = styled(motion.section)`
 `
 
 const SkillsStyled = styled(motion.section)`
-    margin: 1rem;
+    padding: 1rem;
     margin-bottom: 4rem;
 `;
 

@@ -84,7 +84,6 @@ const ContactItemStyled = styled.div`
             display: flex;
             justify-content: center;
             align-items:center;
-            border: 1px solid var(--border-color);
             padding: 1rem;
             border-radius: 50%;
             @media screen and (max-width:800px){
@@ -93,7 +92,7 @@ const ContactItemStyled = styled.div`
                 border: none;
             }
         }
-
+        
         div{
             width: 50%;
             text-align: center;

@@ -21,6 +21,9 @@ const About = () => {
 const AboutStyled = styled.div`
     min-height: 80vh;
     padding: 1rem;
+    @media screen and (max-width:800px){
+        min-height: 60vh;
+    }
 `
 
 export default About;

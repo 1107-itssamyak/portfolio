@@ -19,6 +19,7 @@ const Menu = ({ data }) => {
                     </div>
                     <h2>{item.title}</h2>
                     <p>{item.text}</p>
+                    <div className='desc'>{item.description}</div>
                     <ul>
                         <li>
                             <a href={item.link1}><DescriptionIcon /> Source</a>
@@ -53,9 +54,17 @@ const MenuItemStyled = styled(motion.div)`
         font-style: italic;
     }
     p{
-        min-height: 8vh;
+        min-height: 4vh;
         margin: .5rem 1rem;
-        font-size: 1rem;
+        font-size: .9rem;
+        @media screen and (max-width:600px){
+            min-height: 4vh;
+        }
+    }
+    .desc{
+        margin: .5rem 1rem;
+        font-size: .9rem;
+        min-height: 8vh;
         @media screen and (max-width:600px){
             min-height: 4vh;
         }
@@ -81,7 +90,7 @@ const MenuItemStyled = styled(motion.div)`
                 height: 25vh;
                 
                 @media screen and (max-width:600px){
-                    width: 70%;
+                    width: 90%;
                     height: 25vh;
                 }
             }
@@ -91,7 +100,7 @@ const MenuItemStyled = styled(motion.div)`
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            margin-bottom: .75rem;
+            margin: .75rem;
             
             li{
                 border: 3px solid var(--background-light-color);
@@ -102,7 +111,7 @@ const MenuItemStyled = styled(motion.div)`
                 justify-content: center;
                 align-items:center;
                 background-color: var(--portfolio-bg);
-                color: var(--primary-color);
+                color: var(--white-color);
             }
             li svg{
                 font-size: 1rem;

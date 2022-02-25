@@ -7,10 +7,8 @@ import Sidebar from "./components/Sidebar";
 import styled from 'styled-components';
 
 // adding icons from material react
-import Brightness4Icon from '@material-ui/icons/Brightness4';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import MenuIcon from '@material-ui/icons/Menu';
-import Switch from '@material-ui/core/Switch';
 import { IconButton } from "@material-ui/core";
 
 // importing all pages here
@@ -20,9 +18,6 @@ import TimelinePage from "./pages/TimelinePage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ContactPage from "./pages/ContactPage";
 import SkillsPage from "./pages/SkillsPage";
-
-// framer motion details
-// import { motion } from "framer-motion";
 
 function App() {
 	const [theme, setTheme] = useState('light-theme');
@@ -44,20 +39,32 @@ function App() {
 	}
 
 	// handling the side navbar
-	const handleCloseNavbar = () => (setNavToggle((prev) => !prev))
+	const handleCloseNavbar = () => setNavToggle((prev) => !prev)
+
+	// closing navbar permanently & clean up function for eventlistener
+	function afterNavClose() {
+		setNavToggle(false);
+		window.removeEventListener('click', afterNavClose)
+	}
+
+	if (navToggle) {
+		setTimeout(() => {
+			window.addEventListener('click', afterNavClose)
+		}, 1);
+	}
 
 	// handling the arrow up button
 	const handleArrowUpClick = () => {
 		setTimeout(() => {
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
-		}, 200);
+		}, 150);
 	}
 
 	window.onscroll = () => scrollFunction();
 
 	const scrollFunction = () => {
-		const arrowUp = document.querySelector('#arrowUp');
+		const arrowUp = document.querySelector('.arrowUp');
 		if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
 			arrowUp.style.display = "block";
 		} else {
@@ -69,30 +76,19 @@ function App() {
 		<div className="App">
 			<div className="ham-burger-menu">
 				<IconButton
-					onClick={handleCloseNavbar}
 					name="ham-burger-menu"
-					aria-label="ham-burger-menu" >
+					aria-label="ham-burger-menu"
+					onClick={handleCloseNavbar}
+					id="ham-burger">
 					<MenuIcon />
 				</IconButton>
 			</div>
 
 			<Sidebar
 				navToggle={navToggle}
+				checked={checked}
+				themeToggler={themeToggler}
 				handleCloseNavbar={handleCloseNavbar} />
-
-			<div className="theme">
-				<div className="light-dark-mode">
-					<label htmlFor="theme-toggler">
-						<Brightness4Icon />
-					</label>
-					<Switch
-						checked={checked}
-						size="medium"
-						id="theme-toggler"
-						name="theme-toggler"
-						onClick={themeToggler} />
-				</div>
-			</div>
 
 			<MainContentStyled>
 				<HomePage />
@@ -103,12 +99,12 @@ function App() {
 				<ContactPage />
 			</MainContentStyled>
 
-			<div className="arrow-up-icon">
+			<div className="arrowUp">
 				<IconButton
 					onClick={handleArrowUpClick}
 					aria-label="arrow-up-icon" >
 					<ArrowUpwardIcon
-						id="arrowUp" />
+						id="arrow-up-icon" />
 				</IconButton>
 			</div>
 		</div>
@@ -117,10 +113,10 @@ function App() {
 
 const MainContentStyled = styled.main`
 	position: relative;
-	margin-left: 16.3rem;
+	margin-right: 18.3rem;
 	min-height: 100vh;
 	@media screen and (max-width:1200px){
-		margin-left: 0;
+		margin-right: 0;
 	}
 `;
 
