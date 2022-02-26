@@ -41,7 +41,8 @@ const HomePageStyled = styled(motion.header)`
     justify-content: center;
     align-items: center;
     padding: 1rem;
-
+    padding-top: 2rem;
+    
     .typography{
         width: 100%;
         text-align: center;

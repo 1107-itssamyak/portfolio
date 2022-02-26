@@ -57,6 +57,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     color: var(--white-color);
     scroll-behavior: smooth;
+    opacity: 0.99;
 }
 
 body{
@@ -108,7 +109,7 @@ h6{
 //Floting Toggler
 .light-dark-mode{
     background-color: var(--toggle-color);
-    border-radius: .75rem;
+    border-radius: .5rem;
     padding: 0 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -133,7 +134,11 @@ h6{
         display: block;
     }
 }
-    
+
+.active-class{
+    background-color: var(--background-light-color-2);
+}
+
 .arrowUp{
     position: fixed;
     right: 5%;
@@ -143,8 +148,8 @@ h6{
     display: block;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-    -webkit-backface-visibility: hidden;
-    @media screen and (max-width:800px){
+    /* -webkit-backface-visibility: hidden; */
+    @media screen and (max-width:1200px){
         bottom: 2%;
         margin-right: 0;
     }

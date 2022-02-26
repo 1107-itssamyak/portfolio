@@ -150,16 +150,17 @@ const ContainerStyled = styled(motion.section)`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
     width: 100%;
     margin: 2rem 0;
 
     &:nth-child(2n){
         flex-direction: reverse;
     }
+
     .left-content{
         padding: 0 .75rem;
-        width: 50%;
+        flex: 0.6;
         .heading{
             text-decoration: underline;
             font-size: 1.2rem;
@@ -181,21 +182,23 @@ const ContainerStyled = styled(motion.section)`
             align-items: center;
             flex-direction: column;
         }
+
+        @media screen and (max-width:800px){
+            width: 100%;
+        }
     }
 
     .right-content{
-        margin: 0 .75rem;
-        width: 50%;
+        flex: 0.5;
         display: flex;
         justify-content: center;
         align-items: center;
         img{
-            width: 50%;
-            height: 100%;
+            width: 70%;
             object-fit: cover;
             padding: 1rem;
-            @media screen and (max-width:800px){
-                margin: 2rem 0;
+            @media screen and (max-width:800px) {
+                width: 60%;
             }
         }
     }
@@ -203,28 +206,12 @@ const ContainerStyled = styled(motion.section)`
     @media screen and (max-width:800px){
         margin: 1.5rem 0;        
         flex-direction: column;
-        .left-content{
-            width: 100%;
-            span{
-            }
-            .subheading, .skills{
-            }
-        }
-
-        .right-content{
-            img{
-                width: 20rem;
-                object-fit: cover;
-                @media screen and (max-width:600px){
-                    width: 15rem;
-                }
-            }
-        }
-  }
+    }
 `
 
 const SkillsStyled = styled(motion.section)`
     padding: 1rem;
+    padding-top: 2rem;
     margin-bottom: 4rem;
 `;
 

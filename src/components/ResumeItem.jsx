@@ -6,99 +6,65 @@ import styled from 'styled-components'
 function ResumeItem({ year, title, subTitle, text }) {
     return (
         <ResumeItemStyled>
-            <div className="left-content">
-                <p>{year}</p>
-            </div>
-            <div className="right-content">
-                <div className='title'>{title}</div>
-                <div className='subtitle'>{subTitle}</div>
-                <p>{text}</p>
-            </div>
+            <p>{year}</p>
+            <div className='title'>{title}</div>
+            <div className='subtitle'>{subTitle}</div>
+            <div className='text'>{text}</div>
         </ResumeItemStyled>
     )
 }
 
 const ResumeItemStyled = styled.div`
     display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+
     &:not(:last-child){
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
     }
     
-    .left-content{
-        width: 35vw;
-        position: relative;
-        padding-left: 2rem;
-        &::before{
-            content: "";
-            position: absolute;
+    &::before{
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 10px;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        border: 2px solid var(--border-color);
+        background-color: var(--background-dark-color);
+        @media screen and (max-width: 800px){
             left: -10px;
-            top: 10px;
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            border: 2px solid var(--border-color);
-            background-color: var(--background-dark-color);
-            @media screen and (max-width: 800px){
-                left: -10px;
-            }
-        }
-        p{
-            align-text: center;
-            display: inline-block;
-            padding: .6rem .8rem .2rem .8rem;
-            @media screen and (max-width: 800px){
-                padding: .4rem .8rem;
-            }
-        }
-        @media screen and (max-width:800px){
-            width: 30%;
-            padding-left: 1rem;
         }
     }
+
+    padding-left: 2rem;
+    p{
+        display: inline-block;
+        padding: .5rem 0;
+        @media screen and (max-width: 800px){
+            padding: .4rem 0;
+        }
+    }    
     
-    .right-content{
-        text-align: center;
-        width: 65vw;
-        padding-left: 2rem;
-        position: relative;
-        &::before{
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 10px;
-            height: 2px;
-            width: 3rem;
-            background-color: var(--border-color);
-            transform: translate(35%, 200%);
-            @media screen and (max-width:800px){
-                left: -5%;
-                width: 1.5rem;
-            }
-            @media screen and (max-width: 450px){
-                left: 5%;
-                width: .75rem;
-            }
-        }
-        .title{
+    .title{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--primary-color);
+        margin-bottom: .5rem;
+        @media screen and (max-width:800px){
             font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--primary-color);
-            @media screen and (max-width:800px){
-                font-size: 1.2rem;
-            }
         }
-        .subtitle{
-            font-size: 1.2rem;
-            @media screen and (max-width:800px){
-                font-size: 1rem;
-            }
-        }
-        p{
+    }
+    .subtitle{
+        font-size: 1rem;
+        @media screen and (max-width:800px){
             font-size: 1rem;
         }
-        @media screen and (max-width: 800px){
-            text-align: center;
-        }
+    }
+    .text{
+        font-size: 1rem;
     }
 `;
 

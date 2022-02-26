@@ -21,7 +21,7 @@ const Navigation = ({ handleCloseNavbar, checked, themeToggler }) => {
 
             <ul className="nav-items">
                 <li className="nav-item">
-                    <a aria-label='nav-link-tag1' href="#home">Home</a>
+                    <a aria-label='nav-link-tag1' className='active-class' href="#home">Home</a>
                 </li>
                 <li className="nav-item">
                     <a aria-label='nav-link-tag2' href="#about">About</a>
@@ -92,30 +92,32 @@ const NavigationStyled = styled.nav`
         
         .nav-item{
             display: block;
-            padding: .1rem .5rem;
+            padding: .1rem .25rem;
             border-radius: .5rem;
             a{
                 display: block;
-                padding: .3rem 0;
+                padding: .45rem 0;
                 position: relative;
                 z-index: 10;
                 text-transform: uppercase;
                 transition: all .4s ease-in-out;
                 font-weight: 600;
                 color: var(--white-color);
-
+                border-radius: .5rem;
+                
                 &:hover{
                     cursor: pointer;
                 }
                 &::before{
                     content: "";
                     position: absolute;
-                    top: 0;
+                    bottom: 0;
                     left: 0;
                     width: 0;
                     height: 50%;
                     background-color: var( --primary-color);
                     transition: All 0.4s cubic-bezier(1,-0.2,.25,.95) ;
+                    border-radius: .5rem;
                     opacity: 0.21;
                     z-index: -1;
                 }

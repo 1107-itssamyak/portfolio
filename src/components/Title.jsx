@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion'
 import React from 'react'
+import { motion } from 'framer-motion'
 
 // importing styled component
 import styled from 'styled-components'
@@ -24,14 +24,13 @@ const Title = ({ title }) => {
 }
 
 const TitleStyled = styled(motion.div)`
+    margin: 0 0 2.5rem 1rem;
     position: relative;
-    margin-bottom: 2.5rem;
     
     h2{
         color: var(--white-color);
         text-transform: uppercase;
         position: relative;
-        /* font-style: italic; */
         margin-bottom: 2rem;
         font-size: 2rem;
         @media screen and (max-width:1000px){

@@ -10,19 +10,18 @@ function SkillStats({ tools: { title, id } }) {
 }
 
 const SkillState = styled.div`
-    width: 70%;
+    width: 60%;
     text-align: center;
     color: var(--font-light-color);
     background-color: var(--background-light-color-2);
     text-transform: uppercase;
     border-radius: .5rem;
     font-weight: bold;
-    box-shadow: var(--box-shadow-color) 0px 1px 2px 0px;
-    padding: 12px 14px;
+    padding: 8px 12px;
     margin: .5rem 0;
     @media screen and (max-width:600px){
-        width: 60%;
-        padding: 14px;
+        width: 70%;
+        padding: 12px 14px;
     }
     @media screen and (max-width:450px){
         width: 100%;

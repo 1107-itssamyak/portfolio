@@ -10,7 +10,7 @@ const About = () => {
     const pageName = "about me";
 
     return (
-        <AboutStyled id="about">
+        <AboutStyled id="about" >
             <Title
                 title={pageName} />
             <ImageSection />
@@ -19,8 +19,9 @@ const About = () => {
 }
 
 const AboutStyled = styled.div`
-    min-height: 80vh;
+    min-height: 100vh;
     padding: 1rem;
+    padding-top: 2rem;
     @media screen and (max-width:800px){
         min-height: 60vh;
     }

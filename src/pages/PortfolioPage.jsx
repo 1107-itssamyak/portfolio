@@ -13,7 +13,7 @@ import { useScroll } from '../animation/useScroll';
 import { fade } from '../animation/animation';
 
 const PortfolioPage = () => {
-    const [ref, controls] = useScroll(0.2);
+    const [ref, controls] = useScroll(0.1);
 
     const pageName = "portfolio";
     return (
@@ -30,6 +30,7 @@ const PortfolioPage = () => {
 
 const PortfolioStyled = styled(motion.section)`
     padding: 1rem;
+    padding-top: 2rem;
     margin-bottom: 10vh;
     @media screen and (max-width: 800px){
         margin-bottom: 6vh;
