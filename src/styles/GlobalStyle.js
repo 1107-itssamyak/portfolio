@@ -139,12 +139,14 @@ h6{
     right: 5%;
     bottom: 5%;
     z-index: 15;
+    margin-right: 16rem;
     display: block;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     -webkit-backface-visibility: hidden;
     @media screen and (max-width:800px){
         bottom: 2%;
+        margin-right: 0;
     }
 }
 

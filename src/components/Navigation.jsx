@@ -13,29 +13,30 @@ const Navigation = ({ handleCloseNavbar, checked, themeToggler }) => {
     return (
         <NavigationStyled id='navigation'>
             <div className="close-button" onClick={handleCloseNavbar}>
-                <IconButton>
+                <IconButton
+                    aria-label="sidenav-close-button" >
                     <CloseIcon />
                 </IconButton>
             </div>
 
             <ul className="nav-items">
                 <li className="nav-item">
-                    <a aria-label='nav-link-tag1' onClick={handleCloseNavbar} href="#home">Home</a>
+                    <a aria-label='nav-link-tag1' href="#home">Home</a>
                 </li>
                 <li className="nav-item">
-                    <a aria-label='nav-link-tag2' onClick={handleCloseNavbar} href="#about">About</a>
+                    <a aria-label='nav-link-tag2' href="#about">About</a>
                 </li>
                 <li className="nav-item">
-                    <a aria-label='nav-link-tag3' onClick={handleCloseNavbar} href="#timeline">Timeline</a>
+                    <a aria-label='nav-link-tag3' href="#timeline">Timeline</a>
                 </li>
                 <li className="nav-item">
-                    <a aria-label='nav-link-tag4' onClick={handleCloseNavbar} href="#skills">Skills</a>
+                    <a aria-label='nav-link-tag4' href="#skills">Skills</a>
                 </li>
                 <li className="nav-item">
-                    <a aria-label='nav-link-tag5' onClick={handleCloseNavbar} href="#portfolio">Portfolio</a>
+                    <a aria-label='nav-link-tag5' href="#portfolio">Portfolio</a>
                 </li>
                 <li className="nav-item">
-                    <a aria-label='nav-link-tag6' onClick={handleCloseNavbar} href="#contact">Contact</a>
+                    <a aria-label='nav-link-tag6' href="#contact">Contact</a>
                 </li>
             </ul>
             <ul className="nav-items">
@@ -71,8 +72,8 @@ const NavigationStyled = styled.nav`
 
     .close-button{
         position: absolute;
+        right: 5%;
         top: 2%;
-        left: 5%;
         display: none;
         @media screen and (max-width:1200px){
             display: block;

@@ -18,8 +18,7 @@ const ContactItem = ({ phone, contact, github, linkedIn, mail, instagram }) => {
                         href="mailto:samyak.mehta11@gmail.com"
                         rel="noreferrer"
                         target="_blank"
-                        aria-label='contact-link-tag2'
-                    >
+                        aria-label='contact-link-tag2' >
                         {mail}
                     </a>
                     <div>email</div>

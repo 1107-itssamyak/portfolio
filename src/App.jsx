@@ -64,8 +64,9 @@ function App() {
 	window.onscroll = () => scrollFunction();
 
 	const scrollFunction = () => {
+		setNavToggle(false);
 		const arrowUp = document.querySelector('.arrowUp');
-		if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+		if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
 			arrowUp.style.display = "block";
 		} else {
 			arrowUp.style.display = "none";
