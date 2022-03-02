@@ -102,7 +102,7 @@ const NavigationStyled = styled.nav`
         
         .nav-item{
             display: block;
-            padding: .25rem;
+            padding: .25rem;fire
             border-radius: .5rem;
 
             a{
