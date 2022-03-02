@@ -19,20 +19,28 @@ import PortfolioPage from "./pages/PortfolioPage";
 import ContactPage from "./pages/ContactPage";
 import SkillsPage from "./pages/SkillsPage";
 
+import './styles/HomeAnimation.css';
+
 function App() {
 	const [theme, setTheme] = useState('light-theme');
 	const [checked, setChecked] = useState(true);
 	const [navToggle, setNavToggle] = useState(false);
 
 	useEffect(() => {
+		localStorage.getItem('theme')
+			? setTheme(localStorage.getItem('theme'))
+			: localStorage.setItem('theme', 'light-theme');
+
 		document.documentElement.className = theme;
 	}, [theme]);
 
 	const themeToggler = () => {
 		if (theme === 'light-theme') {
+			localStorage.setItem('theme', 'dark-theme');
 			setTheme('dark-theme');
 			setChecked(false)
 		} else {
+			localStorage.setItem('theme', 'light-theme');
 			setTheme('light-theme');
 			setChecked(true)
 		}
@@ -73,20 +81,36 @@ function App() {
 		}
 	}
 
+	let indents = [];
+	for (let i = 0; i < 30; i++) {
+		indents.push(<div className='indent' key={i}></div>);
+	}
+
 	return (
 		<div className="App">
-			<ul className="circles">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+			<div className="container">
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+				<div className="kartanesi"></div>
+			</div>
 
 			<div className="ham-burger-menu">
 				<IconButton

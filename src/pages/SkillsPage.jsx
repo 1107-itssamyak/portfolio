@@ -195,12 +195,15 @@ const ContainerStyled = styled(motion.section)`
         align-items: center;
         img{
             width: 70%;
-            height: fit-content;
+            /* height: fit-content; */
             object-fit: cover;
             padding: 1rem;
             @media screen and (max-width:800px) {
                 width: 50%;
                 margin: 1rem 0;
+            }
+            @media screen and (max-width:800px) {
+                width: 70%;
             }
         }
     }

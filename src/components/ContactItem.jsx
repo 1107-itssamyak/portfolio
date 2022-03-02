@@ -90,11 +90,11 @@ const ContactItemStyled = styled.div`
             padding: .75rem;
             margin: .25rem;
             @media screen and (max-width:800px){
-                width: 80%;
+                width: 100%;
                 padding: .75rem .5rem;
             }
             @media screen and (max-width:800px){
-                width: 100%;
+                padding: .5rem;
             }
 
             div{
