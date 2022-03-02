@@ -198,7 +198,8 @@ const ContainerStyled = styled(motion.section)`
             object-fit: cover;
             padding: 1rem;
             @media screen and (max-width:800px) {
-                width: 60%;
+                width: 50%;
+                margin: 1rem 0;
             }
         }
     }

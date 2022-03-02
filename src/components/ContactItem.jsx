@@ -10,8 +10,10 @@ const ContactItem = ({ phone, contact, github, linkedIn, mail, instagram }) => {
                 <div className='content'>
                     <a
                         href={`Tel:${contact}`}
-                        aria-label='contact-link-tag1' >{phone}</a>
-                    <div>contact no.</div>
+                        aria-label='contact-link-tag1' >
+                        {phone}
+                        <div>contact no.</div>
+                    </a>
                 </div>
                 <div className='content'>
                     <a
@@ -20,8 +22,8 @@ const ContactItem = ({ phone, contact, github, linkedIn, mail, instagram }) => {
                         target="_blank"
                         aria-label='contact-link-tag2' >
                         {mail}
+                        <div>email</div>
                     </a>
-                    <div>email</div>
                 </div>
                 <div className='content'>
                     <a
@@ -30,8 +32,8 @@ const ContactItem = ({ phone, contact, github, linkedIn, mail, instagram }) => {
                         target="_blank"
                         aria-label='contact-link-tag3'>
                         {github}
+                        <div>github</div>
                     </a>
-                    <div>github</div>
                 </div>
                 <div className='content'>
                     <a
@@ -40,8 +42,8 @@ const ContactItem = ({ phone, contact, github, linkedIn, mail, instagram }) => {
                         target="_blank"
                         aria-label='contact-link-tag4'>
                         {linkedIn}
+                        <div>linked in</div>
                     </a>
-                    <div>linked in</div>
                 </div>
                 <div className='content'>
                     <a
@@ -50,8 +52,8 @@ const ContactItem = ({ phone, contact, github, linkedIn, mail, instagram }) => {
                         target="_blank"
                         aria-label='contact-link-tag5'>
                         {instagram}
+                        <div>instagram</div>
                     </a>
-                    <div>instagram</div>
                 </div>
             </div>
         </ContactItemStyled >
@@ -69,7 +71,7 @@ const ContactItemStyled = styled.div`
     .content{
         text-transform: uppercase;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items:center;
         font-size: 1.2rem;
         margin-bottom: 4rem;
@@ -79,23 +81,28 @@ const ContactItemStyled = styled.div`
         }
         
         a{
-            width: 15%;
+            width: 80%;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items:center;
-            padding: 1rem;
-            border-radius: 50%;
+            border: 1px solid var(--primary-color);
+            border-radius: 10px;
+            padding: .75rem;
+            margin: .25rem;
             @media screen and (max-width:800px){
-                width: 10%;
-                padding: .5rem;
-                border: none;
+                width: 80%;
+                padding: .75rem .5rem;
             }
-        }
-        
-        div{
-            width: 50%;
-            text-align: center;
-            font-size: 1.2rem;
+            @media screen and (max-width:800px){
+                width: 100%;
+            }
+
+            div{
+                white-space: nowrap;
+                width: 50%;
+                text-align: center;
+                font-size: 1.2rem;
+            }
         }
     }
 `;

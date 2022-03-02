@@ -171,6 +171,7 @@ const ContactPageStyled = styled(motion.section)`
                     padding: 0 .2rem;
                     background-color: var(--background-dark-color);
                     color: inherit;
+                    z-index: 10;
                     font-size: 1rem;
                 }
                 input{

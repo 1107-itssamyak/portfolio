@@ -10,6 +10,22 @@ import { currYear } from '../data/DataImageSection';
 import { IconButton } from '@material-ui/core';
 
 const Navigation = ({ handleCloseNavbar, checked, themeToggler }) => {
+    const removeColorAll = () => {
+        document.querySelector('#id_home').classList.remove('active-class');
+        document.querySelector('#id_about').classList.remove('active-class');
+        document.querySelector('#id_timeline').classList.remove('active-class');
+        document.querySelector('#id_skills').classList.remove('active-class');
+        document.querySelector('#id_portfolio').classList.remove('active-class');
+        document.querySelector('#id_contact').classList.remove('active-class');
+    }
+
+    const handleClick = (e) => {
+        removeColorAll();
+
+        let name = '#' + e.target.id;
+        document.querySelector(`${name}`).classList.add('active-class');
+    }
+
     return (
         <NavigationStyled id='navigation'>
             <div className="close-button" onClick={handleCloseNavbar}>
@@ -21,22 +37,22 @@ const Navigation = ({ handleCloseNavbar, checked, themeToggler }) => {
 
             <ul className="nav-items">
                 <li className="nav-item">
-                    <a aria-label='nav-link-tag1' className='active-class' href="#home">Home</a>
+                    <a aria-label='nav-link-tag1' id="id_home" className='active-class' onClick={handleClick} href="#home">Home</a>
                 </li>
                 <li className="nav-item">
-                    <a aria-label='nav-link-tag2' href="#about">About</a>
+                    <a aria-label='nav-link-tag2' id="id_about" onClick={handleClick} href="#about">About</a>
                 </li>
                 <li className="nav-item">
-                    <a aria-label='nav-link-tag3' href="#timeline">Timeline</a>
+                    <a aria-label='nav-link-tag3' id="id_timeline" onClick={handleClick} href="#timeline">Timeline</a>
                 </li>
                 <li className="nav-item">
-                    <a aria-label='nav-link-tag4' href="#skills">Skills</a>
+                    <a aria-label='nav-link-tag4' id="id_skills" onClick={handleClick} href="#skills">Skills</a>
                 </li>
                 <li className="nav-item">
-                    <a aria-label='nav-link-tag5' href="#portfolio">Portfolio</a>
+                    <a aria-label='nav-link-tag5' id="id_portfolio" onClick={handleClick} href="#portfolio">Portfolio</a>
                 </li>
                 <li className="nav-item">
-                    <a aria-label='nav-link-tag6' href="#contact">Contact</a>
+                    <a aria-label='nav-link-tag6' id="id_contact" onClick={handleClick} href="#contact">Contact</a>
                 </li>
             </ul>
             <ul className="nav-items">
@@ -83,20 +99,15 @@ const NavigationStyled = styled.nav`
     .nav-items{
         width: 100%;
         text-align: center;
-
-        /* check via intersection observer the presence of nav a */
-        /* .active-class{
-            background-color: var(--primary-color-light);
-            color: white;
-        } */
         
         .nav-item{
             display: block;
-            padding: .1rem .25rem;
+            padding: .25rem;
             border-radius: .5rem;
+
             a{
                 display: block;
-                padding: .45rem 0;
+                padding: .6rem 0;
                 position: relative;
                 z-index: 10;
                 text-transform: uppercase;
