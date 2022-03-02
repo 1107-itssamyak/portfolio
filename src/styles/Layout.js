@@ -10,7 +10,7 @@ const InnerLayout = styled(motion.div)`
     padding: 0 1rem;
 `;
 
-const ButtonStyled = styled(motion.a)`
+const ButtonStyled = styled(motion.button)`
     background-color: var(--button-styled-bg-color);
     color: white;
     cursor: pointer;
@@ -21,6 +21,7 @@ const ButtonStyled = styled(motion.a)`
     margin: 1rem 0;
     text-transform: uppercase;
     position: relative;
+    border: none;
     transition: all .4s ease-in-out;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;

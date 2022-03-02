@@ -19,7 +19,7 @@ const HomePage = () => {
             id="home" >
             <div className="typography">
                 <h1>Hi, I'm <span>Samyak Mehta</span></h1>
-                <p>
+                <div>
                     I am a Prefinal year CS Undergraduate 😄,
                     <br className='br1' />
                     <span>Front-end Web Developer</span>.
@@ -28,7 +28,7 @@ const HomePage = () => {
                     I'm working on improving my skills in scope of
                     <br />
                     <span>Full Stack Web Development</span>.
-                </p>
+                </div>
             </div>
         </HomePageStyled>
     )
@@ -55,11 +55,9 @@ const HomePageStyled = styled(motion.header)`
             @media screen and (max-width:1000px){
                 font-size: 1.5rem;
             }
-            @media screen and (max-width:600px){
-                font-size: 1.2rem;
-            }
         }
-        p{
+        div{
+            z-index: 1;
             font-size: 1rem;
             line-height: 1.5rem;
             .br1{

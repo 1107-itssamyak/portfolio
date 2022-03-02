@@ -75,6 +75,19 @@ function App() {
 
 	return (
 		<div className="App">
+			<ul className="circles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+
 			<div className="ham-burger-menu">
 				<IconButton
 					name="ham-burger-menu"

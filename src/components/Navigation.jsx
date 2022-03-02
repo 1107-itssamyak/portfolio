@@ -57,10 +57,10 @@ const Navigation = ({ handleCloseNavbar, checked, themeToggler }) => {
             </ul>
             <ul className="nav-items">
                 <li className="nav-item">
-                    <div className="light-dark-mode">
-                        <label htmlFor="theme-toggler">
-                            <Brightness4Icon />
-                        </label>
+                    <div className="light-dark-mode" onClick={themeToggler}>
+                        <Brightness4Icon />
+                        {/* <input type="checkbox" checked={checked} id="theme-toggler" /> */}
+                        {/* Theme */}
                         <Switch
                             checked={checked}
                             size="medium"

@@ -16,6 +16,10 @@ import { useScroll } from '../animation/useScroll';
 const ImageSection = () => {
     const [ref, controls] = useScroll(0.25);
 
+    const handleResumeClick = () => {
+        window.open(resume);
+    }
+
     return (
         <ImageSectionStyled ref={ref}>
             <div className="left-content">
@@ -59,7 +63,7 @@ const ImageSection = () => {
                     initial="hidden"
                     exit="exit"
                     animate={controls}
-                    href={resume}
+                    onClick={handleResumeClick}
                     target='_blank'
                     rel='noopener noreferrer'>
                     Download CV
