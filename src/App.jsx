@@ -49,18 +49,6 @@ function App() {
 	// handling the side navbar
 	const handleCloseNavbar = () => setNavToggle((prev) => !prev)
 
-	// closing navbar permanently & clean up function for eventlistener
-	function afterNavClose() {
-		setNavToggle(false);
-		window.removeEventListener('click', afterNavClose)
-	}
-
-	if (navToggle) {
-		setTimeout(() => {
-			window.addEventListener('click', afterNavClose)
-		}, 1);
-	}
-
 	// handling the arrow up button
 	const handleArrowUpClick = () => {
 		setTimeout(() => {
@@ -69,7 +57,8 @@ function App() {
 		}, 150);
 	}
 
-	window.onscroll = () => scrollFunction();
+	if (navToggle)
+		window.onscroll = () => scrollFunction();
 
 	const scrollFunction = () => {
 		setNavToggle(false);
@@ -81,13 +70,8 @@ function App() {
 		}
 	}
 
-	let indents = [];
-	for (let i = 0; i < 30; i++) {
-		indents.push(<div className='indent' key={i}></div>);
-	}
-
 	return (
-		<div className="App">
+		<>
 			<div className="container">
 				<div className="kartanesi"></div>
 				<div className="kartanesi"></div>
@@ -145,7 +129,7 @@ function App() {
 						id="arrow-up-icon" />
 				</IconButton>
 			</div>
-		</div>
+		</>
 	);
 }
 

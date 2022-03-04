@@ -126,12 +126,18 @@ h6{
 //Nav Toggler
 .ham-burger-menu{
     position: fixed;
-    right: 5%;
-    top: 2%; 
+    width: 100%;
+    top: 0%;
     display: none;
     z-index: 15;
     @media screen and (max-width:1200px){
-        display: block;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 2% 2% 0 0;
+    }
+    @media screen and (max-width:600px){
+        padding: 2% 3% 0 0;
     }
 }
 
