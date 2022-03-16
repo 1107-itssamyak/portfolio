@@ -152,7 +152,7 @@ const ContainerStyled = styled(motion.section)`
     align-items: center;
     flex-direction: row-reverse;
     width: 100%;
-    margin: 2rem 0;
+    margin: 4rem 0;
 
     &:nth-child(2n){
         flex-direction: reverse;
@@ -208,7 +208,11 @@ const ContainerStyled = styled(motion.section)`
         }
     }
 
-    @media screen and (max-width:800px){
+    @media screen and (max-width:1000px){
+        margin: 2rem 0;
+    }
+
+    @media screen and (max-width:600px){
         margin: 1.5rem 0;        
         flex-direction: column;
     }
