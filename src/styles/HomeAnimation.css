@@ -21,267 +21,267 @@
 @-webkit-keyframes key_frame_for_round_div {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
     -webkit-transform: translate3d(0, 100vh, 0);
-            transform: translate3d(0, 100vh, 0);
+    transform: translate3d(0, 100vh, 0);
   }
 }
 
 @keyframes key_frame_for_round_div {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
     -webkit-transform: translate3d(0, 100vh, 0);
-            transform: translate3d(0, 100vh, 0);
+    transform: translate3d(0, 100vh, 0);
   }
 }
 
 .kartanesi:nth-child(1) {
-  --size: 0.085rem;
-  --left-ini: -6vw;
-  --left-end: 4vw;
-  left: 22vw;
-  border-radius: 8px;
-  -webkit-animation: key_frame_for_round_div 7s linear infinite;
-          animation: key_frame_for_round_div 7s linear infinite;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  --size: 0.45rem;
+  --left-ini: -1vw;
+  --left-end: 10vw;
+  left: 53vw;
+  border-radius: 10px;
+  -webkit-animation: key_frame_for_round_div 13s linear infinite;
+  animation: key_frame_for_round_div 13s linear infinite;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
 }
 
 .kartanesi:nth-child(2) {
-  --size: 0.68rem;
-  --left-ini: 4vw;
-  --left-end: 4vw;
-  left: 80vw;
-  border-radius: 10px;
-  -webkit-animation: key_frame_for_round_div 7s linear infinite;
-          animation: key_frame_for_round_div 7s linear infinite;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  --size: 0.09rem;
+  --left-ini: 9vw;
+  --left-end: 2vw;
+  left: 74vw;
+  border-radius: 11px;
+  -webkit-animation: key_frame_for_round_div 6s linear infinite;
+  animation: key_frame_for_round_div 6s linear infinite;
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
 }
 
 .kartanesi:nth-child(3) {
-  --size: 0.595rem;
-  --left-ini: -6vw;
-  --left-end: -8vw;
-  left: 20vw;
-  border-radius: 12px;
-  -webkit-animation: key_frame_for_round_div 13s linear infinite;
-          animation: key_frame_for_round_div 13s linear infinite;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  --size: 0.36rem;
+  --left-ini: 6vw;
+  --left-end: 6vw;
+  left: 30vw;
+  border-radius: 5px;
+  -webkit-animation: key_frame_for_round_div 8s linear infinite;
+  animation: key_frame_for_round_div 8s linear infinite;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
 }
 
 .kartanesi:nth-child(4) {
-  --size: 0.51rem;
-  --left-ini: -4vw;
-  --left-end: 6vw;
-  left: 46vw;
-  border-radius: 13px;
-  -webkit-animation: key_frame_for_round_div 12s linear infinite;
-          animation: key_frame_for_round_div 12s linear infinite;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  --size: 0.315rem;
+  --left-ini: -7vw;
+  --left-end: -5vw;
+  left: 94vw;
+  border-radius: 7px;
+  -webkit-animation: key_frame_for_round_div 6s linear infinite;
+  animation: key_frame_for_round_div 6s linear infinite;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 .kartanesi:nth-child(5) {
-  --size: 0.17rem;
-  --left-ini: 4vw;
-  --left-end: -2vw;
-  left: 20vw;
+  --size: 0.225rem;
+  --left-ini: 7vw;
+  --left-end: -9vw;
+  left: 100vw;
   border-radius: 9px;
-  -webkit-animation: key_frame_for_round_div 11s linear infinite;
-          animation: key_frame_for_round_div 11s linear infinite;
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
+  -webkit-animation: key_frame_for_round_div 6s linear infinite;
+  animation: key_frame_for_round_div 6s linear infinite;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .kartanesi:nth-child(6) {
-  --size: 0.255rem;
-  --left-ini: 6vw;
-  --left-end: 5vw;
-  left: 80vw;
-  border-radius: 7px;
-  -webkit-animation: key_frame_for_round_div 9s linear infinite;
-          animation: key_frame_for_round_div 9s linear infinite;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  --size: 0.18rem;
+  --left-ini: -2vw;
+  --left-end: -6vw;
+  left: 35vw;
+  border-radius: 11px;
+  -webkit-animation: key_frame_for_round_div 13s linear infinite;
+  animation: key_frame_for_round_div 13s linear infinite;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
 }
 
 .kartanesi:nth-child(7) {
-  --size: 0.085rem;
-  --left-ini: 2vw;
-  --left-end: 4vw;
-  left: 92vw;
-  border-radius: 9px;
-  -webkit-animation: key_frame_for_round_div 12s linear infinite;
-          animation: key_frame_for_round_div 12s linear infinite;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  --size: 0.315rem;
+  --left-ini: -2vw;
+  --left-end: -8vw;
+  left: 66vw;
+  border-radius: 12px;
+  -webkit-animation: key_frame_for_round_div 8s linear infinite;
+  animation: key_frame_for_round_div 8s linear infinite;
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
 }
 
 .kartanesi:nth-child(8) {
-  --size: 0.425rem;
-  --left-ini: 0vw;
-  --left-end: 8vw;
-  left: 95vw;
-  border-radius: 8px;
-  -webkit-animation: key_frame_for_round_div 8s linear infinite;
-          animation: key_frame_for_round_div 8s linear infinite;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  --size: 0.315rem;
+  --left-ini: 8vw;
+  --left-end: -1vw;
+  left: 85vw;
+  border-radius: 13px;
+  -webkit-animation: key_frame_for_round_div 7s linear infinite;
+  animation: key_frame_for_round_div 7s linear infinite;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
 }
 
 .kartanesi:nth-child(9) {
-  --size: 0.17rem;
-  --left-ini: 10vw;
-  --left-end: 1vw;
-  left: 78vw;
-  border-radius: 6px;
-  -webkit-animation: key_frame_for_round_div 10s linear infinite;
-          animation: key_frame_for_round_div 10s linear infinite;
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
+  --size: 0.405rem;
+  --left-ini: 0vw;
+  --left-end: 9vw;
+  left: 86vw;
+  border-radius: 10px;
+  -webkit-animation: key_frame_for_round_div 12s linear infinite;
+  animation: key_frame_for_round_div 12s linear infinite;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
 }
 
 .kartanesi:nth-child(10) {
-  --size: 0.255rem;
-  --left-ini: -6vw;
-  --left-end: -6vw;
-  left: 44vw;
-  border-radius: 5px;
-  -webkit-animation: key_frame_for_round_div 10s linear infinite;
-          animation: key_frame_for_round_div 10s linear infinite;
+  --size: 0.315rem;
+  --left-ini: 5vw;
+  --left-end: 4vw;
+  left: 75vw;
+  border-radius: 12px;
+  -webkit-animation: key_frame_for_round_div 11s linear infinite;
+  animation: key_frame_for_round_div 11s linear infinite;
   -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .kartanesi:nth-child(11) {
-  --size: 0.85rem;
-  --left-ini: 4vw;
-  --left-end: -5vw;
-  left: 98vw;
-  border-radius: 5px;
-  -webkit-animation: key_frame_for_round_div 13s linear infinite;
-          animation: key_frame_for_round_div 13s linear infinite;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  --size: 0.315rem;
+  --left-ini: 9vw;
+  --left-end: 2vw;
+  left: 21vw;
+  border-radius: 10px;
+  -webkit-animation: key_frame_for_round_div 11s linear infinite;
+  animation: key_frame_for_round_div 11s linear infinite;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
 }
 
 .kartanesi:nth-child(12) {
-  --size: 0.765rem;
+  --size: 0.18rem;
   --left-ini: 5vw;
-  --left-end: 6vw;
-  left: 18vw;
-  border-radius: 8px;
-  -webkit-animation: key_frame_for_round_div 7s linear infinite;
-          animation: key_frame_for_round_div 7s linear infinite;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  --left-end: 10vw;
+  left: 42vw;
+  border-radius: 5px;
+  -webkit-animation: key_frame_for_round_div 11s linear infinite;
+  animation: key_frame_for_round_div 11s linear infinite;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
 }
 
 .kartanesi:nth-child(13) {
-  --size: 0.765rem;
-  --left-ini: 8vw;
-  --left-end: -3vw;
-  left: 22vw;
-  border-radius: 9px;
-  -webkit-animation: key_frame_for_round_div 8s linear infinite;
-          animation: key_frame_for_round_div 8s linear infinite;
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
+  --size: 0.405rem;
+  --left-ini: 9vw;
+  --left-end: 0vw;
+  left: 31vw;
+  border-radius: 10px;
+  -webkit-animation: key_frame_for_round_div 13s linear infinite;
+  animation: key_frame_for_round_div 13s linear infinite;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 .kartanesi:nth-child(14) {
-  --size: 0.595rem;
-  --left-ini: -1vw;
-  --left-end: -8vw;
-  left: 79vw;
-  border-radius: 11px;
+  --size: 0.27rem;
+  --left-ini: 1vw;
+  --left-end: 10vw;
+  left: 30vw;
+  border-radius: 12px;
   -webkit-animation: key_frame_for_round_div 6s linear infinite;
-          animation: key_frame_for_round_div 6s linear infinite;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation: key_frame_for_round_div 6s linear infinite;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
 }
 
 .kartanesi:nth-child(15) {
-  --size: 0.255rem;
-  --left-ini: -2vw;
-  --left-end: -1vw;
-  left: 64vw;
-  border-radius: 12px;
-  -webkit-animation: key_frame_for_round_div 7s linear infinite;
-          animation: key_frame_for_round_div 7s linear infinite;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  --size: 0.27rem;
+  --left-ini: 5vw;
+  --left-end: 7vw;
+  left: 11vw;
+  border-radius: 8px;
+  -webkit-animation: key_frame_for_round_div 12s linear infinite;
+  animation: key_frame_for_round_div 12s linear infinite;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
 }
 
 .kartanesi:nth-child(16) {
-  --size: 0.68rem;
-  --left-ini: -5vw;
-  --left-end: -2vw;
-  left: 92vw;
-  border-radius: 12px;
+  --size: 0.135rem;
+  --left-ini: -6vw;
+  --left-end: 6vw;
+  left: 58vw;
+  border-radius: 7px;
   -webkit-animation: key_frame_for_round_div 9s linear infinite;
-          animation: key_frame_for_round_div 9s linear infinite;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  animation: key_frame_for_round_div 9s linear infinite;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
 }
 
 .kartanesi:nth-child(17) {
-  --size: 0.765rem;
-  --left-ini: 4vw;
-  --left-end: 8vw;
-  left: 72vw;
-  border-radius: 7px;
-  -webkit-animation: key_frame_for_round_div 9s linear infinite;
-          animation: key_frame_for_round_div 9s linear infinite;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  --size: 0.45rem;
+  --left-ini: 9vw;
+  --left-end: -7vw;
+  left: 80vw;
+  border-radius: 10px;
+  -webkit-animation: key_frame_for_round_div 11s linear infinite;
+  animation: key_frame_for_round_div 11s linear infinite;
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
 }
 
 .kartanesi:nth-child(18) {
-  --size: 0.51rem;
+  --size: 0.225rem;
   --left-ini: 7vw;
-  --left-end: 8vw;
-  left: 97vw;
-  border-radius: 8px;
-  -webkit-animation: key_frame_for_round_div 11s linear infinite;
-          animation: key_frame_for_round_div 11s linear infinite;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  --left-end: 10vw;
+  left: 93vw;
+  border-radius: 11px;
+  -webkit-animation: key_frame_for_round_div 9s linear infinite;
+  animation: key_frame_for_round_div 9s linear infinite;
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
 }
 
 .kartanesi:nth-child(19) {
-  --size: 0.51rem;
-  --left-ini: -8vw;
-  --left-end: 9vw;
-  left: 75vw;
+  --size: 0.225rem;
+  --left-ini: -6vw;
+  --left-end: 8vw;
+  left: 95vw;
   border-radius: 14px;
-  -webkit-animation: key_frame_for_round_div 7s linear infinite;
-          animation: key_frame_for_round_div 7s linear infinite;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  -webkit-animation: key_frame_for_round_div 13s linear infinite;
+  animation: key_frame_for_round_div 13s linear infinite;
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
 }
 
 .kartanesi:nth-child(20) {
-  --size: 0.85rem;
+  --size: 0.405rem;
   --left-ini: 4vw;
-  --left-end: 8vw;
-  left: 12vw;
-  border-radius: 6px;
-  -webkit-animation: key_frame_for_round_div 6s linear infinite;
-          animation: key_frame_for_round_div 6s linear infinite;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  --left-end: 10vw;
+  left: 94vw;
+  border-radius: 5px;
+  -webkit-animation: key_frame_for_round_div 8s linear infinite;
+  animation: key_frame_for_round_div 8s linear infinite;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
 }
 
 .kartanesi:nth-child(5n) {
   -webkit-filter: blur(1px);
-          filter: blur(1px);
+  filter: blur(1px);
 }
 /*# sourceMappingURL=HomeAnimation.css.map */

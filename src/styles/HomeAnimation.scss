@@ -30,7 +30,7 @@
 
 @for $i from 1 through 20 {
   .kartanesi:nth-child(#{$i}) {
-    --size: #{random(10) * 0.085}rem;
+    --size: #{random(10) * 0.045}rem;
     --left-ini: #{random(20) - 10}vw;
     --left-end: #{random(20) - 10}vw;
     left: #{random(100)}vw;

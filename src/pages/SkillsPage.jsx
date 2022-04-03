@@ -159,8 +159,8 @@ const ContainerStyled = styled(motion.section)`
     }
 
     .left-content{
-        padding: 0 .75rem;
-        flex: 0.6;
+        padding: 1rem;
+        flex: 0.7;
         .heading{
             text-decoration: underline;
             font-size: 1.2rem;
@@ -194,8 +194,7 @@ const ContainerStyled = styled(motion.section)`
         justify-content: center;
         align-items: center;
         img{
-            width: 70%;
-            /* height: fit-content; */
+            width: 60%;
             object-fit: cover;
             padding: 1rem;
             @media screen and (max-width:800px) {
@@ -203,7 +202,7 @@ const ContainerStyled = styled(motion.section)`
                 margin: 1rem 0;
             }
             @media screen and (max-width:800px) {
-                width: 70%;
+                width: 60%;
             }
         }
     }

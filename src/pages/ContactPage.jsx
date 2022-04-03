@@ -8,6 +8,7 @@ import Title from '../components/Title';
 import ContactItem from '../components/ContactItem';
 import { GitHub, LinkedIn, Mail, Phone, Instagram } from '@material-ui/icons';
 import firebase from 'firebase/compat/app';
+import { currYear } from '../data/DataImageSection';
 import { db } from '../firebase';
 
 import { motion } from 'framer-motion';
@@ -64,76 +65,84 @@ const ContactPage = () => {
     const [ref, controls] = useScroll(0.25);
 
     return (
-        <MainLayout id="contact" ref={ref} >
-            <Title title={pageName} />
-            <ContactPageStyled
-                variants={fade}
-                initial="hidden"
-                exit="exit"
-                animate={controls} >
-                <InnerLayout className={'contact-section'}>
-                    <div className="left-content">
-                        <div className="contact-title">
-                            <div><span>Get In Touch</span> 😄</div>
+        <>
+            <MainLayout id="contact" ref={ref} >
+                <Title title={pageName} />
+                <ContactPageStyled
+                    variants={fade}
+                    initial="hidden"
+                    exit="exit"
+                    animate={controls} >
+                    <InnerLayout className={'contact-section'}>
+                        <div className="left-content">
+                            <div className="contact-title">
+                                <div><span>Get In Touch</span> 😄</div>
+                            </div>
+                            <form className="form">
+                                <div className="form-field">
+                                    <label htmlFor="name">Enter your name</label>
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        value={name}
+                                        onChange={handleNameText}
+                                    />
+                                </div>
+                                <div className="form-field">
+                                    <label htmlFor="email">Enter your email</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        value={email}
+                                        onChange={handleEmailText}
+                                    />
+                                </div>
+                                <div className="form-field">
+                                    <label htmlFor="text-area">Enter your Message</label>
+                                    <textarea
+                                        id="text-area"
+                                        cols="20"
+                                        rows="4"
+                                        value={textareaText}
+                                        onChange={handleTextAreaText}
+                                    ></textarea>
+                                </div>
+                                <div className="form-field">
+                                    <ButtonStyled
+                                        type='submit'
+                                        onClick={handleSubmitDetails} >
+                                        Send Message
+                                    </ButtonStyled>
+                                </div>
+                            </form>
                         </div>
-                        <form className="form">
-                            <div className="form-field">
-                                <label htmlFor="name">Enter your name</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    value={name}
-                                    onChange={handleNameText}
-                                />
-                            </div>
-                            <div className="form-field">
-                                <label htmlFor="email">Enter your email</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    value={email}
-                                    onChange={handleEmailText}
-                                />
-                            </div>
-                            <div className="form-field">
-                                <label htmlFor="text-area">Enter your Message</label>
-                                <textarea
-                                    id="text-area"
-                                    cols="20"
-                                    rows="4"
-                                    value={textareaText}
-                                    onChange={handleTextAreaText}
-                                ></textarea>
-                            </div>
-                            <div className="form-field">
-                                <ButtonStyled
-                                    type='submit'
-                                    onClick={handleSubmitDetails} >
-                                    Send Message
-                                </ButtonStyled>
-                            </div>
-                        </form>
-                    </div>
-                    <div className="right-content">
-                        <ContactItem
-                            phone={phone}
-                            title="Phone"
-                            contact="+91-8890992278"
-                            email="samyak.mehta11@gmail.com"
-                            github={github}
-                            linkedIn={linkedIn}
-                            mail={mail}
-                            instagram={instagram}
-                        />
-                    </div>
-                </InnerLayout>
-            </ContactPageStyled>
-        </MainLayout>
+                        <div className="right-content">
+                            <ContactItem
+                                phone={phone}
+                                title="Phone"
+                                contact="+91-8890992278"
+                                email="samyak.mehta11@gmail.com"
+                                github={github}
+                                linkedIn={linkedIn}
+                                mail={mail}
+                                instagram={instagram}
+                            />
+                        </div>
+                    </InnerLayout>
+                </ContactPageStyled>
+            </MainLayout>
+            <FooterStyled>
+                <p>&copy;{currYear}<b> Samyak Mehta</b></p>
+            </FooterStyled>
+        </>
     )
 }
 
 const ContactPageStyled = styled(motion.section)`
     min-height: 80vh;
+    @media screen and (max-width: 1200px){
+        min-height: 60vh;
+    }
     .contact-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -198,6 +207,21 @@ const ContactPageStyled = styled(motion.section)`
                     width: 100%;
                 }
             }            
+        }
+    }
+`;
+
+const FooterStyled = styled.div`
+    position: absolute;
+    bottom: 0;
+    border-top: 3px solid var(--border-color);
+    width: 100%;
+    p{
+        padding: .75rem 0;
+        text-align: center;
+        font-weight: 700;
+        b{
+            font-weight: 700;
         }
     }
 `;

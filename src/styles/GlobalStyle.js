@@ -18,6 +18,8 @@ const GlobalStyle = createGlobalStyle`
 
     --toggle-color: #037fff4d;
 
+    --navbar-universal: #9dceeb99;
+
     --sidebar-dark-color: #F0F0F0;
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
@@ -39,6 +41,8 @@ const GlobalStyle = createGlobalStyle`
     --border-color: #2e344e;
 
     --toggle-color:  #037fff4d;
+
+    --navbar-universal: #9dceeb99;
 
     --sidebar-dark-color: #191D2B;
     --scrollbar-bg-color: #383838;
@@ -125,6 +129,7 @@ h6{
 
 //Nav Toggler
 .ham-burger-menu{
+    background: var(--navbar-universal);
     position: fixed;
     width: 100%;
     top: 0%;
@@ -132,12 +137,9 @@ h6{
     z-index: 15;
     @media screen and (max-width:1200px){
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: center;
-        padding: 2% 2% 0 0;
-    }
-    @media screen and (max-width:600px){
-        padding: 2% 3% 0 0;
+        padding: 1%;
     }
 }
 
@@ -147,11 +149,11 @@ h6{
 
 .arrowUp{
     position: fixed;
-    right: 5%;
-    bottom: 5%;
+    right: 2%;
+    bottom: 6%;
     z-index: 15;
-    margin-right: 16rem;
-    display: block;
+    margin-right: 2rem;
+    display: none;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     @media screen and (max-width:1200px){
@@ -163,6 +165,12 @@ h6{
 .nav-toggle{
     transform: translateX(0%);
     z-index: 20;
+}
+
+.arrow-down{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
 }
 `;
 

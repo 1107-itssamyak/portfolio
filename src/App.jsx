@@ -10,6 +10,7 @@ import styled from 'styled-components';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import MenuIcon from '@material-ui/icons/Menu';
 import { IconButton } from "@material-ui/core";
+// import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 // importing all pages here
 import HomePage from "./pages/HomePage";
@@ -23,13 +24,20 @@ import './styles/HomeAnimation.css';
 
 function App() {
 	const [theme, setTheme] = useState('light-theme');
-	const [checked, setChecked] = useState(true);
+	const [checked, setChecked] = useState(false);
 	const [navToggle, setNavToggle] = useState(false);
 
 	useEffect(() => {
 		localStorage.getItem('theme')
 			? setTheme(localStorage.getItem('theme'))
 			: localStorage.setItem('theme', 'light-theme');
+
+		if (localStorage.getItem('theme')
+			&& localStorage.getItem('theme') === 'dark-theme')
+			setChecked(true);
+		if (localStorage.getItem('theme')
+			&& localStorage.getItem('theme') === 'light-theme')
+			setChecked(false);
 
 		document.documentElement.className = theme;
 	}, [theme]);
@@ -38,11 +46,11 @@ function App() {
 		if (theme === 'light-theme') {
 			localStorage.setItem('theme', 'dark-theme');
 			setTheme('dark-theme');
-			setChecked(false)
+			setChecked(true);
 		} else {
 			localStorage.setItem('theme', 'light-theme');
 			setTheme('light-theme');
-			setChecked(true)
+			setChecked(false);
 		}
 	}
 
@@ -57,8 +65,7 @@ function App() {
 		}, 150);
 	}
 
-	if (navToggle)
-		window.onscroll = () => scrollFunction();
+	window.onscroll = () => scrollFunction();
 
 	const scrollFunction = () => {
 		setNavToggle(false);
@@ -97,13 +104,16 @@ function App() {
 			</div>
 
 			<div className="ham-burger-menu">
-				<IconButton
-					name="ham-burger-menu"
-					aria-label="ham-burger-menu"
-					onClick={handleCloseNavbar}
-					id="ham-burger">
-					<MenuIcon />
-				</IconButton>
+				{/* {!navToggle && */}
+				{
+					<IconButton
+						name="ham-burger-menu"
+						aria-label="ham-burger-menu"
+						onClick={handleCloseNavbar}
+						id="ham-burger">
+						<MenuIcon />
+					</IconButton>
+				}
 			</div>
 
 			<Sidebar
@@ -135,10 +145,10 @@ function App() {
 
 const MainContentStyled = styled.main`
 	position: relative;
-	margin-right: 18.3rem;
+	margin-left: 18.3rem;
 	min-height: 100vh;
 	@media screen and (max-width:1200px){
-		margin-right: 0;
+		margin-left: 0;
 	}
 `;
 

@@ -36,9 +36,6 @@ const TitleStyled = styled(motion.div)`
         @media screen and (max-width:1000px){
             font-size: 1.5rem;
         }
-        @media screen and (max-width:600px){
-            font-size: 1.2rem;
-        }
         &::before{
             content: "";
             position: absolute;

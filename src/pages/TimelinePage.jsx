@@ -59,8 +59,8 @@ const TimelineStyled = styled.section`
     min-height: 100vh;
     padding: 1rem;
     padding-top: 2rem;
-    @media screen and (max-width:800px){
-        min-height: 70vh;
+    @media screen and (max-width:1200px){
+        min-height: 80vh;
     }
     .small-title{
         margin-bottom: 2rem;

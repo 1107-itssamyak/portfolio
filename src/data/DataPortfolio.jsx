@@ -13,7 +13,7 @@ const data = [
         title: 'Portfolio Website',
         description: 'A Personal Project for displaying my intel & portfolio stack',
         image: `${portfolio_image}`,
-        text: 'Developed using React JS, Framer-Motion, css3, Google Firebase'
+        text: 'Developed using React JS, Framer-Motion, Scss, css3, Google Firebase'
     },
     {
         id: 2,
@@ -46,8 +46,8 @@ const data = [
         id: 5,
         link1: 'https://github.com/1107-itssamyak/Frontend-development-project',
         link2: 'http://frontend-development-project.vercel.app/',
-        title: 'Figma Development',
-        description: 'A Frontend Project which was developed by me. I used Figma for the Vector illustration in the development for this.',
+        title: 'Insignia Development',
+        description: 'A Freelance Frontend Project developed by me. This Prototype development was completed using the mockups prepared in Figma.',
         image: `${insignia_image}`,
         text: 'Developed using html5, css3, js'
     }

@@ -20,14 +20,14 @@ const Sidebar = ({ navToggle, handleCloseNavbar, checked, themeToggler }) => {
 const SidebarStyled = styled.div`
     width: 18rem;
     position: fixed;
-    right: 0;
+    left: 0;
     height: 100vh;
     background-color: var(--sidebar-dark-color);
     overflow: hidden;
     transition: all .4s ease-in-out;
     @media screen and (max-width:1200px){
         display: block;
-        transform: translateX(100%);
+        transform: translateX(-100%);
         z-index: 20;
     }
 `

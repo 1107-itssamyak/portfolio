@@ -6,7 +6,7 @@ import Switch from '@material-ui/core/Switch';
 // importing styled component
 import styled from 'styled-components'
 
-import { currYear } from '../data/DataImageSection';
+
 import { IconButton } from '@material-ui/core';
 
 const Navigation = ({ handleCloseNavbar, checked, themeToggler }) => {
@@ -59,8 +59,6 @@ const Navigation = ({ handleCloseNavbar, checked, themeToggler }) => {
                 <li className="nav-item">
                     <div className="light-dark-mode" onClick={themeToggler}>
                         <Brightness4Icon />
-                        {/* <input type="checkbox" checked={checked} id="theme-toggler" /> */}
-                        {/* Theme */}
                         <Switch
                             checked={checked}
                             size="medium"
@@ -70,9 +68,6 @@ const Navigation = ({ handleCloseNavbar, checked, themeToggler }) => {
                     </div>
                 </li>
             </ul>
-            <footer className="footer">
-                <p>&copy;{currYear}<b> Samyak Mehta</b></p>
-            </footer>
         </NavigationStyled>
     )
 }
@@ -137,21 +132,6 @@ const NavigationStyled = styled.nav`
             a:hover::before{
                 width: 100%;
                 height: 100%;
-            }
-        }
-    }
-
-    footer{
-        position: absolute;
-        bottom: 0;
-        border-top: 3px solid var(--border-color);
-        width: 100%;
-        p{
-            padding: 1rem 0;
-            text-align: center;
-            font-weight: 700;
-            b{
-                font-weight: 700;
             }
         }
     }

@@ -39,7 +39,7 @@ const ImageSection = () => {
                     <span>Hey there,</span>
                 </h1>
                 <p className="paragraph">
-                    <span>UI/UX development</span> peek my Interests. I find myself developing and designing them. I am looking for more opportunities to work in coding for them.
+                    <span>UI/UX development</span> pique my Interests. I find myself developing and designing them. I am looking for more opportunities to work in coding for them. I working on my skills for making myself A <span> Full Stack Web Developer </span>
                     <br /> Looking forward to Collabrate over Projects or Discussions which are fun & meaningful.😃
                 </p>
                 <div className="about-info">
@@ -82,12 +82,13 @@ const ImageSectionStyled = styled(motion.div)`
         align-items: center;
         img{
             height: 100%;
-            width: 80%;
+            width: 100%;
             object-fit: cover;
-            padding: 1rem;
+            padding: 5rem;
             overflow: hidden;
-            @media screen and (max-width:800px){
-                width: 60%;
+            @media screen and (max-width:600px){
+                width: 70%;
+                padding: 1rem;
             }
         }
     }

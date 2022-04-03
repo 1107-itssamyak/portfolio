@@ -21,7 +21,6 @@ const SkillState = styled.div`
     margin: .5rem 0;
     @media screen and (max-width:600px){
         width: 70%;
-        padding: 12px 14px;
     }
     @media screen and (max-width:450px){
         width: 100%;

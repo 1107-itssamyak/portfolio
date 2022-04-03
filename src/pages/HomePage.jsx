@@ -7,9 +7,18 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { HomePageFramer } from '../animation/animation';
 import { useScroll } from '../animation/useScroll';
+import { KeyboardArrowDown } from '@material-ui/icons';
+import { IconButton } from '@material-ui/core';
 
 const HomePage = () => {
     const [ref, controls] = useScroll(0.25);
+
+    const handleClick = () => {
+        setTimeout(() => {
+            document.body.scrollTop = 600;
+            document.documentElement.scrollTop = 600;
+        }, 100);
+    }
 
     return (
         <HomePageStyled
@@ -22,15 +31,23 @@ const HomePage = () => {
                 <div>
                     I am a Prefinal year CS Undergraduate 😄,
                     <br className='br1' />
-                    <span>Front-end Web Developer</span>.
+                    <span> Front-end Web Developer</span>.
                     <br />
-                    I live in Udaipur, Rajasthan.
-                    I'm working on improving my skills in scope of
+                    I build modern looking and responsive websites,
+                    <br className='br1' />
+                    providing User wonderful <span>User Experience</span>
                     <br />
-                    <span>Full Stack Web Development</span>.
+                    I come from Udaipur City, also known as City of Lakes, Rajasthan, India.
                 </div>
             </div>
-        </HomePageStyled>
+
+            <IconButton
+                name="arrow-down"
+                className='arrow-down'
+                onClick={handleClick}>
+                <KeyboardArrowDown />
+            </IconButton>
+        </HomePageStyled >
     )
 }
 
@@ -42,6 +59,7 @@ const HomePageStyled = styled(motion.header)`
     align-items: center;
     padding: 1rem;
     padding-top: 2rem;
+    position: relative;
     
     .typography{
         width: 100%;
@@ -70,7 +88,11 @@ const HomePageStyled = styled(motion.header)`
                     }
                 }
         }
+        @media screen and (max-width: 1000px){
+            width: 80%;
+        }
         @media screen and (max-width: 600px){
+            width: 100%;
             padding: 0 1rem;
         }
     }
