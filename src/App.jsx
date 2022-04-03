@@ -104,8 +104,6 @@ function App() {
 			</div>
 
 			<div className="ham-burger-menu">
-				{/* {!navToggle && */}
-				{
 					<IconButton
 						name="ham-burger-menu"
 						aria-label="ham-burger-menu"
@@ -113,7 +111,6 @@ function App() {
 						id="ham-burger">
 						<MenuIcon />
 					</IconButton>
-				}
 			</div>
 
 			<Sidebar

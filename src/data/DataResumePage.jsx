@@ -15,7 +15,7 @@ const EducationQualificationItems = [
     },
     {
         "id": "3",
-        "year": "2005 - 2017",
+        "year": "2014 - 2017",
         "title": "Secondary Education",
         "subtitle": "St. Paul's Senior Secondary School",
         "text": "Rajasthan, India"

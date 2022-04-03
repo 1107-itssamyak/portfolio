@@ -169,8 +169,11 @@ h6{
 
 .arrow-down{
     position: absolute;
+    transform: translateX(50%, -50%);
     bottom: 5%;
-    left: 50%;
+    @media screen and (max-width:600px){
+        bottom: 8%;
+    }
 }
 `;
 
