@@ -42,7 +42,8 @@ const HomePage = () => {
             </div>
 
             <IconButton
-                name="arrow-down"
+                name="arrow-down button"
+                aria-label="arrow-down button"
                 className='arrow-down'
                 onClick={handleClick}>
                 <KeyboardArrowDown />

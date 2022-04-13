@@ -86,7 +86,7 @@ const MenuItemStyled = styled(motion.div)`
             margin: 1rem 0;
             img{
                 border-radius: .5rem;
-                width: 80%;
+                width: 95%;
                 height: 25vh;
                 
                 @media screen and (max-width:600px){

@@ -6,7 +6,6 @@ import Switch from '@material-ui/core/Switch';
 // importing styled component
 import styled from 'styled-components'
 
-
 import { IconButton } from '@material-ui/core';
 
 const Navigation = ({ handleCloseNavbar, checked, themeToggler }) => {
