@@ -29,7 +29,7 @@ const HomePage = () => {
             <div className="typography">
                 <h1>Hi, I'm <span>Samyak Mehta</span></h1>
                 <div>
-                    I am a Prefinal year CS Undergraduate 😄,
+                    I am a Final year CS Undergraduate 😄,
                     <br className='br1' />
                     <span> Front-end Web Developer</span>.
                     <br />
