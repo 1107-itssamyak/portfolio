@@ -27,17 +27,19 @@ const HomePage = () => {
             animate={controls}
             id="home" >
             <div className="typography">
-                <h1>Hi, I'm <span>Samyak Mehta</span></h1>
+                <h1>Greetings! 😄 I am<span> Samyak Mehta</span></h1>
                 <div>
-                    I am a Final year CS Undergraduate 😄,
-                    <br className='br1' />
-                    <span> Front-end Web Developer</span>.
+                    A Computer Science Undergraduate 😄,
                     <br />
-                    I build modern looking and responsive websites,
-                    <br className='br1' />
-                    providing User wonderful <span>User Experience</span>
+                    hailing from the enchanting City of Lakes, Udaipur, Rajasthan, India.
                     <br />
-                    I come from Udaipur City, also known as City of Lakes, Rajasthan, India.
+                    My passion lies in <span> Full-Stack Web Development </span>,
+                    <br />
+                    where I specialize in crafting visually captivating and user-centric websites.
+                    <br />
+                    With a keen eye for detail and a focus on delivering exceptional <span> User Experience, </span>
+                    <br />
+                    I take pride in building responsive and modern-looking web applications. 
                 </div>
             </div>
 

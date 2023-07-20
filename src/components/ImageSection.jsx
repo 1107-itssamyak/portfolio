@@ -39,8 +39,10 @@ const ImageSection = () => {
                     <span>Hey there,</span>
                 </h1>
                 <p className="paragraph">
-                    <span>UI/UX development</span> pique my Interests. I find myself developing and designing them. I am looking for more opportunities to work in coding for them. I working on my skills for making myself A <span> Full Stack Web Developer </span>
-                    <br /> Looking forward to Collabrate over Projects or Discussions which are fun & meaningful.😃
+                    I am a highly motivated and creative Full-Stack Web Developer. With a passion for crafting visually appealing and intuitive websites that provide an exceptional User Experience. With a strong academics, I am adept at using cutting-edge technologies and frameworks to bring innovative ideas to life. I thrive in collaborative environments and continuously seek opportunities to expand my skills and contribute to meaningful projects. I am excited about the endless possibilities in the world of technology and aim to create digital experiences that leave a lasting impression.
+                    <br />
+                    <br />
+                    Looking forward to Collabrate over Projects or Discussions which are fun & meaningful.😃
                 </p>
                 <div className="about-info">
                     <div className="info-title">
@@ -96,6 +98,7 @@ const ImageSectionStyled = styled(motion.div)`
     .right-content{
         flex: 0.6;
         margin: 1rem 0;
+        padding-right: 2rem;
         h1{
             font-size: 1.5rem;
             color: var(--white-color);
@@ -122,6 +125,9 @@ const ImageSectionStyled = styled(motion.div)`
             .info p{
                 padding-left: 2rem;
             }
+        }
+        @media screen and (max-width:800px){
+            padding-right: 0;
         }
     }
     @media screen and (max-width:800px){
