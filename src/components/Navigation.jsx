@@ -13,6 +13,7 @@ const Navigation = ({ handleCloseNavbar, checked, themeToggler }) => {
         document.querySelector('#id_home').classList.remove('active-class');
         document.querySelector('#id_about').classList.remove('active-class');
         document.querySelector('#id_timeline').classList.remove('active-class');
+        document.querySelector('#id_experience').classList.remove('active-class');
         document.querySelector('#id_skills').classList.remove('active-class');
         document.querySelector('#id_portfolio').classList.remove('active-class');
         document.querySelector('#id_contact').classList.remove('active-class');
@@ -40,6 +41,9 @@ const Navigation = ({ handleCloseNavbar, checked, themeToggler }) => {
                 </li>
                 <li className="nav-item">
                     <a aria-label='nav-link-tag2' id="id_about" onClick={handleClick} href="#about">About</a>
+                </li>
+                <li className="nav-item">
+                    <a aria-label='nav-link-tag3' id="id_experience" onClick={handleClick} href="#experience">Experience</a>
                 </li>
                 <li className="nav-item">
                     <a aria-label='nav-link-tag3' id="id_timeline" onClick={handleClick} href="#timeline">Timeline</a>

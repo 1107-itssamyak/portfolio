@@ -20,7 +20,9 @@ import PortfolioPage from "./pages/PortfolioPage";
 import ContactPage from "./pages/ContactPage";
 import SkillsPage from "./pages/SkillsPage";
 
+
 import './styles/HomeAnimation.css';
+import ExperiencePage from "./pages/ExperiencePage";
 
 function App() {
 	const [theme, setTheme] = useState('light-theme');
@@ -104,13 +106,13 @@ function App() {
 			</div>
 
 			<div className="ham-burger-menu">
-					<IconButton
-						name="ham-burger-menu"
-						aria-label="ham-burger-menu"
-						onClick={handleCloseNavbar}
-						id="ham-burger">
-						<MenuIcon />
-					</IconButton>
+				<IconButton
+					name="ham-burger-menu"
+					aria-label="ham-burger-menu"
+					onClick={handleCloseNavbar}
+					id="ham-burger">
+					<MenuIcon />
+				</IconButton>
 			</div>
 
 			<Sidebar
@@ -122,6 +124,7 @@ function App() {
 			<MainContentStyled>
 				<HomePage />
 				<AboutPage />
+				<ExperiencePage />
 				<TimelinePage />
 				<SkillsPage />
 				<PortfolioPage />
