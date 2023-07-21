@@ -6,8 +6,10 @@ import styled from 'styled-components'
 function ResumeItem({ year, title, subTitle, text }) {
     return (
         <ResumeItemStyled>
-            <p>{year}</p>
-            <div className='title'>{title}</div>
+            <div className="seprator">
+                <div className='title'>{title}</div>
+                <p>{year}</p>
+            </div>
             <div className='subtitle'>{subTitle}</div>
             <div className='text'>{text}</div>
         </ResumeItemStyled>
@@ -18,7 +20,9 @@ const ResumeItemStyled = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
-    text-align: center;
+    text-align: left;
+    margin: 1rem 0;
+    padding: .5rem 0 1rem 0;
 
     &:not(:last-child){
         margin-bottom: 2rem;
@@ -40,23 +44,26 @@ const ResumeItemStyled = styled.div`
     }
 
     padding-left: 2rem;
-    p{
-        display: inline-block;
-        padding: .5rem 0;
-        @media screen and (max-width: 800px){
-            padding: .4rem 0;
-        }
-    }    
-    
-    .title{
-        font-size: 1.2rem;
-        font-weight: 600;
-        color: var(--primary-color);
-        margin-bottom: .5rem;
-        @media screen and (max-width:800px){
+
+    .seprator{
+        display: flex;
+        justify-content: space-between;
+
+        p{
+            display: inline-block;
+        }    
+        
+        .title{
             font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: .5rem;
+            @media screen and (max-width:800px){
+                font-size: 1.2rem;
+            }
         }
     }
+
     .subtitle{
         font-size: 1rem;
         @media screen and (max-width:800px){

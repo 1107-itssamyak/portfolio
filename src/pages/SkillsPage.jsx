@@ -35,7 +35,7 @@ const SkillsPage = () => {
                         Web Development
                     </div>
                     <div className="subheading">
-                        I have worked on various <span>Web Development Projects</span>. This is the tech's Stack, I have knowledge and am confident about. I also have used <span>Bootstrap</span>, which is a CSS framework for developing responsive and mobile-first websites, for Responsive Web Projects.
+                        I have worked on various <span>Web Development Projects</span>. This is the tech's Stack, I have knowledge and am confident about. I also have used <span>Bootstrap</span> &amp; <span>Material UI</span>, which are CSS framework for developing responsive and mobile-first Websites.
                     </div>
                     <div className="skills">
                         {web_development.map((item) => (
@@ -121,6 +121,7 @@ const SkillsPage = () => {
                     </div>
                     <div className="subheading">
                         Some <span>Databases & Web services</span> I have worked upon.
+                        I am proficient in AWS, Firebase, MySQL, and MongoDB. Leveraging <span>AWS</span> , I have deployed secure web apps with cloud resources. <span>Firebase</span> enables dynamic web experiences with real-time databases. With <span>MySQL</span>, I design efficient relational databases. <span>MongoDB</span> allows me to handle diverse data types, ideal for modern web apps.
                     </div>
                     <div className="skills">
                         {web_services.map((item) => (

@@ -1,33 +1,33 @@
 const web_development = [
     {
-        "title": "html5",
+        "title": "Material UI",
         "id": "1"
     },
     {
-        "title": "css3 / scss",
+        "title": "tailwind css",
         "id": "2"
     },
     {
-        "title": "tailwind css",
+        "title": "bootstrap",
         "id": "3"
     },
     {
-        "title": "bootstrap",
+        "title": "html5 / css3 / scss",
         "id": "4"
     }
 ]
 
 const programming = [
     {
-        "title": "c++",
+        "title": "java",
         "id": "1"
     },
     {
-        "title": "java",
+        "title": "javascript / typescript",
         "id": "2"
     },
     {
-        "title": "javascript",
+        "title": "c++",
         "id": "3"
     },
     {
@@ -42,11 +42,11 @@ const tools = [
         "id": "1"
     },
     {
-        "title": "git/ github",
+        "title": "node js",
         "id": "2"
     },
     {
-        "title": "vscode",
+        "title": "git / github / bitbucket",
         "id": "3"
     },
     {
@@ -57,12 +57,20 @@ const tools = [
 
 const web_services = [
     {
-        "title": "mysql",
+        "title": "aws",
         "id": "1"
     },
     {
-        "title": "Firebase",
+        "title": "firebase",
         "id": "2"
+    },
+    {
+        "title": "mysql",
+        "id": "3"
+    },
+    {
+        "title": "mongodb",
+        "id": "4"
     },
 ]
 

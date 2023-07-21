@@ -21,12 +21,16 @@ const Menu = ({ data }) => {
                     <p>{item.text}</p>
                     <div className='desc'>{item.description}</div>
                     <ul>
-                        <li>
-                            <a href={item.link1}><DescriptionIcon /> Source</a>
-                        </li>
-                        <li>
-                            <a href={item.link2} ><TvIcon /> Live</a>
-                        </li>
+                        {
+                            item.link1 && <li>
+                                <a href={item.link1}><DescriptionIcon /> Source</a>
+                            </li>
+                        }
+                        {
+                            item.link2 && <li>
+                                <a href={item.link2} ><TvIcon /> Live</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             ))}

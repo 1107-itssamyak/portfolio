@@ -4,7 +4,7 @@ export const data = [
         "duration": "Jan 2023 - July 2023",
         "title": "IT Roots Intern",
         "firmName": "Boston Scientific Corporation",
-        "location": "Gurugram, Harayana",
+        "location": "Gurugram, Haryana",
         "text": `Collaborated cross-functionally, developed custom AEM components to enhance web functionality. Contributing as a part of Digital Marketing for better Improved     website performance, Remediation of custom components, optimizing load times for a seamless user experience. Contributed to Website Delivery Team, enhancing web functionality with custom AEM components.Leveraged advanced JCR - SQL querying for data - driven decision - making.`,
         "skills": ["Adobe Experience Manager- 6.5", "Node.js", "Java", "Javascript", "Atlassian Jira", "Bitbucket"]
     },

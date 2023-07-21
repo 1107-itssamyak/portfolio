@@ -4,6 +4,7 @@ import forward_image from '../image/forward_image.webp';
 import pokedex_image from '../image/pokedex_image.webp';
 import typing_game_image from '../image/typing_game.webp';
 import portfolio_image from '../image/portfolio_image.webp';
+import scraper_image from '../image/scraper_image.webp';
 
 const data = [
     {
@@ -34,7 +35,16 @@ const data = [
         text: 'Developed using html5, css3, chartjs, js, Google Firebase'
     },
     {
-        id: 4,
+        id: 5,
+        link1: 'https://github.com/1107-itssamyak/RBSE-22-result-scrapper',
+        link2: '',
+        title: 'RBSE Result Scraper',
+        description: 'A Python scraper Project which scrappes the result for the entered student roll no"s. The scrapped result is then exported to excel sheet for storing, analysis & sharing purposes.',
+        image: `${scraper_image}`,
+        text: 'Developed using Python & beautifulsoap'
+    },
+    {
+        id: 5,
         link1: 'https://github.com/1107-itssamyak/Pokedex-Project',
         link2: 'https://pokedex-project-1107-itssamyak.vercel.app/',
         title: 'PokeDex Project',
@@ -43,7 +53,7 @@ const data = [
         text: 'Developed using React JS, CSS3'
     },
     {
-        id: 5,
+        id: 6,
         link1: 'https://github.com/1107-itssamyak/Frontend-development-project',
         link2: 'http://frontend-development-project.vercel.app/',
         title: 'Insignia Development',
